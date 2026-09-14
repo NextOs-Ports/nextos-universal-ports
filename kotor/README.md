@@ -1,0 +1,202 @@
+# Star Wars: Knights of the Old Republic — universal ARMv7 port (BYO game data)
+
+**🌐 Language / Idioma:** [🇬🇧 English](#-english) · [🇧🇷 Português](#-português)
+
+![KOTOR title screen on NextOS Mali-450, 1280x720](screenshots/mali450-title-1280x720.png)
+
+## Community
+
+Questions, device reports and help: **<https://discord.gg/DHfY62eDNN>**
+
+## 🇬🇧 English
+
+The original Aspyr Android release of **Star Wars: Knights of the Old Republic**
+running natively on Linux handhelds through our ARMv7 so-loader. The game keeps
+its own Odyssey/SDL2 runtime flow: native constructors, `JNI_OnLoad`, Android
+lifecycle handshake, OBB mounting and `SDL_main` all execute in their original
+order.
+
+**No game data is distributed.** You provide your own legally-owned copy of the
+Aspyr Android release (APK + OBB cache) and the bundled NXExtract installer
+extracts, validates and installs everything on first launch.
+
+### Supported devices
+
+| Device / firmware | Status |
+|---|---|
+| NextOS Elite (Amlogic, Mali-450, fbdev) | validated physically |
+| R36S / R36T (ArkOS, RK3326, Mali-G31) | validated physically |
+| Other AArch64 CFWs with 32-bit GL stack | untested — capability-detected, reports welcome |
+
+The public runtime requires at most `GLIBC_2.28` and a 32-bit ARM (armhf)
+EGL/GLES2 stack on the device. Resolution is read from the real display
+(DRM connector → fbdev), never hard-coded.
+
+The release uses the complete NextOS framework without replacing the game's
+native flow: `nxbootstrap` performs capability-based launch and extraction;
+`nxcompat`, `nxloader` and `nxandroid` validate the host, guest ELFs and
+lifecycle order; `nxgl`, `nxaudio` and `nxinput` publish evidence from the
+window, audio device and controller that KOTOR actually opened. The graphics
+bridge observes the engine-owned context and never creates a second window or
+GL context.
+
+### Installation
+
+1. Copy the port folder to your `ports/` directory (`/roms/ports`,
+   `/storage/roms/ports`, muOS/batocera layouts are auto-detected).
+2. Put your APK and OBB cache (`.apk` + `.zip`/`.obb` files) inside
+   `ports/kotor/gamedata/`.
+3. Optional: choose the game language in the visible `Star Wars KOTOR.sh`
+   launcher by changing `GAME_LANGUAGE="en"`. Supported
+   codes are `en`, `fr`, `it`, `de`, `es` and `pl`.
+4. Launch **Star Wars KOTOR** from the frontend. NXExtract runs once,
+   validates your files by content (not by filename) and installs the payload.
+   Wrong or different builds are reported honestly.
+5. On later launches a fast marker check skips straight into the game.
+
+### Controls (Xbox semantics)
+
+| Control | Action |
+|---|---|
+| Left stick | Move / menu navigation |
+| Right stick | Camera |
+| D-pad | Menu and gameplay navigation |
+| A / B | Confirm / cancel |
+| X / Y | Native KOTOR actions |
+| LB / RB / LT / RT | Native shoulder and trigger actions |
+| Start | Pause / game menu |
+| **Select + Start** | Save-safe exit |
+
+Built-in pads of the supported handhelds are normalized automatically
+(including the R36S "GO-Super Gamepad"); external pads go through SDL's
+regular controller database plus the PortMaster profile.
+
+### Build from source
+
+```bash
+./build_universal.sh     # Debian Buster cross build, GLIBC <= 2.30 ceiling
+```
+
+Produces one ARMHF executable, `kotor-nextos`. Controller normalization and
+the framework are linked into that executable; there is no preload library and
+the release contains no `run.sh` compatibility layer.
+
+### Runtime settings
+
+| Variable | Purpose |
+|---|---|
+| `GAME_LANGUAGE` | Visible launcher setting: `en`, `fr`, `it`, `de`, `es` or `pl` |
+| `NXPORT_LANGUAGE` | Optional environment override using the same codes |
+| `KOTOR_W` / `KOTOR_H` | Manual resolution override (diagnostic only) |
+| `KOTOR_FMOD_OPENSL=1` | FMOD OpenSL output through the SDL bridge (default) |
+| `KOTOR_INPUT_REMAP=0` | Disable the built-in pad normalizer |
+| `KOTOR_TEX_16BIT=1` | Diagnostic 16-bit texture upload path |
+
+### Source map
+
+- `src/main.c` — module order, lifecycle, OBB handshake, real-display probe.
+- `src/so_util.c` — ARM32 ELF loading, REL relocation and export snapshots.
+- `src/imports.c` — bionic imports, SDL/GLES boundary and FMOD selection.
+- `src/pthr.c` — bionic-to-glibc pthread object bridge.
+- `src/libc_shim.c` — filesystem, stdio, `stat` ABI and AAsset compatibility.
+- `src/softfp_shim.c` — softfp-to-hardfp libm/GLES2 calls.
+- `src/jni_fake.c` — minimal JavaVM/JNIEnv and Android activity values.
+- `src/opensles_shim.c` — OpenSL buffer queues and MP3 streams over SDL audio.
+- `src/kotor_input.c` — linked per-pad raw joystick normalization profiles.
+- `src/kotor_framework.c` — capability probe, guest/lifecycle validation and
+  runtime graphics/audio/input receipts.
+- `vendor/` — pinned runtime sources compiled into the reproducible build.
+- `nxport.json` / `Star Wars KOTOR.sh` — declarative contract and its
+  self-contained launcher generated by the pinned `nxbootstrap` source.
+
+### Licenses
+
+The loader source is GPL-3.0; `minimp3` is CC0. KOTOR, the Odyssey Engine, the
+Android native libraries, OBB data, FMOD and all Star Wars assets remain
+property of their respective owners and are **not** distributed here. This is
+an independent interoperability project, not affiliated with or endorsed by
+Lucasfilm, BioWare, Aspyr or Electronic Arts.
+
+---
+
+## 🇧🇷 Português
+
+A versão Android original da Aspyr de **Star Wars: Knights of the Old
+Republic** rodando nativamente em handhelds Linux através do nosso so-loader
+ARMv7. O port mantém o fluxo real da engine Odyssey/SDL2: construtores
+nativos, `JNI_OnLoad`, ciclo de vida Android, montagem dos OBBs e `SDL_main`
+acontecem na ordem original.
+
+**Nenhum dado do jogo é distribuído.** Você fornece a sua própria cópia legal
+da versão Android da Aspyr (APK + cache OBB) e o instalador NXExtract
+embutido extrai, valida e instala tudo na primeira abertura.
+
+### Aparelhos suportados
+
+| Aparelho / firmware | Estado |
+|---|---|
+| NextOS Elite (Amlogic, Mali-450, fbdev) | validado fisicamente |
+| R36S / R36T (ArkOS, RK3326, Mali-G31) | validado fisicamente |
+| Outros CFWs AArch64 com stack GL 32-bit | não testado — detecção por capacidade; relatos são bem-vindos |
+
+O runtime público exige no máximo `GLIBC_2.28` e um stack EGL/GLES2 ARM
+32-bit (armhf) no aparelho. A resolução é lida do display real (conector DRM →
+fbdev), nunca cravada.
+
+A release usa o framework NextOS completo sem substituir o fluxo nativo do
+jogo: `nxbootstrap` faz a inicialização e extração por capacidades;
+`nxcompat`, `nxloader` e `nxandroid` validam host, ELFs e ciclo de vida;
+`nxgl`, `nxaudio` e `nxinput` publicam provas da janela, áudio e controle que o
+próprio KOTOR abriu. A ponte gráfica apenas observa o contexto da engine e
+nunca cria uma segunda janela ou contexto GL.
+
+### Instalação
+
+1. Copie a pasta do port para o seu diretório `ports/`.
+2. Coloque o APK e o cache OBB (`.apk` + `.zip`/`.obb`) dentro de
+   `ports/kotor/gamedata/`.
+3. Opcional: escolha o idioma na linha
+   `GAME_LANGUAGE="en"` do launcher visível
+   `Star Wars KOTOR.sh`. Os códigos disponíveis são `en`, `fr`, `it`, `de`,
+   `es` e `pl`.
+4. Abra **Star Wars KOTOR** pelo frontend. O NXExtract roda uma vez, valida
+   os arquivos por conteúdo (não por nome) e instala o payload. Build errado
+   ou diferente é reportado honestamente.
+5. Nas aberturas seguintes um marker rápido pula direto pro jogo.
+
+### Controles (padrão Xbox)
+
+Analógico esquerdo move, direito controla a câmera; D-pad navega; A confirma,
+B cancela; LB/RB/LT/RT são as ações nativas; Start pausa; **Select + Start sai
+com segurança**. Os pads embutidos dos aparelhos suportados são normalizados
+automaticamente (incluindo o "GO-Super Gamepad" do R36S); controles externos
+usam o banco normal do SDL mais o perfil do PortMaster.
+
+### Compilar
+
+```bash
+./build_universal.sh     # cross-build Debian Buster, teto GLIBC <= 2.30
+```
+
+O resultado é um único executável ARMHF, `kotor-nextos`, com normalização de
+controles e framework ligados estaticamente. O ZIP não usa `run.sh` nem
+biblioteca de preload.
+
+### Licenças
+
+O fonte do loader é GPL-3.0; `minimp3` é CC0. KOTOR, Odyssey Engine,
+bibliotecas Android, dados OBB, FMOD e todos os assets de Star Wars continuam
+pertencendo aos seus respectivos proprietários e **não** são distribuídos
+aqui. Projeto independente de interoperabilidade, sem afiliação ou endosso de
+Lucasfilm, BioWare, Aspyr ou Electronic Arts.
+
+## Download
+
+- [kotor-v1.1.7](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/kotor-v1.1.7) — `KOTOR.NextOS-v1.1.7.zip`, `KOTOR.NextOS-v1.1.7.zip.sha256`
+- [kotor-v1.1.6](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/kotor-v1.1.6) — `KOTOR.NextOS-v1.1.6.zip`, `KOTOR.NextOS-v1.1.6.zip.sha256`
+- [kotor-v1.1.5](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/kotor-v1.1.5) — `KOTOR.NextOS-v1.1.5-FINAL.zip`, `KOTOR.NextOS-v1.1.5-FINAL.zip.sha256`
+
+- Todas as versões / all versions: [releases?q=kotor](https://github.com/NextOs-Ports/nextos-universal-ports/releases?q=kotor)
+- Histórico: 166 downloads no repositório original `kotor-nextos` (até 13/09/2026).
+
+O pacote não inclui o jogo nem seus dados (BYO-data). / The package does not include the game or its data.
