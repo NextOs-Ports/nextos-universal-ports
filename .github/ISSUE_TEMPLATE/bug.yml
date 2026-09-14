@@ -1,0 +1,25 @@
+name: Problema em um port / Port issue
+description: O port não abre, trava, sem som, controle errado etc.
+labels: [bug]
+body:
+  - type: dropdown
+    id: game
+    attributes: {label: "Jogo / Game", description: "Pasta do jogo (ex.: horizonchase)", options: [actionsquad, angrybirds, beachbuggy, blossomtales, bombchicken-gunbrick, castleofillusion, chrono, deadtrigger, ff4, forager, fp2, geometrydash, hitmango, horizonchase, huntdown, kotor, magicrampage, merchantskies, namelesscat, oceanhorn, offtheroad, partyhard, prizefighters2, rcrdx, sallyface, scourgebringer, skate3, sonic4ep2, sor4, stardewvalley, summertimesaga, suzycube, swordigo, tasm2, tearscape, terraria, tightrope, titansouls, "outro / other"]}
+  - type: input
+    id: version
+    attributes: {label: "Versão do port / Port release", placeholder: "horizonchase-v1.2.2"}
+    validations: {required: true}
+  - type: input
+    id: device
+    attributes: {label: "Aparelho e firmware / Device and firmware", placeholder: "R36S + ArkOS 2.0 / Game Stick Y7 + NextOS Elite 4.9"}
+    validations: {required: true}
+  - type: input
+    id: apk
+    attributes: {label: "Origem dos dados / Game data source", placeholder: "APK 2.6.9 arm64 da Play Store"}
+  - type: textarea
+    id: what
+    attributes: {label: "O que acontece / What happens", description: "Passos, tela onde para, mensagem exibida."}
+    validations: {required: true}
+  - type: textarea
+    id: log
+    attributes: {label: "Log", description: "Cole o log gerado na pasta do port (ex.: log.txt).", render: text}

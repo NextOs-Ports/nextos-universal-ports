@@ -1,0 +1,14 @@
+name: Pedido de jogo / Game request
+description: Sugira um jogo para port.
+labels: [request]
+body:
+  - type: input
+    id: game
+    attributes: {label: "Jogo e plataforma / Game and platform", placeholder: "Nome — Android/iOS/Switch/GameCube"}
+    validations: {required: true}
+  - type: input
+    id: engine
+    attributes: {label: "Engine, se souber / Engine, if known", placeholder: "Unity, GameMaker, Godot, MonoGame, Cocos2d-x..."}
+  - type: textarea
+    id: why
+    attributes: {label: "Observações / Notes"}
