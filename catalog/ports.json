@@ -1,0 +1,1728 @@
+{
+  "ports": {
+    "actionsquad.zip": {
+      "version": 4,
+      "name": "actionsquad.zip",
+      "items": [
+        "Action Squad.sh",
+        "actionsquad/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Door Kickers: Action Squad",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "AArch64 PortMaster adapter for Door Kickers: Action Squad",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/actionsquad: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "action",
+          "platformer"
+        ],
+        "image": {
+          "screenshot": "actionsquad.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-19",
+        "date_updated": "2026-08-19",
+        "md5": "7d38c5eebab8ee377c468f0c9ad683e1",
+        "size": 211939,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/actionsquad.zip",
+        "downloads": 115
+      }
+    },
+    "angrybirds.zip": {
+      "version": 4,
+      "name": "angrybirds.zip",
+      "items": [
+        "Angry Birds Classic.sh",
+        "angrybirds/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Angry Birds Classic",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Angry Birds Classic 8.0.3 universal ARMHF Android compatibility port for NextOS, ArkOS and PortMaster handhelds.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/angrybirds: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "puzzle",
+          "arcade"
+        ],
+        "image": {
+          "screenshot": "angrybirds.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "free",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-09-03",
+        "date_updated": "2026-09-03",
+        "md5": "042b532b302b966dae420ea838a807fb",
+        "size": 349955,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/angrybirds.zip",
+        "downloads": 36
+      }
+    },
+    "asm2.zip": {
+      "version": 4,
+      "name": "asm2.zip",
+      "items": [
+        "The Amazing Spider-Man 2.sh",
+        "asm2_127"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "The Amazing Spider-Man 2",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Clean-room BYO-data loader for The Amazing Spider-Man 2 Android 1.2.7d/1.2.8d. Includes proven ARMHF routes plus a scoped AArch64 X5M/Box32 route, native controls and audio, persistent saves, the original first-run flow and transactional setup. Executable game data is not included.",
+        "desc_md": null,
+        "inst": "Put a supported legal Android 1.2.7d/1.2.8d input in asm2_127/gamedata. A loose APK needs the matching intact cache ZIP or main.12032 plus patch.12723 OBB; patch.12438 is optional. The self-contained 1.2.8d installer needs no separate cache but is ARM32-only. Launch once and let NXExtract validate everything.",
+        "inst_md": null,
+        "genres": [
+          "action",
+          "adventure"
+        ],
+        "image": {
+          "screenshot": "asm2.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64",
+          "armhf"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-02",
+        "date_updated": "2026-08-02",
+        "md5": "f13330ff90d76cc461be0e594943343c",
+        "size": 6741977,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/asm2.zip",
+        "downloads": 602
+      }
+    },
+    "bbracing2.zip": {
+      "version": 4,
+      "name": "bbracing2.zip",
+      "items": [
+        "Beach Buggy Racing 2.sh",
+        "bbracing2/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Beach Buggy Racing 2",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Beach Buggy Racing 2 — native AArch64 port (so-loader, GLES2, SDL3) for NextOS, dArkOS/R36S and aarch64 CFW handhelds.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/beachbuggy: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "racing"
+        ],
+        "image": {
+          "screenshot": "bbracing2.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "free",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-09-06",
+        "date_updated": "2026-09-06",
+        "md5": "e3ac51cf738bbfc940e2f9bd343275c0",
+        "size": 3758122,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/bbracing2.zip",
+        "downloads": 24
+      }
+    },
+    "beachbuggy.zip": {
+      "version": 4,
+      "name": "beachbuggy.zip",
+      "items": [
+        "Beach Buggy Racing.sh",
+        "beachbuggy/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Beach Buggy Racing",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Beach Buggy Racing — native AArch64 port (so-loader, GLES2, SDL3) for NextOS, dArkOS/R36S and aarch64 CFW handhelds.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/beachbuggy: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "racing"
+        ],
+        "image": {
+          "screenshot": "beachbuggy.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "free",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-09-06",
+        "date_updated": "2026-09-06",
+        "md5": "0c2cfccca429e700dff12a3630d1161c",
+        "size": 3659862,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/beachbuggy.zip",
+        "downloads": 22
+      }
+    },
+    "blossomtales.zip": {
+      "version": 4,
+      "name": "blossomtales.zip",
+      "items": [
+        "Blossom Tales.sh",
+        "blossomtales/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Blossom Tales: The Sleeping King",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Blossom Tales: The Sleeping King 1.0.0 — universal AArch64 MonoGame/.NET-for-Android so-loader for NextOS, ArkOS/R36S-class and PortMaster handhelds.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/blossomtales: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "adventure",
+          "rpg"
+        ],
+        "image": {
+          "screenshot": "blossomtales.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-09-04",
+        "date_updated": "2026-09-04",
+        "md5": "4ce8d4feaaf3c0c600df18de700e84a8",
+        "size": 2655407,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/blossomtales.zip",
+        "downloads": 22
+      }
+    },
+    "bombchicken.zip": {
+      "version": 4,
+      "name": "bombchicken.zip",
+      "items": [
+        "Bomb Chicken.sh",
+        "bombchicken/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Bomb Chicken",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Bomb Chicken — validated universal AArch64 port for NextOS and PortMaster handhelds.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/bombchicken-gunbrick: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "puzzle",
+          "platformer"
+        ],
+        "image": {
+          "screenshot": "bombchicken.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-13",
+        "date_updated": "2026-08-13",
+        "md5": "bd97fae8161a01da220dea6413f27f4d",
+        "size": 223160,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/bombchicken.zip",
+        "downloads": 67
+      }
+    },
+    "castleofillusion.zip": {
+      "version": 4,
+      "name": "castleofillusion.zip",
+      "items": [
+        "Castle of Illusion.sh",
+        "castleofillusion/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Castle of Illusion Starring Mickey Mouse",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Castle of Illusion Starring Mickey Mouse — native AArch64 port for Linux handhelds (BYO game data)",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/castleofillusion: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "platformer"
+        ],
+        "image": {
+          "screenshot": "castleofillusion.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-05",
+        "date_updated": "2026-08-05",
+        "md5": "1f968660f35ee3e1c44be305a8fad21a",
+        "size": 171516,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/castleofillusion.zip",
+        "downloads": 125
+      }
+    },
+    "chrono.zip": {
+      "version": 4,
+      "name": "chrono.zip",
+      "items": [
+        "Chrono Trigger.sh",
+        "chrono/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Chrono Trigger",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "A native Linux port of the Android release of Chrono Trigger (Cocos2d-x 3.14.1, GLES2) for retro handhelds. The port is a compatibility loader: it maps the game's original AArch64 Android libraries into a Linux process, replaces the Android runtime they expect (JNI, OpenSL ES, asset manager, Cocos2dxBitmap text rendering) and drives the Cocos2d-x render loop on the firmware's own SDL2/EGL/GLES2.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/chrono: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "rpg"
+        ],
+        "image": {
+          "screenshot": "chrono.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-09-06",
+        "date_updated": "2026-09-06",
+        "md5": "b30c2fff6aaeb5cc41cf88c31354d441",
+        "size": 916306,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/chrono.zip",
+        "downloads": 21
+      }
+    },
+    "deadtrigger.zip": {
+      "version": 4,
+      "name": "deadtrigger.zip",
+      "items": [
+        "Dead Trigger.sh",
+        "deadtrigger/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Dead Trigger",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Validated NextOS port of Dead Trigger with reproducible low-glibc compatibility runtime",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/deadtrigger: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "fps",
+          "action"
+        ],
+        "image": {
+          "screenshot": "deadtrigger.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "free",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-12",
+        "date_updated": "2026-08-12",
+        "md5": "d86b870884b1fbd29e21cd6551f9fd59",
+        "size": 235819,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/deadtrigger.zip",
+        "downloads": 43
+      }
+    },
+    "ff4.zip": {
+      "version": 4,
+      "name": "ff4.zip",
+      "items": [
+        "Final Fantasy IV 3D Remake.sh",
+        "ff4/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Final Fantasy IV (3D Remake)",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Final Fantasy IV (3D Remake) — native AArch64 port (so-loader, GLES1) for NextOS, dArkOS/R36S, ROCKNIX and PortMaster handhelds.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/ff4: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "rpg"
+        ],
+        "image": {
+          "screenshot": "ff4.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-25",
+        "date_updated": "2026-08-25",
+        "md5": "0886a041181ba12288d0af9dde5f58f4",
+        "size": 262022,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/ff4.zip",
+        "downloads": 99
+      }
+    },
+    "ff4a.zip": {
+      "version": 4,
+      "name": "ff4a.zip",
+      "items": [
+        "Final Fantasy IV The After Years.sh",
+        "ff4a/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Final Fantasy IV: The After Years",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Final Fantasy IV: The After Years — native AArch64 port (so-loader, GLES1) for NextOS, dArkOS/R36S, ROCKNIX and PortMaster handhelds.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/ff4: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "rpg"
+        ],
+        "image": {
+          "screenshot": "ff4a.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-25",
+        "date_updated": "2026-08-25",
+        "md5": "3329678cd1a046f345cea01f0a25ec05",
+        "size": 266868,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/ff4a.zip",
+        "downloads": 99
+      }
+    },
+    "fp2.zip": {
+      "version": 4,
+      "name": "fp2.zip",
+      "items": [
+        "Freedom Planet 2.sh",
+        "fp2/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Freedom Planet 2",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Freedom Planet 2 1.2.8 — universal AArch64 Unity 2018.4/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/fp2: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "platformer",
+          "action"
+        ],
+        "image": {
+          "screenshot": "fp2.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-09-04",
+        "date_updated": "2026-09-04",
+        "md5": "71575ad6387a9db4a73ca08e128a894b",
+        "size": 7945404,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/fp2.zip",
+        "downloads": 23
+      }
+    },
+    "gdsubzero.zip": {
+      "version": 4,
+      "name": "gdsubzero.zip",
+      "items": [
+        "Geometry Dash SubZero.sh",
+        "gdsubzero/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Geometry Dash SubZero",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Geometry Dash SubZero (RobTop, Cocos2d-x 2.x) — native AArch64 port for Linux handhelds.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/geometrydash: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "rhythm",
+          "platformer"
+        ],
+        "image": {
+          "screenshot": "gdsubzero.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "free",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-17",
+        "date_updated": "2026-08-17",
+        "md5": "b44382d0dd48da7d2ae17071ce7f291c",
+        "size": 345782,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/gdsubzero.zip",
+        "downloads": 65
+      }
+    },
+    "geometrydash.zip": {
+      "version": 4,
+      "name": "geometrydash.zip",
+      "items": [
+        "Geometry Dash.sh",
+        "PACKAGE-MANIFEST.sha256",
+        "geometrydash/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Geometry Dash",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Geometry Dash (RobTop, Cocos2d-x 2.x) — native AArch64 port for Linux handhelds.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/geometrydash: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "rhythm",
+          "platformer"
+        ],
+        "image": {
+          "screenshot": "geometrydash.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-08",
+        "date_updated": "2026-08-08",
+        "md5": "2945fe428b7d680e54ac0d895a2a49ac",
+        "size": 309004,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/geometrydash.zip",
+        "downloads": 210
+      }
+    },
+    "gunbrick.zip": {
+      "version": 4,
+      "name": "gunbrick.zip",
+      "items": [
+        "Gunbrick.sh",
+        "gunbrick/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Gunbrick: Reloaded",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Gunbrick: Reloaded — validated universal AArch64 port for NextOS and PortMaster handhelds.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/bombchicken-gunbrick: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "puzzle",
+          "platformer"
+        ],
+        "image": {
+          "screenshot": "gunbrick.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-11",
+        "date_updated": "2026-08-11",
+        "md5": "34fa19c5250e7f490293490450d5a009",
+        "size": 287457,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/gunbrick.zip",
+        "downloads": 56
+      }
+    },
+    "hitmango.zip": {
+      "version": 4,
+      "name": "hitmango.zip",
+      "items": [
+        "Hitman GO.sh",
+        "hitmango/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Hitman GO",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Hitman GO 1.18.1 universal AArch64 Unity/IL2CPP loader — NextOS/Mali-450 + multi-device. BYO-data; backup privado.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/hitmango: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "puzzle",
+          "strategy"
+        ],
+        "image": {
+          "screenshot": "hitmango.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-18",
+        "date_updated": "2026-08-18",
+        "md5": "7542da5577301622d02d5383e3140f6b",
+        "size": 485151,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/hitmango.zip",
+        "downloads": 21
+      }
+    },
+    "horizonchase.zip": {
+      "version": 4,
+      "name": "horizonchase.zip",
+      "items": [
+        "Horizon Chase.sh",
+        "horizonchase"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Horizon Chase",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Horizon Chase Android 2.6.9 through a native AArch64 Unity/IL2CPP so-loader. One loader negotiates Mali/fbdev, KMSDRM, GLES, compressed textures, audio and memory tiers at runtime. Includes native controllers, music/SFX, persistent saves and clean frontend exit. BYO-data; game files are not included.",
+        "inst": "Place a legal arm64 Horizon Chase Android 2.6.9 APK, all splits, or a complete APKS/APKM/XAPK bundle in horizonchase/gamedata and launch the port. NXExtract validates and prepares it automatically. If you own the full game on Android, also drop your com.aquiris.horizonchase.v2.playerprefs.xml there and the port imports your own profile on the next launch.",
+        "genres": [
+          "racing",
+          "arcade"
+        ],
+        "image": {
+          "screenshot": "horizonchase.screenshot.jpg"
+        },
+        "rtr": false,
+        "runtime": [],
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "exp": false,
+        "store": [],
+        "availability": "free",
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-06",
+        "date_updated": "2026-08-06",
+        "md5": "950b715fc0cf751cdb548c29f6fc5cad",
+        "size": 1105249,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/horizonchase.zip",
+        "downloads": 423
+      }
+    },
+    "huntdown.zip": {
+      "version": 4,
+      "name": "huntdown.zip",
+      "items": [
+        "Huntdown.sh",
+        "huntdown/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Huntdown",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Huntdown universal PortMaster port for AArch64 handhelds",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/huntdown: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "action",
+          "platformer"
+        ],
+        "image": {
+          "screenshot": "huntdown.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-31",
+        "date_updated": "2026-08-31",
+        "md5": "a207e6c2695568689c872877d779fd50",
+        "size": 810617,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/huntdown.zip",
+        "downloads": 71
+      }
+    },
+    "kotor.zip": {
+      "version": 4,
+      "name": "kotor.zip",
+      "items": [
+        "Star Wars KOTOR.sh",
+        "kotor/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Star Wars: Knights of the Old Republic",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Star Wars: KOTOR — universal ARMv7 so-loader for Linux handhelds (NextOS, ArkOS/R36S). BYO game data; no game files included.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/kotor: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "rpg"
+        ],
+        "image": {
+          "screenshot": "kotor.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-12",
+        "date_updated": "2026-08-12",
+        "md5": "2b992974cd696bee2f49a121dfc6bdb3",
+        "size": 282246,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/kotor.zip",
+        "downloads": 132
+      }
+    },
+    "magicrampage.zip": {
+      "version": 4,
+      "name": "magicrampage.zip",
+      "items": [
+        "Magic Rampage.sh",
+        "magicrampage/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Magic Rampage",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Universal PortMaster port of Magic Rampage for NextOS and ARM handhelds",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/magicrampage: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "platformer",
+          "rpg"
+        ],
+        "image": {
+          "screenshot": "magicrampage.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "free",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-20",
+        "date_updated": "2026-08-20",
+        "md5": "4d76519966618f0b054c558e6820de17",
+        "size": 251554,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/magicrampage.zip",
+        "downloads": 44
+      }
+    },
+    "merchantskies.zip": {
+      "version": 4,
+      "name": "merchantskies.zip",
+      "items": [
+        "Merchant of the Skies.sh",
+        "merchantskies/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Merchant of the Skies",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Merchant of the Skies 2.0 — universal AArch64 Unity 6/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/merchantskies: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "simulation",
+          "strategy"
+        ],
+        "image": {
+          "screenshot": "merchantskies.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-28",
+        "date_updated": "2026-08-28",
+        "md5": "2208dc09611fe9ec8a86c59af145ae5a",
+        "size": 390027,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/merchantskies.zip",
+        "downloads": 27
+      }
+    },
+    "namelesscat.zip": {
+      "version": 4,
+      "name": "namelesscat.zip",
+      "items": [
+        "Nameless Cat.sh",
+        "namelesscat/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Nameless Cat",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Nameless Cat 1.15.2 — universal AArch64 Unity 6/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/namelesscat: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "platformer",
+          "puzzle"
+        ],
+        "image": {
+          "screenshot": "namelesscat.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "free",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-09-04",
+        "date_updated": "2026-09-04",
+        "md5": "64275dd9682c25b2fa663cba488bf589",
+        "size": 1332596,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/namelesscat.zip",
+        "downloads": 23
+      }
+    },
+    "nxforager.zip": {
+      "version": 4,
+      "name": "nxforager.zip",
+      "items": [
+        "Forager.sh",
+        "nxforager/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Forager",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Forager Nuclear Android compatibility port for PortMaster",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/forager: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "adventure",
+          "simulation"
+        ],
+        "image": {
+          "screenshot": "nxforager.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-18",
+        "date_updated": "2026-08-18",
+        "md5": "e19bd1a56b586db41e1f1b20b80ea872",
+        "size": 554674,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/nxforager.zip",
+        "downloads": 58
+      }
+    },
+    "oceanhorn.zip": {
+      "version": 4,
+      "name": "oceanhorn.zip",
+      "items": [
+        "Oceanhorn Chronos Dungeon.sh",
+        "oceanhorn/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Oceanhorn: Chronos Dungeon",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Native AArch64 port of Oceanhorn: Chronos Dungeon 4.0b54 for Linux handhelds. It drives the original Android Unity 2022.3.61f1 IL2CPP libraries through a native so-loader and keeps the Android lifecycle order intact. No game data is distributed here — you bring your own legal copy (see INSTALLATION.md).",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/oceanhorn: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "action",
+          "adventure"
+        ],
+        "image": {
+          "screenshot": "oceanhorn.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-26",
+        "date_updated": "2026-08-26",
+        "md5": "c99dbdad5c48cff1851eabcdbe425238",
+        "size": 372076,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/oceanhorn.zip",
+        "downloads": 41
+      }
+    },
+    "offtheroad.zip": {
+      "version": 4,
+      "name": "offtheroad.zip",
+      "items": [
+        "Off The Road.sh",
+        "offtheroad/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Off The Road: Open World Driving",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Off The Road — Open World Driving 1.18.2 — universal AArch64 so-loader (xGen/Horde3D/bgfx) for NextOS, ArkOS/R36S-class and PortMaster handhelds.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/offtheroad: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "racing",
+          "simulation"
+        ],
+        "image": {
+          "screenshot": "offtheroad.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "free",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-29",
+        "date_updated": "2026-08-29",
+        "md5": "df7af3af0875d92e4a1f8551d246ba86",
+        "size": 572189,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/offtheroad.zip",
+        "downloads": 83
+      }
+    },
+    "partyhard.zip": {
+      "version": 4,
+      "name": "partyhard.zip",
+      "items": [
+        "Party Hard GO.sh",
+        "partyhard/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Party Hard GO",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Universal AArch64 PortMaster port of Party Hard GO",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/partyhard: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "strategy",
+          "action"
+        ],
+        "image": {
+          "screenshot": "partyhard.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "free",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-09-08",
+        "date_updated": "2026-09-08",
+        "md5": "90206219307d43e2a89acec8880501e6",
+        "size": 2935306,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/partyhard.zip",
+        "downloads": 11
+      }
+    },
+    "pf2.zip": {
+      "version": 4,
+      "name": "pf2.zip",
+      "items": [
+        "LEIA-ME.txt",
+        "Prizefighters 2.sh",
+        "pf2/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Prizefighters 2",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Public native ARM64 BYO-data port of Prizefighters 2 for Linux handhelds",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/prizefighters2: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "sports"
+        ],
+        "image": {
+          "screenshot": "pf2.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "free",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-08",
+        "date_updated": "2026-08-08",
+        "md5": "8ca8b2c8bbd97dab574efeb8ff0817b3",
+        "size": 1399024,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/pf2.zip",
+        "downloads": 34
+      }
+    },
+    "rcrdx.zip": {
+      "version": 4,
+      "name": "rcrdx.zip",
+      "items": [
+        "Retro City Rampage DX.sh",
+        "rcrdx/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Retro City Rampage DX",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Port nativo AArch64 que carrega a biblioteca Android original de Retro City Rampage DX e reproduz o fluxo real do aplicativo: construtores, JNI_OnLoad, superfície, nativeInit e SDL_main. O jogo e seus dados não são distribuídos.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/rcrdx: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "action",
+          "adventure"
+        ],
+        "image": {
+          "screenshot": "rcrdx.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-18",
+        "date_updated": "2026-08-18",
+        "md5": "3474cabdbf74fd46038f3533b18bde19",
+        "size": 227528,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/rcrdx.zip",
+        "downloads": 66
+      }
+    },
+    "sallyface.zip": {
+      "version": 4,
+      "name": "sallyface.zip",
+      "items": [
+        "Sally Face.sh",
+        "sallyface/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Sally Face",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Sally Face 1.5.5x — universal AArch64 Unity 2022.3/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/sallyface: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "adventure",
+          "puzzle"
+        ],
+        "image": {
+          "screenshot": "sallyface.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-29",
+        "date_updated": "2026-08-29",
+        "md5": "ae525fb233db193b9aa6c6361124d383",
+        "size": 1285927,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/sallyface.zip",
+        "downloads": 44
+      }
+    },
+    "scourgebringer.zip": {
+      "version": 4,
+      "name": "scourgebringer.zip",
+      "items": [
+        "ScourgeBringer.sh",
+        "scourgebringer/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "ScourgeBringer",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "ScourgeBringer 1.61.x AArch64 MonoGame/.NET Android loader for NextOS and PortMaster.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/scourgebringer: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "action",
+          "platformer"
+        ],
+        "image": {
+          "screenshot": "scourgebringer.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-18",
+        "date_updated": "2026-08-18",
+        "md5": "731b983fd50f2aa1aca7babc50fae4e5",
+        "size": 399874,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/scourgebringer.zip",
+        "downloads": 42
+      }
+    },
+    "skate3.zip": {
+      "version": 4,
+      "name": "skate3.zip",
+      "items": [
+        "Skateboard Party 3.sh",
+        "skate3/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Skateboard Party 3",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Port nativo do build Android (Unity 2022.3.45f1, IL2CPP, arm64-v8a) para o NextOS Retro Elite Edition. O jogo roda pelo so-loader: as bibliotecas originais (libmain.so, libunity.so, libil2cpp.so) são carregadas por um loader ELF próprio que implementa a JNI, o bionic e o ciclo de vida do UnityPlayer que elas esperam.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/skate3: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "sports"
+        ],
+        "image": {
+          "screenshot": "skate3.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "free",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-20",
+        "date_updated": "2026-08-20",
+        "md5": "258e7c390ab5233cfca966312627c387",
+        "size": 262963,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/skate3.zip",
+        "downloads": 74
+      }
+    },
+    "sonic4ep2.zip": {
+      "version": 4,
+      "name": "sonic4ep2.zip",
+      "items": [
+        "Sonic4EP2.sh",
+        "sonic4ep2"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Sonic The Hedgehog 4: Episode II",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Sonic The Hedgehog 4: Episode II through a native AArch64 Android so-loader. V6 supports adaptive video and audio backends, native resolution, controller input and a visible first-run validator. BYO-data: Android v3.0.0-109 game files are not included.",
+        "inst": "Copy the legally obtained Android v3.0.0-109 ARM64 split_config.arm64_v8a.apk and split_packs.apk, or one complete .apks/.apkm/merged APK export, into sonic4ep2 and launch once to validate and extract.",
+        "genres": [
+          "platformer"
+        ],
+        "image": {
+          "screenshot": "sonic4ep2.screenshot.jpg"
+        },
+        "rtr": false,
+        "runtime": [],
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "exp": false,
+        "store": [],
+        "availability": "paid",
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-07-29",
+        "date_updated": "2026-07-29",
+        "md5": "d10cf318e8dde0c7ab482fc36fdaf64e",
+        "size": 5851709,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/sonic4ep2.zip",
+        "downloads": 97
+      }
+    },
+    "sor4.zip": {
+      "version": 4,
+      "name": "sor4.zip",
+      "items": [
+        "StreetsOfRage4.sh",
+        "sor4"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Streets of Rage 4",
+        "porter": [
+          "NextOs-Ports",
+          "NextOS"
+        ],
+        "desc": "Streets of Rage 4 Android v1.4.5 through a native AArch64 .NET 9/MonoGame GLES host. Automatic 1GB, 2GB and High profiles provide native ASTC where supported, ETC2/ETC1 fallbacks, bounded on-demand texture streaming and transactional resumable setup. BYO-data; game files are not included.",
+        "inst": "Copy one legal Android v1.4.5 source into sor4/gamedata: a complete merged ARM64 APK, every APK split from the same complete installation, or one complete .apks/.apkm/.xapk bundle. Launch once to validate and install; the original source is preserved.",
+        "genres": [
+          "action"
+        ],
+        "image": {
+          "screenshot": "sor4.screenshot.jpg"
+        },
+        "rtr": false,
+        "runtime": [],
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "exp": false,
+        "store": [],
+        "availability": "paid",
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-07-29",
+        "date_updated": "2026-07-29",
+        "md5": "3ce437961961fe00592fb502ba925fd5",
+        "size": 37948458,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/sor4.zip",
+        "downloads": 444
+      }
+    },
+    "summertimesaga.zip": {
+      "version": 4,
+      "name": "summertimesaga.zip",
+      "items": [
+        "Summertime Saga.sh",
+        "summertimesaga"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Summertime Saga",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Universal AArch64 port of the free Summertime Saga Android Preview through a native Ren'Py compatibility loader. Supports current NextOS and GLIBC 2.30-class ArkOS/R36S systems, controller pointer, audio, saves and clean exit. Adult content; BYO-data, game files are not included.",
+        "inst": "For adults only. Place the official free Android Preview APK or bundle in summertimesaga/gamedata and launch the port. NXExtract validates and prepares compatible current or future 21.x/8.5.x builds automatically.",
+        "genres": [
+          "visual novel"
+        ],
+        "image": {
+          "screenshot": "summertimesaga.screenshot.jpg"
+        },
+        "rtr": false,
+        "runtime": [],
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "exp": false,
+        "store": [],
+        "availability": "free",
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-07-31",
+        "date_updated": "2026-07-31",
+        "md5": "bfbae3f867cc88df005a839bacc5ce0a",
+        "size": 4010520,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/summertimesaga.zip",
+        "downloads": 280
+      }
+    },
+    "suzycube.zip": {
+      "version": 4,
+      "name": "suzycube.zip",
+      "items": [
+        "Suzy Cube.sh",
+        "suzycube/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Suzy Cube",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Suzy Cube 1.0.13 universal AArch64 Unity/IL2CPP loader for NextOS, ArkOS/R36S and PortMaster.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/suzycube: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "platformer"
+        ],
+        "image": {
+          "screenshot": "suzycube.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-18",
+        "date_updated": "2026-08-18",
+        "md5": "7a1aca3ac90aa84dc9ba770165726e47",
+        "size": 305109,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/suzycube.zip",
+        "downloads": 39
+      }
+    },
+    "swordigo.zip": {
+      "version": 4,
+      "name": "swordigo.zip",
+      "items": [
+        "Swordigo.sh",
+        "swordigo/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Swordigo",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Universal Swordigo port for NextOS/PortMaster handhelds (BYO data)",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/swordigo: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "platformer",
+          "rpg"
+        ],
+        "image": {
+          "screenshot": "swordigo.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "free",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-12",
+        "date_updated": "2026-08-12",
+        "md5": "75e504430f816ada76a1bdb2f7484b7e",
+        "size": 347024,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/swordigo.zip",
+        "downloads": 85
+      }
+    },
+    "tearscape.zip": {
+      "version": 4,
+      "name": "tearscape.zip",
+      "items": [
+        "Tearscape.sh",
+        "tearscape/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Tearscape",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Tearscape 1.0.0 — universal AArch64 Godot 4.6.1 Mono port for NextOS, ArkOS/R36S-class, ROCKNIX, muOS and PortMaster handhelds.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/tearscape: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "adventure",
+          "puzzle"
+        ],
+        "image": {
+          "screenshot": "tearscape.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-09-04",
+        "date_updated": "2026-09-04",
+        "md5": "6a88f662948585f1909cf5060e999588",
+        "size": 184269163,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/tearscape.zip",
+        "downloads": 25
+      }
+    },
+    "terraria.zip": {
+      "version": 4,
+      "name": "terraria.zip",
+      "items": [
+        "Terraria.sh",
+        "terraria/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Terraria",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Universal BYO-data Terraria Android Unity/IL2CPP loader for NextOS and R36S-class AArch64 handhelds",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/terraria: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "adventure",
+          "simulation"
+        ],
+        "image": {
+          "screenshot": "terraria.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-09-08",
+        "date_updated": "2026-09-08",
+        "md5": "b326d43649db6ca3686965fca9a1f9b8",
+        "size": 345300,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/terraria.zip",
+        "downloads": 52
+      }
+    },
+    "tightrope.zip": {
+      "version": 4,
+      "name": "tightrope.zip",
+      "items": [
+        "Tightrope Theatre.sh",
+        "tightrope/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Tightrope Theatre",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Tightrope Theatre 1.0.5 — universal AArch64 Stencyl/Haxe-OpenFL-Lime loader for Linux handhelds (NextOS, ArkOS/R36S). BYO-data: no game files are distributed.",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/tightrope: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "platformer",
+          "puzzle"
+        ],
+        "image": {
+          "screenshot": "tightrope.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-19",
+        "date_updated": "2026-08-19",
+        "md5": "210de773f504454e1865f71f110efdbd",
+        "size": 331697,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/tightrope.zip",
+        "downloads": 12
+      }
+    },
+    "titansouls.zip": {
+      "version": 4,
+      "name": "titansouls.zip",
+      "items": [
+        "Titan Souls.sh",
+        "titansouls/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Titan Souls",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Titan Souls 1.0.3 universal ARMv7 Android compatibility port for NextOS, ArkOS and ROCKNIX. PortMaster",
+        "inst": "Leia o README/INSTALLATION da pasta ports-android/titansouls: coloque o APK/XAPK original do jogo onde indicado e abra o port.",
+        "genres": [
+          "action",
+          "adventure"
+        ],
+        "image": {
+          "screenshot": "titansouls.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-08-19",
+        "date_updated": "2026-08-19",
+        "md5": "e6dc3c39012799e687fa488ebc2eb454",
+        "size": 303090,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/titansouls.zip",
+        "downloads": 7
+      }
+    }
+  },
+  "utils": {
+    "images.zip": {
+      "name": "images.zip",
+      "md5": "c67be5bfe5fab89d655935964e31942a",
+      "size": 2704451,
+      "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/images.zip"
+    }
+  },
+  "official_runtimes": {}
+}

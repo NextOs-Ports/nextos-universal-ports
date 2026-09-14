@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEXTOS UNIVERSAL PORTS</title>
+<meta name="description" content="Ports universais de jogos para portáteis Linux AArch64 (NextOS, ArkOS/R36S, ROCKNIX, muOS, PortMaster). BYO-data: nenhum jogo incluído.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/marked@14.1.4/marked.min.js" defer></script>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="brand">
+      <span class="logo">🎮</span>
+      <div>
+        <h1>NEXTOS UNIVERSAL PORTS</h1>
+        <p class="tagline" data-i18n="tagline">Ports universais de jogos para portáteis Linux AArch64 · NextOS · ArkOS / R36S · ROCKNIX · muOS · PortMaster</p>
+      </div>
+    </div>
+    <nav class="links">
+      <a href="https://github.com/NextOs-Ports/nextos-universal-ports" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/NextOs-Ports/nextos-universal-ports/releases" target="_blank" rel="noopener">Releases</a>
+      <a href="https://discord.gg/DHfY62eDNN" target="_blank" rel="noopener">Discord</a>
+      <button id="lang" class="lang" type="button" aria-label="Language">EN</button>
+    </nav>
+  </div>
+  <div class="stats" id="stats"></div>
+</header>
+
+<main class="layout">
+  <aside class="rail">
+    <details class="panel" open>
+      <summary data-i18n="how">Como instalar</summary>
+      <div class="panel-body" id="howto">
+        <ol data-i18n-html="howto">
+          <li>Baixe o <b>.zip</b> do port.</li>
+          <li>Copie para a pasta de ports do aparelho: <code>ports/</code> (PortMaster/ArkOS) ou <code>roms/ports</code> (NextOS).</li>
+          <li>Coloque o <b>APK/XAPK original</b> do jogo onde o README do port indicar (normalmente <code>&lt;port&gt;/gamedata/</code>).</li>
+          <li>Abra pelo menu. A primeira abertura extrai e valida os dados.</li>
+          <li><b>SELECT + START</b> sai com segurança.</li>
+        </ol>
+        <p class="pm" data-i18n-html="pm">
+          <b>Dentro do app PortMaster:</b> baixe
+          <a href="https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/040_nextos.source.json">040_nextos.source.json</a>
+          e coloque em <code>PortMaster/config/</code> (ao lado de <code>020_portmaster.source.json</code>). Na próxima abertura o PortMaster lista estes ports.
+        </p>
+        <p class="legal" data-i18n="legal">Nenhum pacote inclui jogo ou dados de jogo. Você precisa da sua própria cópia legítima.</p>
+      </div>
+    </details>
+
+    <section class="panel">
+      <h2 data-i18n="filters">Filtros</h2>
+      <div class="panel-body">
+        <input id="q" type="search" placeholder="Buscar…" data-i18n-ph="search" autocomplete="off">
+        <label><span data-i18n="platform">Plataforma de origem</span>
+          <select id="platform"><option value="all" data-i18n="all">Todas</option><option value="android">Android</option><option value="ios">iOS</option><option value="switch">Switch</option><option value="gamecube">GameCube</option></select></label>
+        <label><span data-i18n="genre">Gênero</span><select id="genre"><option value="all" data-i18n="all">Todos</option></select></label>
+        <label><span data-i18n="type">Tipo</span>
+          <select id="avail"><option value="all" data-i18n="all">Todos</option><option value="free" data-i18n="free">Jogo gratuito</option><option value="paid" data-i18n="paid">Jogo pago</option></select></label>
+        <label><span data-i18n="install">Instalação</span>
+          <select id="pmf"><option value="all" data-i18n="all">Todas</option><option value="pm">PortMaster</option><option value="manual" data-i18n="manual">Manual</option></select></label>
+        <label><span data-i18n="sort">Ordenar</span>
+          <select id="sort"><option value="alpha" data-i18n="alpha">A–Z</option><option value="recent" data-i18n="recent">Mais recentes</option><option value="downloads" data-i18n="downloads">Mais baixados</option></select></label>
+      </div>
+    </section>
+  </aside>
+
+  <section class="content">
+    <div class="tabs" id="tabs"></div>
+    <div id="grid" class="grid" aria-live="polite"><p class="muted">Carregando…</p></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p data-i18n-html="footer">Todos os jogos e marcas pertencem aos seus respectivos detentores. Os pacotes contêm apenas código de compatibilidade e documentação. · <a href="https://github.com/NextOs-Ports/nextos-universal-ports#%EF%B8%8F-aviso-legal--legal-notice">Aviso legal</a></p>
+</footer>
+
+<div id="modal" class="modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true">
+    <header class="modal-head">
+      <h2 id="modal-title"></h2>
+      <div class="modal-actions">
+        <a id="modal-dl" class="btn primary" href="#" target="_blank" rel="noopener" data-i18n="download">Baixar</a>
+        <a id="modal-rel" class="btn" href="#" target="_blank" rel="noopener">Release</a>
+        <button id="modal-close" class="btn ghost" type="button" aria-label="Fechar">✕</button>
+      </div>
+    </header>
+    <article id="modal-body" class="readme"></article>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

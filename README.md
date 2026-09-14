@@ -7,9 +7,10 @@ NextOS · ArkOS / R36S · ROCKNIX · muOS · PortMaster
 
 [![Releases](https://img.shields.io/github/v/release/NextOs-Ports/nextos-universal-ports?label=%C3%BAltima%20release&sort=date)](https://github.com/NextOs-Ports/nextos-universal-ports/releases)
 [![Downloads](https://img.shields.io/github/downloads/NextOs-Ports/nextos-universal-ports/total?label=downloads)](https://github.com/NextOs-Ports/nextos-universal-ports/releases)
+[![Site](https://img.shields.io/badge/site-nextos--ports.github.io-22c55e)](https://nextos-ports.github.io/nextos-universal-ports/)
 [![Discord](https://img.shields.io/badge/Discord-comunidade-5865F2?logo=discord&logoColor=white)](https://discord.gg/DHfY62eDNN)
 
-[Ports Android](#-ports-android) · [Ports iOS](#-ports-ios) · [Ports Switch](#-ports-switch) · [Ports GameCube](#-ports-gamecube) · [Ferramentas](#%EF%B8%8F-ferramentas--tools) · [Instalação](#-instalação--install) · [Aviso legal](#%EF%B8%8F-aviso-legal--legal-notice)
+[Site](https://nextos-ports.github.io/nextos-universal-ports/) · [Ports Android](#-ports-android) · [Ports iOS](#-ports-ios) · [Ports Switch](#-ports-switch) · [Ports GameCube](#-ports-gamecube) · [Ferramentas](#%EF%B8%8F-ferramentas--tools) · [Instalação](#-instalação--install) · [Aviso legal](#%EF%B8%8F-aviso-legal--legal-notice)
 
 </div>
 
@@ -36,6 +37,18 @@ live in [Releases](https://github.com/NextOs-Ports/nextos-universal-ports/releas
 | 🎮 Nintendo Switch | [`ports-switch/`](ports-switch/) | em breve |
 | 🟣 GameCube | [`ports-gamecube/`](ports-gamecube/) | em breve |
 | 🛠️ Ferramentas | [`tools/`](tools/) | 1 |
+
+## 🌐 Site e app PortMaster / Website and PortMaster app
+
+- **Site:** <https://nextos-ports.github.io/nextos-universal-ports/> — catálogo com capas, filtros por plataforma/gênero e botão de download.
+- **Dentro do app PortMaster:** baixe [`040_nextos.source.json`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/040_nextos.source.json) e coloque em `PortMaster/config/` (ao lado de `020_portmaster.source.json`):
+  - ArkOS e similares: `/roms/ports/PortMaster/config/` (ou `/roms/tools/PortMaster/config/`)
+  - ROCKNIX, muOS, Knulli: `.local/share/PortMaster/config/`
+  
+  Na próxima abertura o PortMaster lista e instala estes ports como se fossem do catálogo oficial.
+- **Release rolante [`ports-latest`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/ports-latest):** sempre a versão mais nova de cada port com nome fixo `<port>.zip`, mais `ports.json` e `images.zip` (catálogo PortMasterV3). As releases versionadas `<jogo>-vX.Y.Z` continuam existindo para histórico.
+
+Website with covers, filters and downloads; drop `040_nextos.source.json` into `PortMaster/config/` to browse and install these ports inside the PortMaster app; `ports-latest` always carries the newest `<port>.zip` of every port plus the PortMasterV3 catalog.
 
 ## 📥 Instalação / Install
 

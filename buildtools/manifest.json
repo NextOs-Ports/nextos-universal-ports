@@ -1,0 +1,746 @@
+[
+ {
+  "key": "actionsquad",
+  "title": "Door Kickers: Action Squad",
+  "folder": "ports-android/actionsquad",
+  "release_tag": "actionsquad-v1.0.5",
+  "asset": "actionsquad.zip",
+  "portmaster": true,
+  "genres": [
+   "action",
+   "platformer"
+  ],
+  "availability": "paid",
+  "screenshot": "actionsquad.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-08-19",
+  "legacy_downloads": 115,
+  "desc": "AArch64 PortMaster adapter for Door Kickers: Action Squad"
+ },
+ {
+  "key": "angrybirds",
+  "title": "Angry Birds Classic",
+  "folder": "ports-android/angrybirds",
+  "release_tag": "angrybirds-v1.1.9",
+  "asset": "angrybirds.zip",
+  "portmaster": true,
+  "genres": [
+   "puzzle",
+   "arcade"
+  ],
+  "availability": "free",
+  "screenshot": "angrybirds.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-09-03",
+  "legacy_downloads": 36,
+  "desc": "Angry Birds Classic 8.0.3 universal ARMHF Android compatibility port for NextOS, ArkOS and PortMaster handhelds."
+ },
+ {
+  "key": "asm2",
+  "title": "The Amazing Spider-Man 2",
+  "folder": "ports-android/tasm2",
+  "release_tag": "tasm2-v1.1.9",
+  "asset": "asm2.zip",
+  "portmaster": true,
+  "genres": [
+   "action",
+   "adventure"
+  ],
+  "availability": "paid",
+  "screenshot": "asm2.screenshot.jpg",
+  "screenshot_source": "zip",
+  "first_seen": "2026-08-02",
+  "legacy_downloads": 602,
+  "desc": "The Amazing Spider-Man 2 1.2.7d universal ARMHF/X5M compatibility port for NextOS, ArkOS/R36S and PortMaster."
+ },
+ {
+  "key": "bbracing2",
+  "title": "Beach Buggy Racing 2",
+  "folder": "ports-android/beachbuggy",
+  "release_tag": "beachbuggy-v1.1.2-bbracing2",
+  "asset": "bbracing2.zip",
+  "portmaster": true,
+  "genres": [
+   "racing"
+  ],
+  "availability": "free",
+  "screenshot": "bbracing2.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-09-06",
+  "legacy_downloads": 24,
+  "desc": "Beach Buggy Racing 2 — native AArch64 port (so-loader, GLES2, SDL3) for NextOS, dArkOS/R36S and aarch64 CFW handhelds."
+ },
+ {
+  "key": "beachbuggy",
+  "title": "Beach Buggy Racing",
+  "folder": "ports-android/beachbuggy",
+  "release_tag": "beachbuggy-v1.1.2",
+  "asset": "beachbuggy.zip",
+  "portmaster": true,
+  "genres": [
+   "racing"
+  ],
+  "availability": "free",
+  "screenshot": "beachbuggy.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-09-06",
+  "legacy_downloads": 22,
+  "desc": "Beach Buggy Racing — native AArch64 port (so-loader, GLES2, SDL3) for NextOS, dArkOS/R36S and aarch64 CFW handhelds."
+ },
+ {
+  "key": "blossomtales",
+  "title": "Blossom Tales: The Sleeping King",
+  "folder": "ports-android/blossomtales",
+  "release_tag": "blossomtales-v1.4.5",
+  "asset": "blossomtales.zip",
+  "portmaster": true,
+  "genres": [
+   "adventure",
+   "rpg"
+  ],
+  "availability": "paid",
+  "screenshot": "blossomtales.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-09-04",
+  "legacy_downloads": 22,
+  "desc": "Blossom Tales: The Sleeping King 1.0.0 — universal AArch64 MonoGame/.NET-for-Android so-loader for NextOS, ArkOS/R36S-class and PortMaster handhelds."
+ },
+ {
+  "key": "bombchicken",
+  "title": "Bomb Chicken",
+  "folder": "ports-android/bombchicken-gunbrick",
+  "release_tag": "bombchicken-v1.1.7",
+  "asset": "bombchicken.zip",
+  "portmaster": true,
+  "genres": [
+   "puzzle",
+   "platformer"
+  ],
+  "availability": "paid",
+  "screenshot": "bombchicken.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-08-13",
+  "legacy_downloads": 67,
+  "desc": "Bomb Chicken — validated universal AArch64 port for NextOS and PortMaster handhelds."
+ },
+ {
+  "key": "castleofillusion",
+  "title": "Castle of Illusion Starring Mickey Mouse",
+  "folder": "ports-android/castleofillusion",
+  "release_tag": "castleofillusion-v1.0.1",
+  "asset": "castleofillusion.zip",
+  "portmaster": true,
+  "genres": [
+   "platformer"
+  ],
+  "availability": "paid",
+  "screenshot": "castleofillusion.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-08-05",
+  "legacy_downloads": 125,
+  "desc": "Castle of Illusion Starring Mickey Mouse — native AArch64 port for Linux handhelds (BYO game data)"
+ },
+ {
+  "key": "chrono",
+  "title": "Chrono Trigger",
+  "folder": "ports-android/chrono",
+  "release_tag": "chrono-v1.1.2",
+  "asset": "chrono.zip",
+  "portmaster": true,
+  "genres": [
+   "rpg"
+  ],
+  "availability": "paid",
+  "screenshot": "chrono.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-09-06",
+  "legacy_downloads": 21,
+  "desc": "A native Linux port of the Android release of Chrono Trigger (Cocos2d-x 3.14.1, GLES2) for retro handhelds. The port is a compatibility loader: it maps the game's original AArch64 Android libraries into a Linux process, replaces the Android runtime they expect (JNI, OpenSL ES, asset manager, Cocos2dxBitmap text rendering) and drives the Cocos2d-x render loop on the firmware's own SDL2/EGL/GLES2."
+ },
+ {
+  "key": "deadtrigger",
+  "title": "Dead Trigger",
+  "folder": "ports-android/deadtrigger",
+  "release_tag": "deadtrigger-v1.1.1",
+  "asset": "DeadTrigger.NextOS-v1.1.1-FINAL.zip",
+  "portmaster": true,
+  "genres": [
+   "fps",
+   "action"
+  ],
+  "availability": "free",
+  "screenshot": "deadtrigger.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-08-12",
+  "legacy_downloads": 43,
+  "desc": "Validated NextOS port of Dead Trigger with reproducible low-glibc compatibility runtime"
+ },
+ {
+  "key": "ff4",
+  "title": "Final Fantasy IV (3D Remake)",
+  "folder": "ports-android/ff4",
+  "release_tag": "ff4-1.0.4_ff4a-1.0.6",
+  "asset": "ff4-1.0.4.zip",
+  "portmaster": true,
+  "genres": [
+   "rpg"
+  ],
+  "availability": "paid",
+  "screenshot": "ff4.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-08-25",
+  "legacy_downloads": 99,
+  "desc": "Final Fantasy IV (3D Remake) — native AArch64 port (so-loader, GLES1) for NextOS, dArkOS/R36S, ROCKNIX and PortMaster handhelds."
+ },
+ {
+  "key": "ff4a",
+  "title": "Final Fantasy IV: The After Years",
+  "folder": "ports-android/ff4",
+  "release_tag": "ff4-1.0.4_ff4a-1.0.6",
+  "asset": "ff4a-1.0.6.zip",
+  "portmaster": true,
+  "genres": [
+   "rpg"
+  ],
+  "availability": "paid",
+  "screenshot": "ff4a.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-08-25",
+  "legacy_downloads": 99,
+  "desc": "Final Fantasy IV: The After Years — native AArch64 port (so-loader, GLES1) for NextOS, dArkOS/R36S, ROCKNIX and PortMaster handhelds."
+ },
+ {
+  "key": "fp2",
+  "title": "Freedom Planet 2",
+  "folder": "ports-android/fp2",
+  "release_tag": "fp2-v1.1.5",
+  "asset": "fp2.zip",
+  "portmaster": true,
+  "genres": [
+   "platformer",
+   "action"
+  ],
+  "availability": "paid",
+  "screenshot": "fp2.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-09-04",
+  "legacy_downloads": 23,
+  "desc": "Freedom Planet 2 1.2.8 — universal AArch64 Unity 2018.4/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds."
+ },
+ {
+  "key": "gdsubzero",
+  "title": "Geometry Dash SubZero",
+  "folder": "ports-android/geometrydash",
+  "release_tag": "gdsubzero-v1.0.3",
+  "asset": "gdsubzero.zip",
+  "portmaster": true,
+  "genres": [
+   "rhythm",
+   "platformer"
+  ],
+  "availability": "free",
+  "screenshot": "gdsubzero.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-08-17",
+  "legacy_downloads": 65,
+  "desc": "Geometry Dash SubZero (RobTop, Cocos2d-x 2.x) — native AArch64 port for Linux handhelds."
+ },
+ {
+  "key": "geometrydash",
+  "title": "Geometry Dash",
+  "folder": "ports-android/geometrydash",
+  "release_tag": "geometrydash-v1.0.2",
+  "asset": "Geometry.Dash.NextOS.zip",
+  "portmaster": true,
+  "genres": [
+   "rhythm",
+   "platformer"
+  ],
+  "availability": "paid",
+  "screenshot": "geometrydash.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-08-08",
+  "legacy_downloads": 210,
+  "desc": "Geometry Dash (RobTop, Cocos2d-x 2.x) — native AArch64 port for Linux handhelds."
+ },
+ {
+  "key": "gunbrick",
+  "title": "Gunbrick: Reloaded",
+  "folder": "ports-android/bombchicken-gunbrick",
+  "release_tag": "gunbrick-v0.2.5",
+  "asset": "gunbrick.zip",
+  "portmaster": true,
+  "genres": [
+   "puzzle",
+   "platformer"
+  ],
+  "availability": "paid",
+  "screenshot": "gunbrick.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-08-11",
+  "legacy_downloads": 56,
+  "desc": "Gunbrick: Reloaded — validated universal AArch64 port for NextOS and PortMaster handhelds."
+ },
+ {
+  "key": "hitmango",
+  "title": "Hitman GO",
+  "folder": "ports-android/hitmango",
+  "release_tag": "hitmango-v1.2.2",
+  "asset": "hitmango-1.2.2.zip",
+  "portmaster": true,
+  "genres": [
+   "puzzle",
+   "strategy"
+  ],
+  "availability": "paid",
+  "screenshot": "hitmango.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-08-18",
+  "legacy_downloads": 21,
+  "desc": "Hitman GO 1.18.1 universal AArch64 Unity/IL2CPP loader — NextOS/Mali-450 + multi-device. BYO-data; backup privado."
+ },
+ {
+  "key": "horizonchase",
+  "title": "Horizon Chase",
+  "folder": "ports-android/horizonchase",
+  "release_tag": "horizonchase-v1.2.2",
+  "asset": "horizonchase.zip",
+  "portmaster": true,
+  "genres": [
+   "racing",
+   "arcade"
+  ],
+  "availability": "free",
+  "screenshot": "horizonchase.screenshot.jpg",
+  "screenshot_source": "zip",
+  "first_seen": "2026-08-06",
+  "legacy_downloads": 423,
+  "desc": "Horizon Chase 2.6.9 universal AArch64 Unity/IL2CPP loader for NextOS, ArkOS/R36S and PortMaster."
+ },
+ {
+  "key": "huntdown",
+  "title": "Huntdown",
+  "folder": "ports-android/huntdown",
+  "release_tag": "huntdown-v1.0.7",
+  "asset": "huntdown-nextos-v1.0.7.zip",
+  "portmaster": true,
+  "genres": [
+   "action",
+   "platformer"
+  ],
+  "availability": "paid",
+  "screenshot": "huntdown.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-08-31",
+  "legacy_downloads": 71,
+  "desc": "Huntdown universal PortMaster port for AArch64 handhelds"
+ },
+ {
+  "key": "kotor",
+  "title": "Star Wars: Knights of the Old Republic",
+  "folder": "ports-android/kotor",
+  "release_tag": "kotor-v1.1.7",
+  "asset": "KOTOR.NextOS-v1.1.7.zip",
+  "portmaster": true,
+  "genres": [
+   "rpg"
+  ],
+  "availability": "paid",
+  "screenshot": "kotor.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-08-12",
+  "legacy_downloads": 132,
+  "desc": "Star Wars: KOTOR — universal ARMv7 so-loader for Linux handhelds (NextOS, ArkOS/R36S). BYO game data; no game files included."
+ },
+ {
+  "key": "magicrampage",
+  "title": "Magic Rampage",
+  "folder": "ports-android/magicrampage",
+  "release_tag": "magicrampage-v1.1.9",
+  "asset": "magicrampage.zip",
+  "portmaster": true,
+  "genres": [
+   "platformer",
+   "rpg"
+  ],
+  "availability": "free",
+  "screenshot": "magicrampage.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-08-20",
+  "legacy_downloads": 44,
+  "desc": "Universal PortMaster port of Magic Rampage for NextOS and ARM handhelds"
+ },
+ {
+  "key": "merchantskies",
+  "title": "Merchant of the Skies",
+  "folder": "ports-android/merchantskies",
+  "release_tag": "merchantskies-v1.0.0",
+  "asset": "merchantskies.zip",
+  "portmaster": true,
+  "genres": [
+   "simulation",
+   "strategy"
+  ],
+  "availability": "paid",
+  "screenshot": "merchantskies.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-08-28",
+  "legacy_downloads": 27,
+  "desc": "Merchant of the Skies 2.0 — universal AArch64 Unity 6/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds."
+ },
+ {
+  "key": "namelesscat",
+  "title": "Nameless Cat",
+  "folder": "ports-android/namelesscat",
+  "release_tag": "namelesscat-v1.2.8",
+  "asset": "namelesscat.zip",
+  "portmaster": true,
+  "genres": [
+   "platformer",
+   "puzzle"
+  ],
+  "availability": "free",
+  "screenshot": "namelesscat.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-09-04",
+  "legacy_downloads": 23,
+  "desc": "Nameless Cat 1.15.2 — universal AArch64 Unity 6/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds."
+ },
+ {
+  "key": "nxforager",
+  "title": "Forager",
+  "folder": "ports-android/forager",
+  "release_tag": "forager-v1.0.4",
+  "asset": "nxforager.zip",
+  "portmaster": true,
+  "genres": [
+   "adventure",
+   "simulation"
+  ],
+  "availability": "paid",
+  "screenshot": "nxforager.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-08-18",
+  "legacy_downloads": 58,
+  "desc": "Forager Nuclear Android compatibility port for PortMaster"
+ },
+ {
+  "key": "oceanhorn",
+  "title": "Oceanhorn: Chronos Dungeon",
+  "folder": "ports-android/oceanhorn",
+  "release_tag": "oceanhorn-v2.0.1",
+  "asset": "oceanhorn.zip",
+  "portmaster": true,
+  "genres": [
+   "action",
+   "adventure"
+  ],
+  "availability": "paid",
+  "screenshot": "oceanhorn.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-08-26",
+  "legacy_downloads": 41,
+  "desc": "Native AArch64 port of Oceanhorn: Chronos Dungeon 4.0b54 for Linux handhelds. It drives the original Android Unity 2022.3.61f1 IL2CPP libraries through a native so-loader and keeps the Android lifecycle order intact. No game data is distributed here — you bring your own legal copy (see INSTALLATION.md)."
+ },
+ {
+  "key": "offtheroad",
+  "title": "Off The Road: Open World Driving",
+  "folder": "ports-android/offtheroad",
+  "release_tag": "offtheroad-v1.0.5",
+  "asset": "offtheroad.zip",
+  "portmaster": true,
+  "genres": [
+   "racing",
+   "simulation"
+  ],
+  "availability": "free",
+  "screenshot": "offtheroad.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-08-29",
+  "legacy_downloads": 83,
+  "desc": "Off The Road — Open World Driving 1.18.2 — universal AArch64 so-loader (xGen/Horde3D/bgfx) for NextOS, ArkOS/R36S-class and PortMaster handhelds."
+ },
+ {
+  "key": "partyhard",
+  "title": "Party Hard GO",
+  "folder": "ports-android/partyhard",
+  "release_tag": "partyhard-v1.0.8-rc1",
+  "asset": "partyhard.zip",
+  "portmaster": true,
+  "genres": [
+   "strategy",
+   "action"
+  ],
+  "availability": "free",
+  "screenshot": "partyhard.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-09-08",
+  "legacy_downloads": 11,
+  "desc": "Universal AArch64 PortMaster port of Party Hard GO"
+ },
+ {
+  "key": "pf2",
+  "title": "Prizefighters 2",
+  "folder": "ports-android/prizefighters2",
+  "release_tag": "prizefighters2-v1.0.3",
+  "asset": "Prizefighters.2.NextOS-v1.0.3.zip",
+  "portmaster": true,
+  "genres": [
+   "sports"
+  ],
+  "availability": "free",
+  "screenshot": "pf2.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-08-08",
+  "legacy_downloads": 34,
+  "desc": "Public native ARM64 BYO-data port of Prizefighters 2 for Linux handhelds"
+ },
+ {
+  "key": "rcrdx",
+  "title": "Retro City Rampage DX",
+  "folder": "ports-android/rcrdx",
+  "release_tag": "rcrdx-v1.0.0",
+  "asset": "rcrdx.zip",
+  "portmaster": true,
+  "genres": [
+   "action",
+   "adventure"
+  ],
+  "availability": "paid",
+  "screenshot": "rcrdx.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-08-18",
+  "legacy_downloads": 66,
+  "desc": "Port nativo AArch64 que carrega a biblioteca Android original de Retro City Rampage DX e reproduz o fluxo real do aplicativo: construtores, JNI_OnLoad, superfície, nativeInit e SDL_main. O jogo e seus dados não são distribuídos."
+ },
+ {
+  "key": "sallyface",
+  "title": "Sally Face",
+  "folder": "ports-android/sallyface",
+  "release_tag": "sallyface-v1.1.4",
+  "asset": "sallyface.zip",
+  "portmaster": true,
+  "genres": [
+   "adventure",
+   "puzzle"
+  ],
+  "availability": "paid",
+  "screenshot": "sallyface.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-08-29",
+  "legacy_downloads": 44,
+  "desc": "Sally Face 1.5.5x — universal AArch64 Unity 2022.3/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds."
+ },
+ {
+  "key": "scourgebringer",
+  "title": "ScourgeBringer",
+  "folder": "ports-android/scourgebringer",
+  "release_tag": "scourgebringer-v1.0.0",
+  "asset": "scourgebringer-1.0.0.zip",
+  "portmaster": true,
+  "genres": [
+   "action",
+   "platformer"
+  ],
+  "availability": "paid",
+  "screenshot": "scourgebringer.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-08-18",
+  "legacy_downloads": 42,
+  "desc": "ScourgeBringer 1.61.x AArch64 MonoGame/.NET Android loader for NextOS and PortMaster."
+ },
+ {
+  "key": "skate3",
+  "title": "Skateboard Party 3",
+  "folder": "ports-android/skate3",
+  "release_tag": "skate3-v1.0.0",
+  "asset": "skate3-universal-v1.0.0.zip",
+  "portmaster": true,
+  "genres": [
+   "sports"
+  ],
+  "availability": "free",
+  "screenshot": "skate3.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-08-20",
+  "legacy_downloads": 74,
+  "desc": "Port nativo do build Android (Unity 2022.3.45f1, IL2CPP, arm64-v8a) para o NextOS Retro Elite Edition. O jogo roda pelo so-loader: as bibliotecas originais (libmain.so, libunity.so, libil2cpp.so) são carregadas por um loader ELF próprio que implementa a JNI, o bionic e o ciclo de vida do UnityPlayer que elas esperam."
+ },
+ {
+  "key": "sonic4ep2",
+  "title": "Sonic The Hedgehog 4: Episode II",
+  "folder": "ports-android/sonic4ep2",
+  "release_tag": "sonic4ep2-v6",
+  "asset": "sonic4ep2.zip",
+  "portmaster": true,
+  "genres": [
+   "platformer"
+  ],
+  "availability": "paid",
+  "screenshot": "sonic4ep2.screenshot.jpg",
+  "screenshot_source": "zip",
+  "first_seen": "2026-07-29",
+  "legacy_downloads": 97,
+  "desc": "Sonic 4 Episode II — native AArch64 port (BYO-data): SEGA's libfox.so engine on a Linux loader, runs on Mali-450 handhelds. No game data included."
+ },
+ {
+  "key": "sor4",
+  "title": "Streets of Rage 4",
+  "folder": "ports-android/sor4",
+  "release_tag": "sor4-v2.0.2",
+  "asset": "sor4.zip",
+  "portmaster": true,
+  "genres": [
+   "action"
+  ],
+  "availability": "paid",
+  "screenshot": "sor4.screenshot.jpg",
+  "screenshot_source": "zip",
+  "first_seen": "2026-07-29",
+  "legacy_downloads": 444,
+  "desc": "Streets of Rage 4 — native AArch64 port (BYO-data): .NET 9 host + MonoGame GLES, runs on 1GB handhelds (R36S/RG351/RG353...). No game data included."
+ },
+ {
+  "key": "Stardew.Valley.NextOS",
+  "title": "Stardew Valley",
+  "folder": "ports-android/stardewvalley",
+  "release_tag": "stardewvalley-v1.1.8",
+  "asset": "Stardew.Valley.NextOS.zip",
+  "portmaster": false,
+  "genres": [
+   "simulation",
+   "rpg"
+  ],
+  "availability": "paid",
+  "screenshot": "Stardew.Valley.NextOS.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-08-06",
+  "legacy_downloads": 167,
+  "note": "Pacote em layout próprio (instalação manual, ver README). / Custom layout, manual install.",
+  "desc": "Stardew Valley — native AArch64 port of the Android release (BYO-data): the Mono/.NET 8 runtime booted on plain Linux, playable on Mali-450 and R36S handhelds. No game data included."
+ },
+ {
+  "key": "summertimesaga",
+  "title": "Summertime Saga (Preview)",
+  "folder": "ports-android/summertimesaga",
+  "release_tag": "summertimesaga-v1.1.1",
+  "asset": "summertimesaga.zip",
+  "portmaster": true,
+  "genres": [
+   "visual novel"
+  ],
+  "availability": "free",
+  "screenshot": "summertimesaga.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-07-31",
+  "legacy_downloads": 280,
+  "desc": "Summertime Saga (free Preview) universal AArch64 Ren'Py loader for NextOS, ArkOS/R36S and PortMaster. 18+."
+ },
+ {
+  "key": "suzycube",
+  "title": "Suzy Cube",
+  "folder": "ports-android/suzycube",
+  "release_tag": "suzycube-v1.1.12",
+  "asset": "suzycube-1.1.12.zip",
+  "portmaster": true,
+  "genres": [
+   "platformer"
+  ],
+  "availability": "paid",
+  "screenshot": "suzycube.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-08-18",
+  "legacy_downloads": 39,
+  "desc": "Suzy Cube 1.0.13 universal AArch64 Unity/IL2CPP loader for NextOS, ArkOS/R36S and PortMaster."
+ },
+ {
+  "key": "swordigo",
+  "title": "Swordigo",
+  "folder": "ports-android/swordigo",
+  "release_tag": "swordigo-v1.0.15",
+  "asset": "Swordigo.NextOS-v1.0.15.zip",
+  "portmaster": true,
+  "genres": [
+   "platformer",
+   "rpg"
+  ],
+  "availability": "free",
+  "screenshot": "swordigo.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-08-12",
+  "legacy_downloads": 85,
+  "desc": "Universal Swordigo port for NextOS/PortMaster handhelds (BYO data)"
+ },
+ {
+  "key": "tearscape",
+  "title": "Tearscape",
+  "folder": "ports-android/tearscape",
+  "release_tag": "tearscape-v0.2.18",
+  "asset": "tearscape.zip",
+  "portmaster": true,
+  "genres": [
+   "adventure",
+   "puzzle"
+  ],
+  "availability": "paid",
+  "screenshot": "tearscape.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-09-04",
+  "legacy_downloads": 25,
+  "desc": "Tearscape 1.0.0 — universal AArch64 Godot 4.6.1 Mono port for NextOS, ArkOS/R36S-class, ROCKNIX, muOS and PortMaster handhelds."
+ },
+ {
+  "key": "terraria",
+  "title": "Terraria",
+  "folder": "ports-android/terraria",
+  "release_tag": "terraria-v2.0.2",
+  "asset": "terraria.zip",
+  "portmaster": true,
+  "genres": [
+   "adventure",
+   "simulation"
+  ],
+  "availability": "paid",
+  "screenshot": "terraria.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-09-08",
+  "legacy_downloads": 52,
+  "desc": "Universal BYO-data Terraria Android Unity/IL2CPP loader for NextOS and R36S-class AArch64 handhelds"
+ },
+ {
+  "key": "tightrope",
+  "title": "Tightrope Theatre",
+  "folder": "ports-android/tightrope",
+  "release_tag": "tightrope-v1.0.8",
+  "asset": "tightrope.zip",
+  "portmaster": true,
+  "genres": [
+   "platformer",
+   "puzzle"
+  ],
+  "availability": "paid",
+  "screenshot": "tightrope.screenshot.jpg",
+  "screenshot_source": "placeholder",
+  "first_seen": "2026-08-19",
+  "legacy_downloads": 12,
+  "desc": "Tightrope Theatre 1.0.5 — universal AArch64 Stencyl/Haxe-OpenFL-Lime loader for Linux handhelds (NextOS, ArkOS/R36S). BYO-data: no game files are distributed."
+ },
+ {
+  "key": "titansouls",
+  "title": "Titan Souls",
+  "folder": "ports-android/titansouls",
+  "release_tag": "titansouls-v1.0.3",
+  "asset": "titansouls-1.0.3.zip",
+  "portmaster": true,
+  "genres": [
+   "action",
+   "adventure"
+  ],
+  "availability": "paid",
+  "screenshot": "titansouls.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-08-19",
+  "legacy_downloads": 7,
+  "desc": "Titan Souls 1.0.3 universal ARMv7 Android compatibility port for NextOS, ArkOS and ROCKNIX. PortMaster"
+ }
+]
