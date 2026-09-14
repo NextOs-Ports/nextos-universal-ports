@@ -10,7 +10,7 @@ NextOS · ArkOS / R36S · ROCKNIX · muOS · PortMaster
 [![Site](https://img.shields.io/badge/site-nextos--ports.github.io-22c55e)](https://nextos-ports.github.io/nextos-universal-ports/)
 [![Discord](https://img.shields.io/badge/Discord-comunidade-5865F2?logo=discord&logoColor=white)](https://discord.gg/DHfY62eDNN)
 
-[Site](https://nextos-ports.github.io/nextos-universal-ports/) · [Ports Android](#-ports-android) · [Ports iOS](#-ports-ios) · [Ports Switch](#-ports-switch) · [Ports GameCube](#-ports-gamecube) · [Ferramentas](#%EF%B8%8F-ferramentas--tools) · [Instalação](#-instalação--install) · [Aviso legal](#%EF%B8%8F-aviso-legal--legal-notice)
+[Site](https://nextos-ports.github.io/nextos-universal-ports/) · [Ports Android](#-ports-android) · [Ports iOS](#-ports-ios) · [Ports Switch](#-ports-switch) · [Ports GameCube](#-ports-gamecube) · [Ports Vita](#-ports-vita) · [Ferramentas](#%EF%B8%8F-ferramentas--tools) · [Instalação](#-instalação--install) · [Aviso legal](#%EF%B8%8F-aviso-legal--legal-notice)
 
 </div>
 
@@ -36,6 +36,7 @@ live in [Releases](https://github.com/NextOs-Ports/nextos-universal-ports/releas
 | 🍎 iOS | [`ports-ios/`](ports-ios/) | em breve |
 | 🎮 Nintendo Switch | [`ports-switch/`](ports-switch/) | em breve |
 | 🟣 GameCube | [`ports-gamecube/`](ports-gamecube/) | em breve |
+| 🎴 PS Vita | [`ports-vita/`](ports-vita/) | em breve |
 | 🛠️ Ferramentas | [`tools/`](tools/) | 1 |
 
 ## 🌐 Site e app PortMaster / Website and PortMaster app
@@ -118,6 +119,10 @@ Em breve / coming soon. Pasta: [`ports-switch/`](ports-switch/)
 ## 🟣 Ports GameCube
 
 Em breve / coming soon. Pasta: [`ports-gamecube/`](ports-gamecube/)
+
+## 🎴 Ports Vita
+
+Em breve / coming soon. Pasta: [`ports-vita/`](ports-vita/)
 
 ## 🛠️ Ferramentas / Tools
 

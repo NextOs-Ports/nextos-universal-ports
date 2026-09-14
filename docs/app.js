@@ -1,6 +1,6 @@
 (() => {
   const RAW = "https://raw.githubusercontent.com/NextOs-Ports/nextos-universal-ports/main/";
-  const PLAT = { android: "Android", ios: "iOS", switch: "Switch", gamecube: "GameCube" };
+  const PLAT = { android: "Android", ios: "iOS", switch: "Switch", gamecube: "GameCube", vita: "PS Vita" };
   const I18N = {
     pt: { tagline: "Ports universais de jogos para portáteis Linux AArch64 · NextOS · ArkOS / R36S · ROCKNIX · muOS · PortMaster",
       how: "Como instalar", filters: "Filtros", search: "Buscar…", platform: "Plataforma de origem", genre: "Gênero", type: "Tipo", install: "Instalação", sort: "Ordenar",
