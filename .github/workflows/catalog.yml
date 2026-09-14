@@ -2,7 +2,7 @@ name: Catálogo / Catalog
 on:
   workflow_dispatch:
   release:
-    types: [published, edited]
+    types: [published]
   push:
     branches: [main]
     paths: ["buildtools/**", "ports-*/**/*.screenshot.jpg", "catalog/040_nextos.source.json"]
