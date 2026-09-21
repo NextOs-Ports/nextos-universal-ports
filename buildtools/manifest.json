@@ -742,5 +742,25 @@
   "first_seen": "2026-08-19",
   "legacy_downloads": 7,
   "desc": "Titan Souls 1.0.3 universal ARMv7 Android compatibility port for NextOS, ArkOS and ROCKNIX. PortMaster"
+ },
+ {
+  "key": "residentevil4-ios",
+  "title": "Resident Evil 4 Platinum (iOS)",
+  "folder": "ports-ios/residentevil4-ios",
+  "release_tag": "residentevil4-ios-v1.0.2",
+  "asset": "residentevil4-ios.zip",
+  "portmaster": true,
+  "platform": "ios",
+  "genres": [
+   "action",
+   "adventure"
+  ],
+  "availability": "paid",
+  "screenshot": "residentevil4-ios.screenshot.jpg",
+  "screenshot_source": "local",
+  "first_seen": "2026-09-21",
+  "legacy_downloads": 0,
+  "desc": "Resident Evil 4 Platinum (iOS 1.04.10) running the original ARMv7 iPhone executable on ARMhf PortMaster handhelds (Framework V6). Bring your own IPA.",
+  "inst": "Coloque o seu .ipa do Resident Evil 4 Platinum 1.04.10 em residentevil4-ios/gamedata/ e abra o port; o NXExtract extrai na primeira abertura. / Put your Resident Evil 4 Platinum 1.04.10 .ipa in residentevil4-ios/gamedata/ and launch; NXExtract extracts it on first launch."
  }
 ]

@@ -33,7 +33,7 @@ live in [Releases](https://github.com/NextOs-Ports/nextos-universal-ports/releas
 | Plataforma de origem | Pasta | Ports |
 |---|---|---|
 | 🤖 Android | [`ports-android/`](ports-android/) | 38 |
-| 🍎 iOS | [`ports-ios/`](ports-ios/) | em breve |
+| 🍎 iOS | [`ports-ios/`](ports-ios/) | 1 |
 | 🎮 Nintendo Switch | [`ports-switch/`](ports-switch/) | em breve |
 | 🟣 GameCube | [`ports-gamecube/`](ports-gamecube/) | em breve |
 | 🎴 PS Vita | [`ports-vita/`](ports-vita/) | em breve |
@@ -110,7 +110,11 @@ the device's ports folder, place your own complete APK/XAPK (or IPA/dump) where 
 
 ## 🍎 Ports iOS
 
-Em breve / coming soon. Pasta: [`ports-ios/`](ports-ios/)
+Rodam o executável original do iPhone (ARMv7) com um runtime próprio; você fornece o seu `.ipa`. / Run the original iPhone executable (ARMv7) through a purpose-built runtime; you provide your own `.ipa`.
+
+| Jogo | Pasta | Última release | Versões | Arquitetura | Sistemas |
+|---|---|---|---|---|---|
+| **Resident Evil 4 Platinum (iOS 1.04.10)** | [`residentevil4-ios`](ports-ios/residentevil4-ios/) | [`residentevil4-ios-v1.0.2`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/residentevil4-ios-v1.0.2) | 1 | ARMv7 (ARMhf) | ArkOS / R36S (dArkOS), PortMaster |
 
 ## 🎮 Ports Switch
 
