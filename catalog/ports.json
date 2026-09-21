@@ -1714,13 +1714,55 @@
         "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/titansouls.zip",
         "downloads": 7
       }
+    },
+    "residentevil4-ios.zip": {
+      "version": 4,
+      "name": "residentevil4-ios.zip",
+      "items": [
+        "Resident Evil 4 Platinum.sh",
+        "residentevil4-ios/"
+      ],
+      "items_opt": null,
+      "attr": {
+        "title": "Resident Evil 4 Platinum (iOS)",
+        "porter": [
+          "NextOS"
+        ],
+        "desc": "Resident Evil 4 Platinum (iOS 1.04.10) running the original ARMv7 iPhone executable on ARMhf PortMaster handhelds (Framework V6). Bring your own IPA.",
+        "inst": "Coloque o seu .ipa do Resident Evil 4 Platinum 1.04.10 em residentevil4-ios/gamedata/ e abra o port; o NXExtract extrai na primeira abertura. / Put your Resident Evil 4 Platinum 1.04.10 .ipa in residentevil4-ios/gamedata/ and launch; NXExtract extracts it on first launch.",
+        "genres": [
+          "action",
+          "adventure"
+        ],
+        "image": {
+          "screenshot": "residentevil4-ios.screenshot.jpg"
+        },
+        "rtr": false,
+        "exp": false,
+        "runtime": [],
+        "store": [],
+        "availability": "paid",
+        "reqs": [],
+        "arch": [
+          "aarch64"
+        ],
+        "min_glibc": ""
+      },
+      "source": {
+        "date_added": "2026-09-21",
+        "date_updated": "2026-09-21",
+        "md5": "5dac8b36825b0706cdafc6beeb05eed6",
+        "size": 10266070,
+        "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/residentevil4-ios.zip",
+        "downloads": 0
+      }
     }
   },
   "utils": {
     "images.zip": {
       "name": "images.zip",
-      "md5": "c67be5bfe5fab89d655935964e31942a",
-      "size": 2704451,
+      "md5": "b79b7e38800ce60e2601343f95c64502",
+      "size": 2764680,
       "url": "https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/images.zip"
     }
   },
