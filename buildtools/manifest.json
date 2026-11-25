@@ -990,5 +990,45 @@
   "desc": "Port da edição iOS de Shakedown: Hawaii.",
   "inst": "Use o IPA original da edição iOS 1.0.2.",
   "note": "A abertura da versão 1.0.2 foi validada no caminho gráfico Mali do NextOS."
+ },
+ {
+  "key": "ducktales",
+  "title": "DuckTales: Remastered",
+  "folder": "ports-android/ducktales",
+  "platform": "android",
+  "release_tag": "ducktales-v1.1.11",
+  "asset": "ducktales.zip",
+  "screenshot": "ducktales.screenshot.jpg",
+  "genres": [
+   "platformer",
+   "action"
+  ],
+  "portmaster": null,
+  "arch": [
+   "armhf"
+  ],
+  "desc": "Port da edição Android de DuckTales: Remastered para Linux ARMHF.",
+  "inst": "Use o APK original da Google Play 1.0.3 e o OBB main.124, solto ou dentro do ZIP que o contém.",
+  "note": "Requer suporte a bibliotecas ARMHF de 32 bits no firmware."
+ },
+ {
+  "key": "the-messenger-android",
+  "title": "The Messenger",
+  "folder": "ports-android/the-messenger-android",
+  "platform": "android",
+  "release_tag": "the-messenger-android-v1.2.1",
+  "asset": "the-messenger-android.zip",
+  "screenshot": "the-messenger-android.screenshot.jpg",
+  "genres": [
+   "platformer",
+   "action"
+  ],
+  "portmaster": null,
+  "arch": [
+   "aarch64"
+  ],
+  "desc": "Port da edição Android de The Messenger para Linux ARM64.",
+  "inst": "Use somente o APK original e completo da edição Android 1.2 (versionCode 1), sem splits nem OBB.",
+  "note": "Controles e gameplay validados no R36T/K36S com dArkOS, usando dados já preparados."
  }
 ]
