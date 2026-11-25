@@ -41,7 +41,7 @@ button { color: inherit; }
 .button-glass:hover { border-color: var(--accent); color: var(--accent); }
 .showcase { display: grid; grid-template-columns: 2.2fr 1fr; gap: 12px; margin-top: 26px; }
 .hero { position: relative; isolation: isolate; display: flex; align-items: center; min-height: 402px; overflow: hidden; border: 1px solid #504b44; border-radius: 18px; background: #181a22; }
-.hero-art { position: absolute; z-index: -1; inset: 0 0 0 29%; background: #2b2d38 url("https://raw.githubusercontent.com/NextOs-Ports/nextos-universal-ports/main/ports-vita/gow-collection-vita/gow-collection-vita.screenshot.jpg") center 56% / cover no-repeat; }
+.hero-art { position: absolute; z-index: -1; inset: 0 0 0 29%; background: #2b2d38 url("https://raw.githubusercontent.com/NextOs-Ports/nextos-universal-ports/main/ports-vita/gow-collection-vita/gow-collection-vita.combate.screenshot.jpg") center 56% / cover no-repeat; }
 .hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg,#181a22 17%,#181a22f7 29%,#181a2299 52%,#181a2200 85%), linear-gradient(0deg,#0e111bd6,transparent 53%); }
 .hero-copy { padding: 48px 0 56px 52px; max-width: 590px; }
 .kicker { display: flex; align-items: center; gap: 9px; margin: 0 0 15px; color: var(--accent); font-size: 11px; font-weight: 800; letter-spacing: .16em; }
