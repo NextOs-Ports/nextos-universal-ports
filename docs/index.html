@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20261125-8">
+  <link rel="stylesheet" href="style.css?v=20261125-9">
   <script defer src="app.js?v=20261125-8"></script>
 </head>
 <body>
@@ -25,7 +25,6 @@
         <a href="#atualizacoes" data-t="updates">Atualizações</a>
         <a href="#instalar" data-t="install">Como instalar</a>
         <a href="#suporte" data-t="support">Suporte</a>
-        <a href="https://retroboxgame.com/" target="_blank" rel="noopener noreferrer">RetroBoxGame <span aria-hidden="true">↗</span></a>
       </nav>
       <div class="header-actions">
         <a class="button button-quiet github" href="https://github.com/NextOs-Ports/nextos-universal-ports">GitHub <span aria-hidden="true">↗</span></a>
@@ -34,6 +33,12 @@
     </div>
   </header>
   <main class="wrap">
+    <div class="summary" aria-live="polite">
+      <div><span class="summary-icon" aria-hidden="true">▦</span><p><strong id="port-count">—</strong> <span data-t="available">ports disponíveis</span></p></div>
+      <div><span class="summary-icon" aria-hidden="true">◈</span><p><strong id="source-count">—</strong> <span data-t="origins">plataformas de origem</span></p></div>
+      <a class="discord-cta" href="https://discord.gg/DHfY62eDNN" target="_blank" rel="noopener noreferrer"><span data-t="joinCommunity">Entrar no Discord</span><span aria-hidden="true">↗</span></a>
+    </div>
+
     <section class="showcase" aria-labelledby="hero-title">
       <article class="hero">
         <img class="hero-art" src="https://raw.githubusercontent.com/NextOs-Ports/nextos-universal-ports/main/ports-vita/gow-collection-vita/gow-collection-vita.capa.screenshot.jpg" width="607" height="394" alt="" fetchpriority="high">
@@ -60,11 +65,6 @@
       </div>
     </section>
 
-    <div class="summary" aria-live="polite">
-      <div><span class="summary-icon" aria-hidden="true">▦</span><p><strong id="port-count">—</strong> <span data-t="available">ports disponíveis</span></p></div>
-      <div><span class="summary-icon" aria-hidden="true">◈</span><p><strong id="source-count">—</strong> <span data-t="origins">plataformas de origem</span></p></div>
-      <a class="discord-cta" href="https://discord.gg/DHfY62eDNN" target="_blank" rel="noopener noreferrer"><span data-t="joinCommunity">Entrar no Discord</span><span aria-hidden="true">↗</span></a>
-    </div>
 
     <section class="section catalog" id="catalogo" aria-labelledby="catalog-title">
       <div class="section-heading">
