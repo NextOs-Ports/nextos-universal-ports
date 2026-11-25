@@ -13,6 +13,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: ${{ github.event_name == 'release' && format('nextos-ports-release-{0}', github.run_id) || 'nextos-ports-pages' }}
+  cancel-in-progress: false
+
 jobs:
   sync-release:
     if: github.event_name == 'release' && github.event.release.tag_name != 'ports-latest'
@@ -53,9 +57,6 @@ jobs:
       actions: read
       pages: write
       id-token: write
-    concurrency:
-      group: nextos-ports-pages
-      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
