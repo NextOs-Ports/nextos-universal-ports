@@ -15,7 +15,8 @@
   "screenshot_source": "local",
   "first_seen": "2026-08-19",
   "legacy_downloads": 115,
-  "desc": "AArch64 PortMaster adapter for Door Kickers: Action Squad"
+  "desc": "AArch64 PortMaster adapter for Door Kickers: Action Squad",
+  "steam_appid": 686200
  },
  {
   "key": "angrybirds",
@@ -103,7 +104,8 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-09-04",
   "legacy_downloads": 22,
-  "desc": "Blossom Tales: The Sleeping King 1.0.0 — universal AArch64 MonoGame/.NET-for-Android so-loader for NextOS, ArkOS/R36S-class and PortMaster handhelds."
+  "desc": "Blossom Tales: The Sleeping King 1.0.0 — universal AArch64 MonoGame/.NET-for-Android so-loader for NextOS, ArkOS/R36S-class and PortMaster handhelds.",
+  "steam_appid": 446810
  },
  {
   "key": "bombchicken",
@@ -121,7 +123,8 @@
   "screenshot_source": "local",
   "first_seen": "2026-08-13",
   "legacy_downloads": 67,
-  "desc": "Bomb Chicken — validated universal AArch64 port for NextOS and PortMaster handhelds."
+  "desc": "Bomb Chicken — validated universal AArch64 port for NextOS and PortMaster handhelds.",
+  "steam_appid": 658780
  },
  {
   "key": "castleofillusion",
@@ -160,7 +163,8 @@
   "screenshot_source": "local",
   "first_seen": "2026-09-06",
   "legacy_downloads": 21,
-  "desc": "A native Linux port of the Android release of Chrono Trigger (Cocos2d-x 3.14.1, GLES2) for retro handhelds. The port is a compatibility loader: it maps the game's original AArch64 Android libraries into a Linux process, replaces the Android runtime they expect (JNI, OpenSL ES, asset manager, Cocos2dxBitmap text rendering) and drives the Cocos2d-x render loop on the firmware's own SDL2/EGL/GLES2."
+  "desc": "A native Linux port of the Android release of Chrono Trigger (Cocos2d-x 3.14.1, GLES2) for retro handhelds. The port is a compatibility loader: it maps the game's original AArch64 Android libraries into a Linux process, replaces the Android runtime they expect (JNI, OpenSL ES, asset manager, Cocos2dxBitmap text rendering) and drives the Cocos2d-x render loop on the firmware's own SDL2/EGL/GLES2.",
+  "steam_appid": 613830
  },
  {
   "key": "deadtrigger",
@@ -195,7 +199,8 @@
   "screenshot_source": "local",
   "first_seen": "2026-08-25",
   "legacy_downloads": 99,
-  "desc": "Final Fantasy IV (3D Remake) — native AArch64 port (so-loader, GLES1) for NextOS, dArkOS/R36S, ROCKNIX and PortMaster handhelds."
+  "desc": "Final Fantasy IV (3D Remake) — native AArch64 port (so-loader, GLES1) for NextOS, dArkOS/R36S, ROCKNIX and PortMaster handhelds.",
+  "steam_appid": 312750
  },
  {
   "key": "ff4a",
@@ -212,7 +217,8 @@
   "screenshot_source": "local",
   "first_seen": "2026-08-25",
   "legacy_downloads": 99,
-  "desc": "Final Fantasy IV: The After Years — native AArch64 port (so-loader, GLES1) for NextOS, dArkOS/R36S, ROCKNIX and PortMaster handhelds."
+  "desc": "Final Fantasy IV: The After Years — native AArch64 port (so-loader, GLES1) for NextOS, dArkOS/R36S, ROCKNIX and PortMaster handhelds.",
+  "steam_appid": 346830
  },
  {
   "key": "fp2",
@@ -230,7 +236,8 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-09-04",
   "legacy_downloads": 23,
-  "desc": "Freedom Planet 2 1.2.8 — universal AArch64 Unity 2018.4/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds."
+  "desc": "Freedom Planet 2 1.2.8 — universal AArch64 Unity 2018.4/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds.",
+  "steam_appid": 595500
  },
  {
   "key": "gdsubzero",
@@ -266,7 +273,8 @@
   "screenshot_source": "local",
   "first_seen": "2026-08-08",
   "legacy_downloads": 210,
-  "desc": "Geometry Dash (RobTop, Cocos2d-x 2.x) — native AArch64 port for Linux handhelds."
+  "desc": "Geometry Dash (RobTop, Cocos2d-x 2.x) — native AArch64 port for Linux handhelds.",
+  "steam_appid": 322170
  },
  {
   "key": "gunbrick",
@@ -284,7 +292,8 @@
   "screenshot_source": "local",
   "first_seen": "2026-08-11",
   "legacy_downloads": 56,
-  "desc": "Gunbrick: Reloaded — validated universal AArch64 port for NextOS and PortMaster handhelds."
+  "desc": "Gunbrick: Reloaded — validated universal AArch64 port for NextOS and PortMaster handhelds.",
+  "steam_appid": 1222270
  },
  {
   "key": "hitmango",
@@ -343,7 +352,8 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-08-31",
   "legacy_downloads": 71,
-  "desc": "Huntdown universal PortMaster port for AArch64 handhelds"
+  "desc": "Huntdown universal PortMaster port for AArch64 handhelds",
+  "steam_appid": 598550
  },
  {
   "key": "kotor",
@@ -360,7 +370,8 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-08-12",
   "legacy_downloads": 132,
-  "desc": "Star Wars: KOTOR — universal ARMv7 so-loader for Linux handhelds (NextOS, ArkOS/R36S). BYO game data; no game files included."
+  "desc": "Star Wars: KOTOR — universal ARMv7 so-loader for Linux handhelds (NextOS, ArkOS/R36S). BYO game data; no game files included.",
+  "steam_appid": 32370
  },
  {
   "key": "magicrampage",
@@ -378,7 +389,8 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-08-20",
   "legacy_downloads": 44,
-  "desc": "Universal PortMaster port of Magic Rampage for NextOS and ARM handhelds"
+  "desc": "Universal PortMaster port of Magic Rampage for NextOS and ARM handhelds",
+  "steam_appid": 704920
  },
  {
   "key": "merchantskies",
@@ -396,7 +408,8 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-08-28",
   "legacy_downloads": 27,
-  "desc": "Merchant of the Skies 2.0 — universal AArch64 Unity 6/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds."
+  "desc": "Merchant of the Skies 2.0 — universal AArch64 Unity 6/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds.",
+  "steam_appid": 1040070
  },
  {
   "key": "namelesscat",
@@ -432,7 +445,8 @@
   "screenshot_source": "local",
   "first_seen": "2026-08-18",
   "legacy_downloads": 58,
-  "desc": "Forager Nuclear Android compatibility port for PortMaster"
+  "desc": "Forager Nuclear Android compatibility port for PortMaster",
+  "steam_appid": 751780
  },
  {
   "key": "oceanhorn",
@@ -450,7 +464,8 @@
   "screenshot_source": "local",
   "first_seen": "2026-08-26",
   "legacy_downloads": 41,
-  "desc": "Native AArch64 port of Oceanhorn: Chronos Dungeon 4.0b54 for Linux handhelds. It drives the original Android Unity 2022.3.61f1 IL2CPP libraries through a native so-loader and keeps the Android lifecycle order intact. No game data is distributed here — you bring your own legal copy (see INSTALLATION.md)."
+  "desc": "Native AArch64 port of Oceanhorn: Chronos Dungeon 4.0b54 for Linux handhelds. It drives the original Android Unity 2022.3.61f1 IL2CPP libraries through a native so-loader and keeps the Android lifecycle order intact. No game data is distributed here — you bring your own legal copy (see INSTALLATION.md).",
+  "steam_appid": 3025560
  },
  {
   "key": "offtheroad",
@@ -486,7 +501,8 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-09-08",
   "legacy_downloads": 11,
-  "desc": "Universal AArch64 PortMaster port of Party Hard GO"
+  "desc": "Universal AArch64 PortMaster port of Party Hard GO",
+  "steam_appid": 356570
  },
  {
   "key": "pf2",
@@ -503,7 +519,8 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-08-08",
   "legacy_downloads": 34,
-  "desc": "Public native ARM64 BYO-data port of Prizefighters 2 for Linux handhelds"
+  "desc": "Public native ARM64 BYO-data port of Prizefighters 2 for Linux handhelds",
+  "steam_appid": 1510210
  },
  {
   "key": "rcrdx",
@@ -521,7 +538,8 @@
   "screenshot_source": "local",
   "first_seen": "2026-08-18",
   "legacy_downloads": 66,
-  "desc": "Port nativo AArch64 que carrega a biblioteca Android original de Retro City Rampage DX e reproduz o fluxo real do aplicativo: construtores, JNI_OnLoad, superfície, nativeInit e SDL_main. O jogo e seus dados não são distribuídos."
+  "desc": "Port nativo AArch64 que carrega a biblioteca Android original de Retro City Rampage DX e reproduz o fluxo real do aplicativo: construtores, JNI_OnLoad, superfície, nativeInit e SDL_main. O jogo e seus dados não são distribuídos.",
+  "steam_appid": 204630
  },
  {
   "key": "sallyface",
@@ -557,7 +575,8 @@
   "screenshot_source": "local",
   "first_seen": "2026-08-18",
   "legacy_downloads": 42,
-  "desc": "ScourgeBringer 1.61.x AArch64 MonoGame/.NET Android loader for NextOS and PortMaster."
+  "desc": "ScourgeBringer 1.61.x AArch64 MonoGame/.NET Android loader for NextOS and PortMaster.",
+  "steam_appid": 1037020
  },
  {
   "key": "skate3",
@@ -591,7 +610,8 @@
   "screenshot_source": "zip",
   "first_seen": "2026-07-29",
   "legacy_downloads": 97,
-  "desc": "Sonic 4 Episode II — native AArch64 port (BYO-data): SEGA's libfox.so engine on a Linux loader, runs on Mali-450 handhelds. No game data included."
+  "desc": "Sonic 4 Episode II — native AArch64 port (BYO-data): SEGA's libfox.so engine on a Linux loader, runs on Mali-450 handhelds. No game data included.",
+  "steam_appid": 203650
  },
  {
   "key": "sor4",
@@ -608,7 +628,8 @@
   "screenshot_source": "zip",
   "first_seen": "2026-07-29",
   "legacy_downloads": 444,
-  "desc": "Streets of Rage 4 — native AArch64 port (BYO-data): .NET 9 host + MonoGame GLES, runs on 1GB handhelds (R36S/RG351/RG353...). No game data included."
+  "desc": "Streets of Rage 4 — native AArch64 port (BYO-data): .NET 9 host + MonoGame GLES, runs on 1GB handhelds (R36S/RG351/RG353...). No game data included.",
+  "steam_appid": 985890
  },
  {
   "key": "Stardew.Valley.NextOS",
@@ -627,7 +648,8 @@
   "first_seen": "2026-08-06",
   "legacy_downloads": 167,
   "note": "Pacote em layout próprio (instalação manual, ver README). / Custom layout, manual install.",
-  "desc": "Stardew Valley — native AArch64 port of the Android release (BYO-data): the Mono/.NET 8 runtime booted on plain Linux, playable on Mali-450 and R36S handhelds. No game data included."
+  "desc": "Stardew Valley — native AArch64 port of the Android release (BYO-data): the Mono/.NET 8 runtime booted on plain Linux, playable on Mali-450 and R36S handhelds. No game data included.",
+  "steam_appid": 413150
  },
  {
   "key": "summertimesaga",
@@ -661,7 +683,8 @@
   "screenshot_source": "local",
   "first_seen": "2026-08-18",
   "legacy_downloads": 39,
-  "desc": "Suzy Cube 1.0.13 universal AArch64 Unity/IL2CPP loader for NextOS, ArkOS/R36S and PortMaster."
+  "desc": "Suzy Cube 1.0.13 universal AArch64 Unity/IL2CPP loader for NextOS, ArkOS/R36S and PortMaster.",
+  "steam_appid": 780500
  },
  {
   "key": "swordigo",
@@ -697,7 +720,8 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-09-04",
   "legacy_downloads": 25,
-  "desc": "Tearscape 1.0.0 — universal AArch64 Godot 4.6.1 Mono port for NextOS, ArkOS/R36S-class, ROCKNIX, muOS and PortMaster handhelds."
+  "desc": "Tearscape 1.0.0 — universal AArch64 Godot 4.6.1 Mono port for NextOS, ArkOS/R36S-class, ROCKNIX, muOS and PortMaster handhelds.",
+  "steam_appid": 3216340
  },
  {
   "key": "terraria",
@@ -715,7 +739,8 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-09-08",
   "legacy_downloads": 52,
-  "desc": "Universal BYO-data Terraria Android Unity/IL2CPP loader for NextOS and R36S-class AArch64 handhelds"
+  "desc": "Universal BYO-data Terraria Android Unity/IL2CPP loader for NextOS and R36S-class AArch64 handhelds",
+  "steam_appid": 105600
  },
  {
   "key": "tightrope",
@@ -733,7 +758,8 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-08-19",
   "legacy_downloads": 12,
-  "desc": "Tightrope Theatre 1.0.5 — universal AArch64 Stencyl/Haxe-OpenFL-Lime loader for Linux handhelds (NextOS, ArkOS/R36S). BYO-data: no game files are distributed."
+  "desc": "Tightrope Theatre 1.0.5 — universal AArch64 Stencyl/Haxe-OpenFL-Lime loader for Linux handhelds (NextOS, ArkOS/R36S). BYO-data: no game files are distributed.",
+  "steam_appid": 1891140
  },
  {
   "key": "titansouls",
@@ -759,7 +785,8 @@
     "release_tag": "titansouls-v1.0.8-spruce-test.1",
     "asset": "titansouls-1.0.8-spruce-test.1.zip"
    }
-  ]
+  ],
+  "steam_appid": 297130
  },
  {
   "key": "residentevil4-ios",
@@ -783,7 +810,11 @@
   "arch": [
    "armhf"
   ],
-  "note": "Atualiza os controles e adiciona uma saída de áudio alternativa no dArkOS."
+  "note": "Atualiza os controles e adiciona uma saída de áudio alternativa no dArkOS.",
+  "requirements": {
+   "glibc": "2.28"
+  },
+  "requirements_digest": "sha256:4793926dae236fedc7cc4de4c6735e73b1e6b6ece7d4c726968f38f45e716387"
  },
  {
   "key": "gow-collection-vita",
@@ -811,7 +842,11 @@
      "firmware": "dArkOS4Clone"
     }
    ]
-  }
+  },
+  "requirements": {
+   "glibc": "2.28"
+  },
+  "requirements_digest": "sha256:01174c9ac68c28a3a2bdd3143460d1843131ecaa3372618917517e671395d311"
  },
  {
   "key": "twinsanity",
@@ -839,7 +874,11 @@
      "firmware": "dArkOS4Clone"
     }
    ]
-  }
+  },
+  "requirements": {
+   "glibc": "2.28"
+  },
+  "requirements_digest": "sha256:4c8eab1904da230034b0bf3d481f96390de6ce0a38d337f1689615d369c6104c"
  },
  {
   "key": "gt4",
@@ -867,7 +906,11 @@
      "firmware": "dArkOS4Clone"
     }
    ]
-  }
+  },
+  "requirements": {
+   "glibc": "2.27"
+  },
+  "requirements_digest": "sha256:995404b59e9c8c63b5a9ef046933d999a0dd9d53a7718ff40ddbcd74c75338f1"
  },
  {
   "key": "rockmanxsurvivors",
@@ -895,7 +938,11 @@
      "firmware": "dArkOS4Clone"
     }
    ]
-  }
+  },
+  "requirements": {
+   "glibc": "2.28"
+  },
+  "requirements_digest": "sha256:740ff82b6713e87fc5f454656a1981fa1208f3f214b560e3b07d21ffadc7e1df"
  },
  {
   "key": "neondrive",
@@ -927,7 +974,12 @@
      "firmware": "NextOS"
     }
    ]
-  }
+  },
+  "steam_appid": 433910,
+  "requirements": {
+   "glibc": "2.28"
+  },
+  "requirements_digest": "sha256:07d6ecbcc4912f9a611b1d58eeff5f6a6e7ddad9ba60b125390a33a433697422"
  },
  {
   "key": "lordsofexile",
@@ -947,7 +999,12 @@
   "desc": "Port da edição Windows para Linux ARM64.",
   "inst": "Use os arquivos originais da edição Windows. O guia explica a preparação para cada loja.",
   "note": "A versão 1.3.13 mantém o runtime da versão anterior e corrige o lançador. O novo lançador foi validado no PC.",
-  "screenshot_source": "local"
+  "screenshot_source": "local",
+  "steam_appid": 1329360,
+  "requirements": {
+   "glibc": "2.28"
+  },
+  "requirements_digest": "sha256:0e8c46c3924526f86bd544f636ed70713f831d3484aa89dd1a50c6485df508e4"
  },
  {
   "key": "wind-waker-nextos",
@@ -966,7 +1023,11 @@
   ],
   "desc": "Port da edição GameCube de The Legend of Zelda: The Wind Waker.",
   "inst": "Use a imagem do disco original conforme a região e o formato descritos no guia.",
-  "note": "Consulte o guia para as edições de GameCube aceitas."
+  "note": "Consulte o guia para as edições de GameCube aceitas.",
+  "requirements": {
+   "glibc": "2.28"
+  },
+  "requirements_digest": "sha256:c6c7612bf13688463e405eeff64740e860bb72227f16432e36087aa73f23b935"
  },
  {
   "key": "isaac-android-nextos",
@@ -998,7 +1059,12 @@
      "firmware": "NextOS"
     }
    ]
-  }
+  },
+  "steam_appid": 250900,
+  "requirements": {
+   "glibc": "2.27"
+  },
+  "requirements_digest": "sha256:be0758432df40532c0585bc879d3b70e75cb85dea7191b1cb2241324d76fe044"
  },
  {
   "key": "avgn12deluxe",
@@ -1017,7 +1083,12 @@
   ],
   "desc": "Port da edição Android 1.2.5.",
   "inst": "Use o pacote original em um dos formatos do guia.",
-  "note": "O sufixo docs1 identifica a revisão do guia. O runtime é o mesmo da versão 1.0.1 aprovada."
+  "note": "O sufixo docs1 identifica a revisão do guia. O runtime é o mesmo da versão 1.0.1 aprovada.",
+  "steam_appid": 1162960,
+  "requirements": {
+   "glibc": "2.27"
+  },
+  "requirements_digest": "sha256:c95000675ca7c898ebf33f403cb4aa57b55c0b02052e50b210622a81ab9a0230"
  },
  {
   "key": "wario-shakeit",
@@ -1036,7 +1107,11 @@
   ],
   "desc": "Port da edição Wii norte-americana, com a mira corrigida e perfil X3.",
   "inst": "Use a imagem do disco americano RWLE01, revisão 0, em um dos formatos descritos no guia.",
-  "note": "O perfil X3 é a edição com cadência mais leve. Consulte o guia para ajustar o perfil de vídeo."
+  "note": "O perfil X3 é a edição com cadência mais leve. Consulte o guia para ajustar o perfil de vídeo.",
+  "requirements": {
+   "glibc": "2.28"
+  },
+  "requirements_digest": "sha256:971013f74c493469de32e6fca2400d21b1fd5b2a33bc879b369e5dcb1d6a92a1"
  },
  {
   "key": "danmanclassic",
@@ -1068,7 +1143,11 @@
      "firmware": "NextOS"
     }
    ]
-  }
+  },
+  "requirements": {
+   "glibc": "2.27"
+  },
+  "requirements_digest": "sha256:2e77fd05c76ec78ab0b8dcf8c71b5c5af4b81699d4b7c6fc377352ac076babef"
  },
  {
   "key": "shakedown-ios",
@@ -1087,7 +1166,12 @@
   ],
   "desc": "Port da edição iOS de Shakedown: Hawaii.",
   "inst": "Use o IPA original da edição iOS 1.0.2.",
-  "note": "A abertura da versão 1.0.2 foi validada no caminho gráfico Mali do NextOS."
+  "note": "A abertura da versão 1.0.2 foi validada no caminho gráfico Mali do NextOS.",
+  "steam_appid": 598730,
+  "requirements": {
+   "glibc": "2.28"
+  },
+  "requirements_digest": "sha256:083e3a021d7cec1420bfaeb22ebf0efaa8b96490f80bd7b7af10ff3d57371427"
  },
  {
   "key": "ducktales",
@@ -1107,7 +1191,12 @@
   ],
   "desc": "Port da edição Android de DuckTales: Remastered para Linux ARMHF.",
   "inst": "Use o APK original da Google Play 1.0.3 e o OBB main.124, solto ou dentro do ZIP que o contém.",
-  "note": "Requer suporte a bibliotecas ARMHF de 32 bits no firmware."
+  "note": "Requer suporte a bibliotecas ARMHF de 32 bits no firmware.",
+  "steam_appid": 237630,
+  "requirements": {
+   "glibc": "2.28"
+  },
+  "requirements_digest": "sha256:9922ea45a9c409089f9ba1bf97fbf96240746d5e138e691246a5db68243257c0"
  },
  {
   "key": "the-messenger-android",
@@ -1127,7 +1216,16 @@
   ],
   "desc": "Port da edição Android de The Messenger para Linux ARM64.",
   "inst": "Use somente o APK original e completo da edição Android 1.2 (versionCode 1), sem splits nem OBB.",
-  "note": "Controles e gameplay validados no R36T/K36S com dArkOS, usando dados já preparados."
+  "note": "Controles e gameplay validados no R36T/K36S com dArkOS, usando dados já preparados.",
+  "steam_appid": 764790,
+  "requirements": {
+   "gles": 2,
+   "libraries": [
+    "SDL2"
+   ],
+   "glibc": "2.28"
+  },
+  "requirements_digest": "sha256:10ed78b1ec69a96c5dce7dac0bdca3b8fb725709318729b274aaae85c2085b4e"
  },
  {
   "key": "vampiresurvivors",
@@ -1146,7 +1244,16 @@
    "aarch64"
   ],
   "inst": "Use os arquivos Windows da edição Phaser 1.5.101 do ramo old-engine da Steam.",
-  "note": ""
+  "note": "",
+  "steam_appid": 1794680,
+  "requirements": {
+   "gles": 2,
+   "glibc": "2.28",
+   "libraries": [
+    "SDL2"
+   ]
+  },
+  "requirements_digest": "sha256:a981bb507576c8a9c2518b1440594e1045877e27ffe52cc87e145ef6a38737be"
  },
  {
   "key": "cotm-switch",
@@ -1166,7 +1273,18 @@
   ],
   "inst": "Use a cópia original de Switch 1.0.0 em NSP. Consulte o guia para os requisitos do preparo.",
   "note": "A instalação limpa foi validada no dArkOS.",
-  "screenshot_source": "local"
+  "screenshot_source": "local",
+  "steam_appid": 838310,
+  "requirements": {
+   "gles": 2,
+   "glibc": "2.30",
+   "libraries": [
+    "SDL2",
+    "OpenSSL libcrypto",
+    "Python 3"
+   ]
+  },
+  "requirements_digest": "sha256:18d458a39f32c640e58e95ae984783885f53780bcbc772d5516712e584e8ccc6"
  },
  {
   "key": "ritas-rewind",
@@ -1186,7 +1304,12 @@
   ],
   "inst": "Use a base e a atualização v458752 da sua cópia Switch. Consulte o guia para os arquivos exigidos e o tempo de preparo.",
   "note": "O preparo inicial pode demorar várias horas.",
-  "screenshot_source": "local"
+  "screenshot_source": "local",
+  "steam_appid": 2816870,
+  "requirements": {
+   "glibc": "2.28"
+  },
+  "requirements_digest": "sha256:cdf9cea0bd0c04f4d47d2d42832055001e4de5c3f60cc1de405b5c48915992a2"
  },
  {
   "key": "mombo",
@@ -1205,7 +1328,12 @@
    "aarch64"
   ],
   "inst": "Use um APK, XAPK, APKM ou APKS original da versão Android 1.2.43.",
-  "note": "Esta versão corrige o golpe para baixo no tutorial."
+  "note": "Esta versão corrige o golpe para baixo no tutorial.",
+  "steam_appid": 1262040,
+  "requirements": {
+   "glibc": "2.27"
+  },
+  "requirements_digest": "sha256:2456b85dece301e857d11965df159b43c768f9a6ee752352a74f459a6ccb1b59"
  },
  {
   "key": "acpirates",
@@ -1225,7 +1353,11 @@
   ],
   "inst": "Use a edição Android 2.9.1. O guia indica o APK e a expansão OBB exigidos.",
   "note": "Testado no dArkOS e no NextOS com Mali-450.",
-  "screenshot_source": "local"
+  "screenshot_source": "local",
+  "requirements": {
+   "glibc": "2.17"
+  },
+  "requirements_digest": "sha256:6edb258690bb41a6e9b166f1891c1213338758159aec7a7ee13450f022b698f1"
  },
  {
   "key": "brotato",
@@ -1245,7 +1377,12 @@
   ],
   "inst": "Use o pacote Android original Brotato: Premium 1.3.489 para ARM64.",
   "note": "Inclui perfis gráficos e ajustes de memória para aparelhos com pouca RAM.",
-  "screenshot_source": "https://store.steampowered.com/app/1942280/Brotato/"
+  "screenshot_source": "https://store.steampowered.com/app/1942280/Brotato/",
+  "steam_appid": 1942280,
+  "requirements": {
+   "glibc": "2.27"
+  },
+  "requirements_digest": "sha256:01638888385d5872ab712dee92a2a064517872946222f27cb61ebe3dbdb42bb9"
  },
  {
   "key": "mmw",
@@ -1266,7 +1403,11 @@
   "inst": "Use a cópia original de Mega Man W 2 em APK, APKM, APKS ou XAPK.",
   "note": "",
   "availability": "free",
-  "screenshot_source": "https://jumpdashevade.itch.io/mega-man-w"
+  "screenshot_source": "https://jumpdashevade.itch.io/mega-man-w",
+  "requirements": {
+   "glibc": "2.27"
+  },
+  "requirements_digest": "sha256:b7ed930beabb925cc4f95b2ac99fc758976424591e44f0538f540cfb2a57b0c3"
  },
  {
   "key": "strangerthings3",
@@ -1286,7 +1427,11 @@
   ],
   "inst": "Use o pacote original Android 1.4.7 para ARM64. Consulte o guia para os formatos aceitos.",
   "note": "",
-  "screenshot_source": "https://play.google.com/store/apps/details?id=com.netflix.NGP.StrangerThings3"
+  "screenshot_source": "https://play.google.com/store/apps/details?id=com.netflix.NGP.StrangerThings3",
+  "requirements": {
+   "glibc": "2.27"
+  },
+  "requirements_digest": "sha256:a73acf533ff34c77d9df95c507391bcb8fa97415f6c573dae8f6858c30be94be"
  },
  {
   "key": "isaac-ios",
@@ -1306,6 +1451,12 @@
   ],
   "inst": "Use o IPA original da edição iOS 1.4. Consulte o guia para o build e o espaço necessário.",
   "note": "Instalação limpa validada com NXExtract.",
-  "screenshot_source": "local"
+  "screenshot_source": "local",
+  "steam_appid": 250900,
+  "requirements": {
+   "tested_ram_mb": 1024,
+   "glibc": "2.27"
+  },
+  "requirements_digest": "sha256:b9732336ce17de64bd4e2da6cfaef41db88b3bdf7ff40d2bde823c5efdb06c21"
  }
 ]

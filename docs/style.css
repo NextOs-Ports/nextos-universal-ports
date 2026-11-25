@@ -227,3 +227,17 @@ dialog::backdrop { background: #050b12cb; backdrop-filter: blur(4px); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+.checker { margin: 16px 0; }
+.check-fields, .related { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; margin: 12px 0; }
+.check-fields label, .steam-import label { display: grid; gap: 4px; font-size: 12px; color: var(--muted); }
+.check-fields select { width: 100%; }
+.check-result { border-left: 2px solid var(--accent); padding-left: 9px; }
+.related-game { display: flex; align-items: center; gap: 9px; padding: 7px; border: 1px solid var(--line); border-radius: 8px; font-size: 13px; }
+.related-game .shot { flex: 0 0 48px; width: 48px; border-radius: 4px; }
+.related-game:hover { border-color: var(--accent); }
+.steam-import { flex: 1 1 100%; padding: 10px; border: 1px solid var(--line); border-radius: 8px; }
+.steam-import p, .steam-import a, .steam-import label { font-size: 13px; margin: 8px 0; }
+.steam-import input { max-width: 100%; }
+@media (max-width: 420px) {
+  .check-fields, .related { grid-template-columns: 1fr; }
+}

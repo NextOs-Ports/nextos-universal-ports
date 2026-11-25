@@ -20,3 +20,9 @@ Para nomes fora desse padrão, inclua o port no manifesto existente com o nome e
 Os filtros de aparelho e firmware usam o campo opcional `verification` de cada port no manifesto. Informe em `digest` o SHA-256 do ZIP testado no formato do GitHub (`sha256:…`) e em `tested_on` os pares de `device` e `firmware` documentados nas provas da versão. O site mostra esses pares enquanto eles corresponderem ao ZIP publicado.
 
 O campo opcional `variants` apresenta ZIPs adicionais na ficha de um port. Cada entrada usa `title`, `version`, `release_tag` e `asset`. O download principal continua seguindo a release padrão. A ficha identifica como prévia as variantes marcadas como pre-release no GitHub.
+
+O campo `steam_appid` associa um título à loja Steam para o filtro de biblioteca. A edição indicada no guia continua sendo a fonte dos dados do jogo. O campo opcional `requirements` registra os requisitos documentados da release (`gles`, `glibc`, `libraries`, `ram_mb`). `tested_ram_mb` indica memória observada nos testes. Use `requirements_digest` para vincular os requisitos aos bytes do ZIP.
+
+O workflow guarda a primeira amostra diária dos contadores da API GitHub no artefato `nextos-download-history`. O ranking usa a diferença observada em até sete dias de histórico, acompanhando o ID dos anexos quando a versão muda. O período efetivo aparece no site. A coleta inicial usa o inventário público das Releases de 25/11/2026.
+
+Os perfis de referência em `docs/hardware.json` usam arquitetura, RAM e glibc do [inventário público de aparelhos do PortMaster](https://portmaster.games/assets/json/device_info.json). São especificações do conjunto aparelho/firmware. Os testes físicos da NextOS continuam vinculados ao digest da release.

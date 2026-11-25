@@ -34,6 +34,8 @@ Busque pelo nome do jogo, filtre pela plataforma de origem ou pela arquitetura d
 | PC | [ports-pc](ports-pc/) |
 | Web | [ports-web](ports-web/) |
 
+Em cada ficha, **Roda no meu aparelho?** cruza os testes da versão com as características que você informar. Jogos semelhantes levam a outros ports do mesmo gênero ou plataforma. Em **Filtros → Importar biblioteca Steam**, carregue a lista de jogos da sua conta para encontrar os títulos correspondentes. A seção [Em alta](https://nextos-ports.github.io/nextos-universal-ports/#em-alta) acompanha as variações dos downloads no GitHub.
+
 A plataforma de origem identifica a edição que fornece os dados do jogo. Consulte o guia do port para saber quais requisitos e aparelhos foram verificados.
 
 ## Como instalar

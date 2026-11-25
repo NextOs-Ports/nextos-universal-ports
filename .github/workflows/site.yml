@@ -3,7 +3,7 @@ name: Site NextOS Ports
 on:
   push:
     branches: [main]
-    paths: ['docs/**', 'buildtools/manifest.json', 'buildtools/build_site.py', 'ports-*/**', '.github/workflows/site.yml']
+    paths: ['docs/**', 'buildtools/manifest.json', 'buildtools/build_site.py', 'buildtools/download_trends.py', 'ports-*/**', '.github/workflows/site.yml']
   release:
     types: [published, edited, deleted, unpublished]
   schedule:
@@ -30,6 +30,9 @@ jobs:
         run: gh workflow run site.yml --repo "$GITHUB_REPOSITORY" --ref main
 
   build:
+    permissions:
+      contents: read
+      actions: read
     if: github.event_name != 'release'
     runs-on: ubuntu-latest
     steps:
@@ -44,8 +47,20 @@ jobs:
         run: |
           site_dir="$RUNNER_TEMP/nextos-ports-site"
           cp -r docs "$site_dir"
+          history="$site_dir/download-history.json"
+          artifact_id=$(gh api "repos/$GITHUB_REPOSITORY/actions/artifacts?name=nextos-download-history&per_page=100" \
+            --jq '[.artifacts[] | select(.expired == false and .workflow_run.head_branch == "main" and .workflow_run.head_repository_id == .workflow_run.repository_id)] | max_by(.id).id // empty')
+          if [[ -n "$artifact_id" ]]; then
+            gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/$artifact_id/zip" > "$RUNNER_TEMP/history.zip"
+            unzip -p "$RUNNER_TEMP/history.zip" download-history.json > "$history"
+          fi
           gh api --paginate --slurp "repos/$GITHUB_REPOSITORY/releases?per_page=100" |
-            python3 buildtools/build_site.py "$site_dir/ports.json"
+            python3 buildtools/build_site.py "$site_dir/ports.json" --history "$history"
+      - uses: actions/upload-artifact@v7.0.2
+        with:
+          name: nextos-download-history
+          path: ${{ runner.temp }}/nextos-ports-site/download-history.json
+          retention-days: 30
       - uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: ${{ runner.temp }}/nextos-ports-site

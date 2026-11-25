@@ -2,6 +2,7 @@
 """Build the public website catalog from GitHub release metadata, without downloading ZIPs."""
 
 import argparse
+from datetime import datetime, timezone
 import json
 import re
 import sys
@@ -123,6 +124,7 @@ def catalog(manifest, existing, release_list):
         for key in ("arch", "desc", "inst"):
             if key in entry:
                 attr[key] = entry[key]
+        tag_matches = release["tag_name"] == entry["release_tag"]
         folder = entry["folder"]
         image_path = f'{folder}/{entry["screenshot"]}'
         verification = entry.get("verification", {})
@@ -164,6 +166,8 @@ def catalog(manifest, existing, release_list):
                 "portmaster": entry.get("portmaster", True), "prerelease": release["prerelease"],
                 "note": entry.get("note", ""),
                 "verified_on": verified_on,
+                "steam_appid": entry.get("steam_appid"),
+                "requirements": entry.get("requirements", {}) if tag_matches and entry.get("requirements_digest", asset.get("digest")) == asset.get("digest") else {},
                 "variants": variants,
             },
         })
@@ -173,6 +177,7 @@ def catalog(manifest, existing, release_list):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("output", type=Path)
+    parser.add_argument("--history", type=Path)
     args = parser.parse_args()
     manifest = json.loads((ROOT / "buildtools/manifest.json").read_text())
     existing = json.loads((ROOT / "docs/ports.json").read_text())
@@ -180,5 +185,8 @@ if __name__ == "__main__":
     ports = catalog(manifest, existing, releases)
     if not ports:
         sys.exit("O GitHub não retornou nenhum port com ZIP publicado.")
+    if args.history:
+        from download_trends import update
+        update(args.history, ports, releases, datetime.now(timezone.utc).date())
     args.output.write_text(json.dumps(ports, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"{len(ports)} ports com ZIP publicado.")

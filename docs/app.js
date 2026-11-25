@@ -2,6 +2,19 @@
 
 const text = {
   pt: {
+    specSource: "Especificações de referência · PortMaster ↗", steamFilter: "Biblioteca Steam", owned: "Tenho na Steam", notOwned: "Não tenho na Steam", forget: "Esquecer biblioteca",
+    importSteam: "Importar biblioteca Steam", openSteam: "Abrir minha lista na Steam ↗", steamFile: "Arquivo da biblioteca",
+    steamHelp: "Com a loja Steam conectada, abra sua lista, salve a página como JSON e selecione o arquivo abaixo. Os IDs ficam neste navegador. Confira no guia a edição exigida pelo port.",
+    badSteam: "Escolha um JSON da biblioteca Steam com a lista de jogos adquiridos.", matches: "ports encontrados na sua biblioteca",
+    trending: "Em alta", period: "Downloads dos ZIPs", measuring: "A contagem começou. Os primeiros destaques aparecerão quando houver novos downloads.",
+    similar: "Jogos semelhantes", checkDevice: "Roda no meu aparelho?", deviceModel: "Aparelho", os: "Firmware",
+    unspecified: "Selecione", otherDevice: "Outro", abi: "Aplicativos ARM suportados pelo firmware", ram: "RAM instalada (MB)",
+    gpu: "OpenGL ES disponível", runtime: "Bibliotecas exigidas instaladas?", yes: "Sim", no: "Não",
+    passed: "Combinação testada com este ZIP.", unknown: "Compatibilidade em aberto. Confira os requisitos e o guia do port.",
+    mismatch: "Requisito não atendido", minimum: "Requisitos declarados", measuredRam: "RAM do aparelho testado",
+    hide: "Ocultar incompatíveis", measured: "A arquitetura informada é aceita. Confira os demais requisitos no guia.",
+    weeklyUnit: "downloads no período", firstWeek: "Primeira semana em medição",
+
     skip: "Ir para o catálogo", catalog: "Catálogo", updates: "Atualizações", install: "Como instalar",
     support: "Suporte", architecture: "Arquitetura", discordSupport: "Suporte no Discord",
     supportCopy: "Para pedir ajuda ou relatar um bug, use o canal #port-help.",
@@ -13,8 +26,8 @@ const text = {
     catalogCopy: "Ports universais, desenvolvidos para atender à maioria dos portáteis Linux ARM. Confira os requisitos de cada jogo e use os dados da sua própria cópia.",
     search: "Buscar por jogo, apelido ou plataforma…", searchLabel: "Buscar ports", sourcePlatform: "Plataforma de origem",
     sortBy: "Ordenar por", featured: "Em destaque", newest: "Adicionados recentemente", recent: "Atualizados recentemente", alphabetical: "Nome A–Z",
-    device: "Aparelho testado", firmware: "Firmware testado", tested: "Testado nesta versão",
-    coverage: "Use estes filtros para encontrar testes registrados no seu aparelho e firmware. Outros modelos podem funcionar se atenderem aos requisitos do port.",
+    glibc: "glibc do firmware", device: "Aparelho testado", firmware: "Firmware testado", tested: "Testado nesta versão",
+    coverage: "Use estes filtros para encontrar testes registrados no seu aparelho e firmware. Configure seu aparelho na ficha de um jogo para ocultar incompatibilidades conhecidas.",
     remove: "Remover filtro", copyLink: "Copiar link", linkCopied: "Link copiado", copyFromAddress: "Copie o link na barra de endereço",
     variants: "Outras versões",
     mostDownloaded: "Mais baixados", filters: "Filtros", genre: "Gênero", gameType: "Tipo de jogo",
@@ -33,6 +46,19 @@ const text = {
     count: (shown, total) => shown < total ? "Mostrando " + shown + " de " + total + " ports" : total + (total === 1 ? " port encontrado" : " ports encontrados"),
   },
   en: {
+    specSource: "Reference specifications · PortMaster ↗", steamFilter: "Steam library", owned: "I own it on Steam", notOwned: "I don’t own it on Steam", forget: "Forget library",
+    importSteam: "Import Steam library", openSteam: "Open my Steam list ↗", steamFile: "Library file",
+    steamHelp: "Sign in to the Steam store, open your list, save the page as JSON and select the file below. IDs stay in this browser. Check the port guide for the required edition.",
+    badSteam: "Choose a Steam library JSON containing your owned games.", matches: "matching ports in your library",
+    trending: "Trending", period: "ZIP downloads", measuring: "Measurement has started. Games will appear here as new downloads arrive.",
+    similar: "Similar games", checkDevice: "Will it run on my device?", deviceModel: "Device", os: "Firmware",
+    unspecified: "Select", otherDevice: "Other", abi: "ARM apps supported by your firmware", ram: "Installed RAM (MB)",
+    gpu: "Available OpenGL ES", runtime: "Required libraries installed?", yes: "Yes", no: "No",
+    passed: "This ZIP was tested on this combination.", unknown: "Compatibility unconfirmed. Check the requirements and the port guide.",
+    mismatch: "Unmet requirement", minimum: "Declared requirements", measuredRam: "RAM on tested hardware",
+    hide: "Hide incompatible ports", measured: "The selected architecture is supported. Check the guide for the remaining requirements.",
+    weeklyUnit: "downloads in this period", firstWeek: "Measuring the first week",
+
     skip: "Skip to catalog", catalog: "Catalog", updates: "Updates", install: "How to install",
     support: "Support", architecture: "Architecture", discordSupport: "Discord support",
     supportCopy: "Ask for help or report a bug in #port-help.",
@@ -44,8 +70,8 @@ const text = {
     catalogCopy: "Universal ports designed for a broad range of ARM Linux handhelds. Check each game’s requirements and use the files from your own copy.",
     search: "Search by game, nickname or platform…", searchLabel: "Search ports", sourcePlatform: "Source platform",
     sortBy: "Sort by", featured: "Featured", newest: "Recently added", recent: "Recently updated", alphabetical: "Name A–Z",
-    device: "Tested device", firmware: "Tested firmware", tested: "Tested on this version",
-    coverage: "Use these filters to find recorded tests for your device and firmware. Other models may work if they meet the port’s requirements.",
+    glibc: "Firmware glibc", device: "Tested device", firmware: "Tested firmware", tested: "Tested on this version",
+    coverage: "Use these filters to find recorded tests for your device and firmware. Set up your device on a game page to hide known incompatibilities.",
     remove: "Remove filter", copyLink: "Copy link", linkCopied: "Link copied", copyFromAddress: "Copy the link from the address bar",
     variants: "Other versions",
     mostDownloaded: "Most downloaded", filters: "Filters", genre: "Genre", gameType: "Game type",
@@ -92,11 +118,18 @@ const pageSize = 12;
 const repo = "https://github.com/NextOs-Ports/nextos-universal-ports";
 const query = (selector) => document.querySelector(selector);
 const search = query("#search");
-const facetIds = ["genre", "availability", "install-mode", "architecture", "device", "firmware"];
+const facetIds = ["genre", "availability", "install-mode", "architecture", "device", "firmware", "steam-filter", "compat-mode"];
+let ownedApps = null;
+let steamError = false;
+const hardware = {};
+let deviceProfiles = {};
 const dialog = query("#port-dialog");
 const state = { lang: "pt", platform: "all", ports: null, limit: pageSize, activePort: null, failed: false };
 
 try {
+  Object.assign(hardware, JSON.parse(localStorage.getItem("nxp-hardware") || "{}"));
+  const saved = JSON.parse(localStorage.getItem("nxp-steam") || "null");
+  if (Array.isArray(saved)) ownedApps = new Set(saved.filter(Number.isSafeInteger));
   state.lang = localStorage.getItem("nxp-lang") === "en" ? "en" : "pt";
 } catch { /* The language switch works without storage. */ }
 
@@ -286,11 +319,12 @@ function renderChips() {
 }
 
 function filteredPorts() {
-  const [genre, availability, mode, architecture, device, firmware] = facetIds.map((id) => query("#" + id).value);
+  const [genre, availability, mode, architecture, device, firmware, steam, compat] = facetIds.map((id) => query("#" + id).value);
   const term = clean(search.value);
   const queryTerms = term ? term.split(" ") : [];
   const testedFilter = device !== "all" || firmware !== "all";
-  const list = state.ports.filter(({ name, attr, source }) => {
+  const list = state.ports.filter((port) => {
+    const { name, attr, source } = port;
     const haystack = clean([attr.title, name, aliases[name], source.platform, platforms[source.platform],
       platformAliases[source.platform], ...(attr.genres || []).flatMap((key) => [key, genreLabel(key)]),
       ...(source.variants || []).map(({ title }) => title)].join(" "));
@@ -302,6 +336,8 @@ function filteredPorts() {
         architecture === "aarch64" ? /^(aarch64|arm64|arm64-v8a)$/i.test(abi) : /^(armhf|armv7l?|arm32|armeabi-v7a)$/i.test(abi))) &&
       (!testedFilter || (source.verified_on || []).some((record) =>
         (device === "all" || device === record.device) && (firmware === "all" || firmware === record.firmware))) &&
+      (compat === "all" || !incompatibleWith(port).length) &&
+      (steam === "all" || (ownedApps && source.steam_appid && ownedApps.has(source.steam_appid) === (steam === "owned"))) &&
       queryTerms.every((term) => haystack.includes(term));
   });
   const rank = (port) => featured.includes(port.name) ? featured.indexOf(port.name) : featured.length;
@@ -310,10 +346,11 @@ function filteredPorts() {
   const added = (port) => port.source.first_seen || dateKey(port);
   const by = {
     featured: (a, b) => relevance(b) - relevance(a) || rank(a) - rank(b) || byName(a, b),
+    trending: (a, b) => (b.source.period_downloads || 0) - (a.source.period_downloads || 0) || byName(a,b),
     added: (a, b) => added(b).localeCompare(added(a)) || byName(a, b), recent: (a, b) => recent(a, b) || byName(a, b),
     name: byName, downloads: (a, b) => downloadCount(b) - downloadCount(a) || byName(a, b),
   };
-  const active = [genre, availability, mode, architecture, device, firmware].filter((filter) => filter !== "all").length;
+  const active = [genre, availability, mode, architecture, device, firmware, steam, compat].filter((filter) => filter !== "all").length;
   query("#filter-count").hidden = active === 0;
   query("#filter-count").textContent = active;
   return list.sort(by[query("#sort").value]);
@@ -343,6 +380,160 @@ function renderUpdates() {
   });
   query("#release-list").replaceChildren(...rows);
 }
+
+function relatedGames(port) {
+  const genres = new Set(port.attr.genres || []);
+  return state.ports.filter((game) => game.name !== port.name).map((game) => {
+    const shared = (game.attr.genres || []).filter((genre) => genres.has(genre)).length;
+    return { game, score: 3 * shared + Number(game.source.platform === port.source.platform) };
+  }).filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score || a.game.attr.title.localeCompare(b.game.attr.title, locale()))
+    .slice(0, 4).map((item) => item.game);
+}
+
+function incompatibleWith({ attr, source }) {
+  const problems = [];
+  const needs = source.requirements || {};
+  const arch = (attr.arch || []).map((value) => {
+    if (/^(armhf|armv7l?|arm32|armeabi-v7a)$/i.test(value)) return "armhf";
+    if (/^(aarch64|arm64|arm64-v8a)$/i.test(value)) return "aarch64";
+    return value;
+  });
+  if (hardware.abi && arch.length && !arch.some((abi) => hardware.abi.split("+").includes(abi))) {
+    problems.push(arch.join(" / "));
+  }
+  const minGlibc = needs.glibc || attr.min_glibc;
+  if (hardware.glibc && minGlibc && hardware.glibc.localeCompare(String(minGlibc), "en", {numeric: true}) < 0) {
+    problems.push("glibc ≥ " + minGlibc);
+  }
+  if (hardware.gpu && needs.gles && Number(hardware.gpu) < needs.gles) problems.push("OpenGL ES " + needs.gles);
+  if (Number(hardware.ram) > 0 && needs.ram_mb > Number(hardware.ram)) problems.push(needs.ram_mb + " MB RAM");
+  // Runtime answers are specific to a port's list of required libraries.
+  if (needs.libraries?.length && hardware["libs:" + needs.libraries.join("|")] === "no") problems.push(needs.libraries.join(", "));
+  return problems;
+}
+
+function deviceChecker(port) {
+  const panel = element("details", "compatibility checker");
+  panel.append(element("summary", "", t("checkDevice")));
+  const form = element("div", "check-fields");
+  const result = element("p", "check-result");
+  result.setAttribute("role", "status");
+  const needs = port.source.requirements || {};
+  const requirements = [...(port.attr.arch || []), ...(needs.libraries || [])];
+  if (needs.gles) requirements.push("OpenGL ES " + needs.gles);
+  const glibc = needs.glibc || port.attr.min_glibc;
+  if (glibc) requirements.push("glibc ≥ " + glibc);
+  if (needs.ram_mb) requirements.push(needs.ram_mb + " MB RAM");
+  if (requirements.length) panel.append(element("h3", "", t("minimum")), element("p", "", requirements.join(" · ")));
+  if (needs.tested_ram_mb) panel.append(element("p", "", t("measuredRam") + " · " + needs.tested_ram_mb + " MB"));
+  function verdict() {
+    const tested = (port.source.verified_on || []).some((test) => test.device === hardware.device && test.firmware === hardware.firmware);
+    const conflicts = incompatibleWith(port);
+    const hasAbi = hardware.abi && port.attr.arch?.length;
+    result.textContent = conflicts.length ? t("mismatch") + " · " + conflicts.join(", ")
+      : tested ? t("passed") : hasAbi ? t("measured") : t("unknown");
+  }
+  function addField(key, label, choices) {
+    const wrap = element("label");
+    wrap.append(element("span", "", t(label)));
+    const select = element("select");
+    select.name = key;
+    select.add(new Option(t("unspecified"), ""));
+    for (const [value, name] of choices) select.add(new Option(name, value));
+    select.value = hardware[key] || "";
+    select.addEventListener("change", () => {
+      let rebuild = false;
+      if (key === "device" || key === "firmware") {
+        const device = key === "device" ? select.value : hardware.device;
+        const systems = Object.keys(deviceProfiles[device] || {});
+        const firmware = key === "firmware" ? select.value : systems.length === 1 ? systems[0] : "";
+        for (const saved of Object.keys(hardware)) delete hardware[saved];
+        Object.assign(hardware, {device, firmware}, deviceProfiles[device]?.[firmware] || {});
+        rebuild = true;
+      } else hardware[key] = select.value;
+      try { localStorage.setItem("nxp-hardware", JSON.stringify(hardware)); } catch { /* Storage is optional. */ }
+      if (rebuild) {
+        const updated = deviceChecker(port);
+        updated.open = true;
+        panel.replaceWith(updated);
+        updated.querySelector('[name="' + key + '"]').focus();
+      } else verdict();
+      renderCatalog();
+    });
+    wrap.append(select);
+    form.append(wrap);
+  }
+  for (const [field, label] of [["device","deviceModel"],["firmware","os"]]) {
+    const tested = [...query("#" + field).options].filter((o) => o.value !== "all").map((o) => o.value);
+    const models = field === "device" ? deviceProfiles : deviceProfiles[hardware.device];
+    const names = new Set(models ? Object.keys(models) : []);
+    if (field === "device" || !models) tested.forEach((value) => names.add(value));
+    const values = [...names].sort().map((value) => [value,value]);
+    values.push(["other", t("otherDevice")]);
+    addField(field, label, values);
+  }
+  addField("abi", "abi", [["armhf","ARMHF (32-bit)"],["aarch64","ARM64"],["aarch64+armhf","ARM64 + ARMHF"]]);
+  if (glibc) addField("glibc", "glibc", [...new Set(["2.17","2.27","2.28","2.30","2.31","2.36","2.39","2.41","2.43", hardware.glibc, glibc].filter(Boolean))].sort((a,b) => a.localeCompare(b,"en",{numeric:true})).map((v) => [v,v]));
+  if (needs.gles) addField("gpu", "gpu", ["1.1","2.0","3.0","3.1","3.2"].map((v) => [v,v]));
+  if (needs.ram_mb || needs.tested_ram_mb) addField("ram","ram",["256","512","1024","2048","4096","8192"].map((v) => [v,v]));
+  if (needs.libraries?.length) addField("libs:" + needs.libraries.join("|"), "runtime", [["yes",t("yes")],["no",t("no")]]);
+  verdict();
+  panel.append(form, result);
+  if (deviceProfiles[hardware.device]?.[hardware.firmware]) {
+    panel.append(external(t("specSource"), "https://portmaster.games/installation/supported-handhelds/", "dialog-link"));
+  }
+  return panel;
+}
+
+function renderTrending() {
+  const source = state.ports.find((p) => p.source.period_since)?.source;
+  const list = state.ports.filter((p) => p.source.period_downloads > 0)
+    .sort((a,b) => b.source.period_downloads - a.source.period_downloads || a.attr.title.localeCompare(b.attr.title, locale())).slice(0,4);
+  const period = query("#trend-period");
+  if (source) {
+    const days = (Date.parse(source.period_until) - Date.parse(source.period_since)) / 86400000;
+    period.textContent = [days < 7 ? t("firstWeek") : "", t("period"), dateLabel(source.period_since) + " – " + dateLabel(source.period_until)].filter(Boolean).join(" · ");
+  } else period.textContent = "";
+  const cards = list.map((port) => {
+    const item = card(port);
+    item.querySelector(".card-meta").textContent = port.source.period_downloads + " " + t("weeklyUnit");
+    return item;
+  });
+  query("#trending-grid").replaceChildren(...(cards.length ? cards : [element("p","empty",t("measuring"))]));
+}
+
+function renderSteam() {
+  query("#steam-filter").disabled = !ownedApps;
+  query("#steam-forget").hidden = !ownedApps;
+  const count = state.ports.filter((p) => ownedApps?.has(p.source.steam_appid)).length;
+  query("#steam-status").textContent = steamError ? t("badSteam") : ownedApps ? count + " " + t("matches") : "";
+}
+
+query("#steam-file").addEventListener("change", async (event) => {
+  const file = event.target.files[0];
+  if (!file || !state.ports) return;
+  try {
+    const data = JSON.parse(await file.text());
+    const ids = data.rgOwnedApps ?? data.response?.games?.map((game) => game.appid);
+    if (!Array.isArray(ids) || !ids.every((id) => Number.isSafeInteger(id) && id > 0)) throw new Error("Invalid Steam list");
+    ownedApps = new Set(ids);
+    steamError = false;
+    try { localStorage.setItem("nxp-steam", JSON.stringify([...ownedApps])); } catch { /* Optional persistence. */ }
+    query("#steam-filter").value = "owned";
+  } catch { steamError = true; }
+  event.target.value = "";
+  renderSteam();
+  resetLimit();
+});
+query("#steam-forget").addEventListener("click", () => {
+  ownedApps = null;
+  steamError = false;
+  try { localStorage.removeItem("nxp-steam"); } catch { /* Optional persistence. */ }
+  query("#steam-filter").value = "all";
+  renderSteam();
+  resetLimit();
+});
 
 function renderDialog(port) {
   const { attr, source } = port;
@@ -395,15 +586,29 @@ function renderDialog(port) {
       info.append(row);
     }
   }
+  info.append(deviceChecker(port));
+  const related = relatedGames(port);
+  if (related.length) {
+    info.append(element("h3", "", t("similar")));
+    const links = element("div", "related");
+    for (const game of related) {
+      const anchor = portLink(game, "", "related-game");
+      anchor.append(screenshot(game), element("span", "", game.attr.title));
+      links.append(anchor);
+    }
+    info.append(links);
+  }
   query("#port-content").replaceChildren(image, info);
 }
 
 function openPort(name) {
   const port = state.ports?.find((entry) => entry.name === name);
   if (!port) return false;
+  const switching = dialog.open;
   state.activePort = port;
   renderDialog(port);
-  if (!dialog.open) dialog.showModal();
+  if (!switching) dialog.showModal();
+  else { dialog.scrollTop = 0; query(".dialog-close").focus({preventScroll: true}); }
   const url = new URL(location.href);
   url.searchParams.set("port", port.name.replace(/\.zip$/, ""));
   history.replaceState(null, "", url);
@@ -435,6 +640,8 @@ function applyLanguage() {
     renderTestedOptions();
     renderCatalog();
     renderUpdates();
+    renderTrending();
+    renderSteam();
   } else if (state.failed) renderFailure();
   if (state.activePort) renderDialog(state.activePort);
 }
@@ -458,6 +665,8 @@ function restoreFilters() {
   for (const id of [...facetIds, "sort"]) {
     const select = query("#" + id);
     const value = params.get(id);
+    if (id === "steam-filter" && !ownedApps) continue;
+    if (id === "compat-mode" && !Object.values(hardware).some(Boolean)) continue;
     if ([...select.options].some((option) => option.value === value)) select.value = value;
   }
 }
@@ -473,7 +682,11 @@ async function loadCatalog() {
   query("#results").textContent = t("loading");
   query("#grid").replaceChildren();
   try {
-    const response = await fetch("ports.json", { cache: "no-cache" });
+    const [response, profiles] = await Promise.all([
+      fetch("ports.json", { cache: "no-cache" }),
+      fetch("hardware.json").then((r) => r.ok ? r.json() : {}).catch(() => ({})),
+    ]);
+    deviceProfiles = profiles;
     if (!response.ok) throw new Error("Catalog unavailable");
     const ports = await response.json();
     if (!Array.isArray(ports)) throw new Error("Invalid catalog");

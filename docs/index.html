@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20261125-9">
-  <script defer src="app.js?v=20261125-10"></script>
+  <link rel="stylesheet" href="style.css?v=20261125-11">
+  <script defer src="app.js?v=20261125-11"></script>
 </head>
 <body>
   <a class="skip" href="#catalogo" data-t="skip">Ir para o catálogo</a>
@@ -22,6 +22,7 @@
       </a>
       <nav class="nav" aria-label="Menu">
         <a href="#catalogo" data-t="catalog">Catálogo</a>
+        <a href="#em-alta" data-t="trending">Em alta</a>
         <a href="#atualizacoes" data-t="updates">Atualizações</a>
         <a href="#instalar" data-t="install">Como instalar</a>
         <a href="#suporte" data-t="support">Suporte</a>
@@ -81,6 +82,7 @@
           <div class="filter-actions">
             <label class="sort"><span class="sr-only" data-t="sortBy">Ordenar por</span><select id="sort">
               <option value="featured" data-t="featured">Em destaque</option>
+              <option value="trending" data-t="trending">Em alta</option>
               <option value="added" data-t="newest">Adicionados recentemente</option>
               <option value="recent" data-t="recent">Atualizados recentemente</option>
               <option value="name" data-t="alphabetical">Nome A–Z</option>
@@ -102,7 +104,20 @@
           </select></label>
           <label class="tested-filter"><span data-t="device">Aparelho testado</span><select id="device"><option value="all" data-t="all">Todos</option></select></label>
           <label class="tested-filter"><span data-t="firmware">Firmware testado</span><select id="firmware"><option value="all" data-t="all">Todos</option></select></label>
-          <p class="filter-help" data-t="coverage">Use estes filtros para encontrar testes registrados no seu aparelho e firmware. Outros modelos podem funcionar se atenderem aos requisitos do port.</p>
+          <label><span data-t="steamFilter">Biblioteca Steam</span><select id="steam-filter" disabled>
+            <option value="all" data-t="all">Todos</option><option value="owned" data-t="owned">Tenho na Steam</option><option value="missing" data-t="notOwned">Não tenho na Steam</option>
+          </select></label>
+          <label><span data-t="checkDevice">Roda no meu aparelho?</span><select id="compat-mode">
+            <option value="all" data-t="all">Todos</option><option value="hide" data-t="hide">Ocultar incompatíveis</option>
+          </select></label>
+          <details class="steam-import">
+            <summary data-t="importSteam">Importar biblioteca Steam</summary>
+            <p data-t="steamHelp">Com a loja Steam conectada, abra sua lista, salve a página como JSON e selecione o arquivo abaixo. Os IDs ficam neste navegador. Confira no guia a edição exigida pelo port.</p>
+            <a class="dialog-link" href="https://store.steampowered.com/dynamicstore/userdata/" target="_blank" rel="noopener noreferrer" data-t="openSteam">Abrir minha lista na Steam ↗</a>
+            <label><span data-t="steamFile">Arquivo da biblioteca</span><input id="steam-file" type="file" accept=".json,application/json"></label>
+            <p id="steam-status" role="status"></p><button id="steam-forget" class="button button-quiet" type="button" hidden data-t="forget">Esquecer biblioteca</button>
+          </details>
+          <p class="filter-help" data-t="coverage">Use estes filtros para encontrar testes registrados no seu aparelho e firmware. Configure seu aparelho na ficha de um jogo para ocultar incompatibilidades conhecidas.</p>
         </div>
         <div class="active-filters" id="active-filters" hidden>
           <div id="chips" class="chips"></div>
@@ -115,6 +130,10 @@
       <noscript><p>Ative o JavaScript para navegar pelo catálogo ou <a href="https://github.com/NextOs-Ports/nextos-universal-ports/releases">veja as Releases no GitHub</a>.</p></noscript>
     </section>
 
+    <section class="section" id="em-alta" aria-labelledby="trending-title">
+      <div class="section-heading"><div><h2 id="trending-title" data-t="trending">Em alta</h2><p id="trend-period"></p></div></div>
+      <div class="grid" id="trending-grid"></div>
+    </section>
     <section class="section updates" id="atualizacoes" aria-labelledby="updates-title">
       <div class="section-heading">
         <div><h2 id="updates-title" data-t="updates">Atualizações</h2><p data-t="updatesCopy">Versões publicadas recentemente no GitHub.</p></div>

@@ -1,0 +1,547 @@
+{
+ "Anbernic RG ARC-D": {
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "2048",
+   "glibc": "2.40"
+  }
+ },
+ "Anbernic RG ARC-S": {
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Anbernic RG353 M/V/P": {
+  "ArkOS": {
+   "abi": "aarch64+armhf",
+   "ram": "2048",
+   "glibc": "2.30"
+  }
+ },
+ "Anbernic RG353 VS/PS": {
+  "ArkOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Anbernic RG351MP": {
+  "ArkOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  },
+  "AmberELEC": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "TheRA": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  }
+ },
+ "Anbernic RG503": {
+  "ArkOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Anbernic RG552": {
+  "AmberELEC": {
+   "abi": "aarch64+armhf",
+   "ram": "4096",
+   "glibc": "2.38"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "4096",
+   "glibc": "2.40"
+  }
+ },
+ "Anbernic RGCUBEXX": {
+  "muOS": {
+   "abi": "aarch64+armhf",
+   "ram": "",
+   "glibc": "2.38"
+  },
+  "Knulli": {
+   "abi": "aarch64+armhf",
+   "ram": "",
+   "glibc": "2.38"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "",
+   "glibc": "2.40"
+  }
+ },
+ "Anbernic RG40XX H": {
+  "muOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "Knulli": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Anbernic RG40XX V": {
+  "muOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "Knulli": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Anbernic RG35XX PLUS": {
+  "muOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "Knulli": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Anbernic RG35XX H": {
+  "muOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "Knulli": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Anbernic RG35XX SP": {
+  "muOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "Knulli": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Anbernic RG34XX": {
+  "muOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "Knulli": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Anbernic RG34XX SP": {
+  "muOS": {
+   "abi": "aarch64+armhf",
+   "ram": "2048",
+   "glibc": "2.38"
+  },
+  "Knulli": {
+   "abi": "aarch64+armhf",
+   "ram": "2048",
+   "glibc": "2.38"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "2048",
+   "glibc": "2.40"
+  }
+ },
+ "Anbernic RG28XX": {
+  "muOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "Knulli": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Anbernic RG351P/M": {
+  "ArkOS (Wummle)": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  },
+  "AmberELEC": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Anbernic RG351V": {
+  "ArkOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  },
+  "AmberELEC": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Powkiddy RGB10": {
+  "ArkOS": {
+   "abi": "aarch64+armhf",
+   "ram": "",
+   "glibc": "2.30"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "",
+   "glibc": "2.40"
+  }
+ },
+ "Powkiddy RGB20S": {
+  "AmberELEC": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  }
+ },
+ "Powkiddy RGB30": {
+  "ArkOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Powkiddy RK2023": {
+  "ArkOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Powkiddy X55": {
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "2048",
+   "glibc": "2.40"
+  }
+ },
+ "Powkiddy RGB10MAX3": {
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Powkiddy RGB10MAX3 Pro": {
+  "ROCKNIX": {
+   "abi": "aarch64",
+   "ram": "2048",
+   "glibc": "2.40"
+  }
+ },
+ "Hardkernel ODROID GO Advance": {
+  "ArkOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  },
+  "AmberELEC": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "EmuELEC": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Hardkernel ODROID GO Super": {
+  "ArkOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  },
+  "AmberELEC": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "EmuELEC": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "Hardkernel ODROID GO Ultra": {
+  "ArkOS": {
+   "abi": "aarch64",
+   "ram": "2048",
+   "glibc": "2.30"
+  },
+  "AmberELEC": {
+   "abi": "aarch64",
+   "ram": "2048",
+   "glibc": "2.38"
+  },
+  "EmuELEC": {
+   "abi": "aarch64",
+   "ram": "2048",
+   "glibc": "2.30"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64",
+   "ram": "2048",
+   "glibc": "2.40"
+  }
+ },
+ "Gameforce Ace": {
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "8192",
+   "glibc": "2.40"
+  }
+ },
+ "Gameforce Chi": {
+  "ArkOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  },
+  "EmuELEC": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  }
+ },
+ "TrimUI Smart Pro": {
+  "TrimUI": {
+   "abi": "aarch64",
+   "ram": "1024",
+   "glibc": "2.33"
+  },
+  "KNULLI": {
+   "abi": "aarch64",
+   "ram": "1024",
+   "glibc": "2.38"
+  }
+ },
+ "TrimUI Brick": {
+  "TrimUI": {
+   "abi": "aarch64",
+   "ram": "1024",
+   "glibc": "2.33"
+  },
+  "KNULLI": {
+   "abi": "aarch64",
+   "ram": "1024",
+   "glibc": "2.38"
+  }
+ },
+ "Retroid Pocket 5": {
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "8192",
+   "glibc": "2.40"
+  },
+  "Batocera": {
+   "abi": "aarch64+armhf",
+   "ram": "8192",
+   "glibc": "2.30"
+  }
+ },
+ "Retroid Pocket Mini": {
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "6144",
+   "glibc": "2.40"
+  },
+  "Batocera": {
+   "abi": "aarch64+armhf",
+   "ram": "6144",
+   "glibc": "2.30"
+  }
+ },
+ "GKD Bubble": {
+  "EMUELEC": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  }
+ },
+ "SteamDeck": {
+  "RetroDECK": {
+   "abi": "",
+   "ram": "16384",
+   "glibc": "2.30"
+  },
+  "Batocera": {
+   "abi": "",
+   "ram": "16384",
+   "glibc": "2.30"
+  }
+ },
+ "XU10 Retro Handheld": {
+  "ArkOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  },
+  "AmberELEC": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "R33S Retro Handheld": {
+  "ArkOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  },
+  "AmberELEC": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "R35S Retro Handheld": {
+  "ArkOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  },
+  "AmberELEC": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ },
+ "R36S Retro Handheld": {
+  "ArkOS": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.30"
+  },
+  "AmberELEC": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.38"
+  },
+  "ROCKNIX": {
+   "abi": "aarch64+armhf",
+   "ram": "1024",
+   "glibc": "2.40"
+  }
+ }
+}
