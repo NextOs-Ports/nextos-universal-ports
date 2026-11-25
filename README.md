@@ -18,6 +18,8 @@
 
 ## Catálogo
 
+Ports universais, desenvolvidos para atender à maioria dos portáteis Linux ARM. Confira os requisitos de cada jogo e use os dados da sua própria cópia.
+
 Busque pelo nome do jogo, filtre pela plataforma de origem ou pela arquitetura do port e abra os detalhes para conferir a edição do jogo exigida. Os downloads do site apontam para os ZIPs de cada versão nas Releases do GitHub.
 
 | Plataforma de origem | Guias dos ports |
