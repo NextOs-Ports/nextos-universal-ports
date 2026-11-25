@@ -1,140 +1,64 @@
 <div align="center">
 
-# NEXTOS UNIVERSAL PORTS
+# NextOS Ports
 
-**Ports universais de jogos para portáteis Linux AArch64**
-NextOS · ArkOS / R36S · ROCKNIX · muOS · PortMaster
+**Ports para portáteis Linux com dados da sua própria cópia do jogo**
 
-[![Releases](https://img.shields.io/github/v/release/NextOs-Ports/nextos-universal-ports?label=%C3%BAltima%20release&sort=date)](https://github.com/NextOs-Ports/nextos-universal-ports/releases)
-[![Downloads](https://img.shields.io/github/downloads/NextOs-Ports/nextos-universal-ports/total?label=downloads)](https://github.com/NextOs-Ports/nextos-universal-ports/releases)
-[![Site](https://img.shields.io/badge/site-nextos--ports.github.io-22c55e)](https://nextos-ports.github.io/nextos-universal-ports/)
-[![Discord](https://img.shields.io/badge/Discord-comunidade-5865F2?logo=discord&logoColor=white)](https://discord.gg/DHfY62eDNN)
+[![Catálogo](https://img.shields.io/badge/Cat%C3%A1logo-NextOS%20Ports-79f0cc)](https://nextos-ports.github.io/nextos-universal-ports/)
+[![Publicação do catálogo](https://github.com/NextOs-Ports/nextos-universal-ports/actions/workflows/site.yml/badge.svg)](https://github.com/NextOs-Ports/nextos-universal-ports/actions/workflows/site.yml)
+[![Downloads](https://img.shields.io/github/downloads/NextOs-Ports/nextos-universal-ports/total?label=Downloads)](https://github.com/NextOs-Ports/nextos-universal-ports/releases)
+[![Discord](https://img.shields.io/badge/Discord-NextOS-5865F2?logo=discord&logoColor=white)](https://discord.gg/DHfY62eDNN)
 
-[Site](https://nextos-ports.github.io/nextos-universal-ports/) · [Ports Android](#-ports-android) · [Ports iOS](#-ports-ios) · [Ports Switch](#-ports-switch) · [Ports GameCube](#-ports-gamecube) · [Ports Vita](#-ports-vita) · [Ferramentas](#%EF%B8%8F-ferramentas--tools) · [Instalação](#-instalação--install) · [Aviso legal](#%EF%B8%8F-aviso-legal--legal-notice)
+[Explorar catálogo](https://nextos-ports.github.io/nextos-universal-ports/#catalogo) · [Como instalar](#como-instalar) · [Suporte](#suporte-no-discord) · [English](#english)
+
+<a href="https://nextos-ports.github.io/nextos-universal-ports/?port=gow-collection-vita"><img src="ports-vita/gow-collection-vita/gow-collection-vita.screenshot.jpg" alt="God of War Collection rodando no port NextOS" width="45%"></a>
+<a href="https://nextos-ports.github.io/nextos-universal-ports/?port=gt4"><img src="ports-ps2/gt4/gt4.screenshot.jpg" alt="Gran Turismo 4 rodando no port NextOS" width="45%"></a>
 
 </div>
 
----
+## Catálogo
 
-## 📖 Sobre / About
+Busque pelo nome do jogo, filtre pela plataforma de origem ou pela arquitetura do port e abra os detalhes para conferir a edição do jogo exigida. Os downloads do site apontam para os ZIPs de cada versão nas Releases do GitHub.
 
-Cada port é um pacote pronto para o menu de ports do aparelho. O pacote traz o carregador
-nativo, a documentação e o instalador; **o jogo não vem junto**. Na primeira abertura o
-instalador extrai os dados da cópia legítima do próprio usuário (APK/XAPK, IPA ou dump),
-valida e instala de forma transacional. Uma pasta por jogo, organizada pela plataforma de
-origem; os pacotes ficam nas [Releases](https://github.com/NextOs-Ports/nextos-universal-ports/releases), com a tag `<jogo>-vX.Y.Z`.
+| Plataforma de origem | Guias dos ports |
+| --- | --- |
+| Android | [ports-android](ports-android/) |
+| iOS | [ports-ios](ports-ios/) |
+| PlayStation Vita | [ports-vita](ports-vita/) |
+| PlayStation 2 | [ports-ps2](ports-ps2/) |
+| GameCube | [ports-gamecube](ports-gamecube/) |
+| Wii | [ports-wii](ports-wii/) |
+| Nintendo Switch | [ports-switch](ports-switch/) |
+| PC | [ports-pc](ports-pc/) |
+| Web | [ports-web](ports-web/) |
 
-Each port is a ready-to-use package for the device's ports menu: native loader, docs and
-installer. **The game itself is not included.** On first launch the installer extracts
-the data from the user's own legitimate copy (APK/XAPK, IPA or dump), validates it and
-installs it transactionally. One folder per game, organized by source platform; packages
-live in [Releases](https://github.com/NextOs-Ports/nextos-universal-ports/releases), tagged `<game>-vX.Y.Z`.
+A plataforma de origem identifica a edição que fornece os dados do jogo. Consulte o guia do port para saber quais requisitos e aparelhos foram verificados.
 
-## 🌐 Catálogo NextOS Ports / NextOS Ports catalog
+## Como instalar
 
-- **Site:** <https://nextos-ports.github.io/nextos-universal-ports/> — busque por jogo, filtre por plataforma e baixe o ZIP da release. O catálogo é atualizado após publicações no GitHub.
-- **Catálogo JSON:** <https://nextos-ports.github.io/nextos-universal-ports/ports.json> — títulos, imagens, versões e links de download para integração.
-- **Dentro do app PortMaster:** baixe [`040_nextos.source.json`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/040_nextos.source.json) e coloque em `PortMaster/config/` (ao lado de `020_portmaster.source.json`):
-  - ArkOS e similares: `/roms/ports/PortMaster/config/` (ou `/roms/tools/PortMaster/config/`)
-  - ROCKNIX, muOS, Knulli: `.local/share/PortMaster/config/`
-  
-  Na próxima abertura o PortMaster lista e instala estes ports como se fossem do catálogo oficial.
-- **Release rolante [`ports-latest`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/ports-latest):** a versão selecionada no manifesto de distribuição com nome fixo `<port>.zip`, mais `ports.json` e `images.zip` (catálogo PortMasterV3). As releases versionadas `<jogo>-vX.Y.Z` continuam existindo para histórico.
+1. Abra o jogo no [catálogo](https://nextos-ports.github.io/nextos-universal-ports/#catalogo), leia o guia e baixe o ZIP correspondente. A release também oferece SHA-256 quando disponível.
+2. Siga os caminhos do guia para instalar o port e copiar os arquivos originais. O arquivo exigido varia por jogo e pode ser APK, IPA, imagem de disco ou arquivos de PC.
+3. Abra o port pelo menu do aparelho. Quando o pacote usa o NXExtract, aguarde o preparo inicial. Ao atualizar, preserve os dados preparados, as configurações e os saves indicados no guia.
 
-The website updates its catalog from GitHub Releases. To install compatible ports through PortMaster, place `040_nextos.source.json` in `PortMaster/config/`. The rolling release contains the ZIPs selected in the distribution manifest and the PortMasterV3 catalog.
+O [NXExtract](tools/nxextract/) prepara os dados locais usados pelos ports. Para consultar a fonte legada no aplicativo PortMaster, use o [arquivo de configuração](https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/040_nextos.source.json) em `PortMaster/config/`. Os ZIPs atuais do site ficam nas [Releases versionadas](https://github.com/NextOs-Ports/nextos-universal-ports/releases).
 
-## 📥 Instalação / Install
+## Suporte no Discord
 
-1. Baixe o ZIP do port no catálogo e confira o `.sha256` quando estiver disponível na release.
-2. Copie o conteúdo para a pasta de ports do aparelho (`ports/` no PortMaster/ArkOS, `roms/ports` no NextOS).
-3. Coloque o APK/XAPK (ou IPA/dump) **original e completo** do jogo onde o `INSTALLATION.md` da pasta do jogo indicar.
-4. Abra o port pelo menu. A primeira abertura extrai e valida os dados; as seguintes vão direto ao jogo.
-5. Para sair com segurança: `SELECT + START`.
+[Entre no servidor da NextOS](https://discord.gg/DHfY62eDNN) e use o [**#port-help**](https://discord.com/channels/1463624170662531082/1531881380349480970) para pedir ajuda ou relatar um bug. Inclua o jogo, a versão do port, o modelo do aparelho, o firmware e o log do erro, se houver. A seção [Suporte do catálogo](https://nextos-ports.github.io/nextos-universal-ports/#suporte) e os detalhes de cada port levam ao mesmo canal.
 
-Cada pasta tem um `README.md` com controles e requisitos e, quando necessário, um `INSTALLATION.md` detalhado.
+## Publicação e integração
 
-Download the port ZIP from the catalog, verify the `.sha256` when provided, copy it to
-the device's ports folder, place your own complete APK/XAPK (or IPA/dump) where the game's
-`INSTALLATION.md` says, and launch from the menu. `SELECT + START` exits safely.
+O [catálogo JSON](https://nextos-ports.github.io/nextos-universal-ports/ports.json) oferece títulos, versões, requisitos registrados e URLs dos downloads para integração. O [workflow de publicação](.github/workflows/site.yml) sincroniza o site com as Releases.
 
-## 🤖 Ports Android
+1. Para um port novo, adicione `ports-<plataforma>/<jogo>/README.md` com o título do jogo e seu guia. A imagem opcional usa `<jogo>.screenshot.jpg`.
+2. Publique a release `<jogo>-vX.Y.Z` com o anexo `<jogo>.zip`. Use o slug do port já cadastrado nas atualizações.
+3. A sincronização atualiza o site automaticamente. Consulte as [regras de nomes e exceções](buildtools/README.md) para os pacotes antigos.
 
-| Jogo | Pasta | Release de referência | Versões | Arquitetura | Sistemas |
-|---|---|---|---|---|---|
-| **Angry Birds Classic** | [`angrybirds`](ports-android/angrybirds/) | [`angrybirds-v1.1.9`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/angrybirds-v1.1.9) | 8 | ARMv7 + AArch64 | NextOS, ArkOS / R36S, PortMaster |
-| **Beach Buggy Racing + Beach Buggy Racing 2** | [`beachbuggy`](ports-android/beachbuggy/) | [`beachbuggy-v1.1.2-bbracing2`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/beachbuggy-v1.1.2-bbracing2) | 4 | AArch64 | NextOS, ArkOS / R36S |
-| **Blossom Tales: The Sleeping King** | [`blossomtales`](ports-android/blossomtales/) | [`blossomtales-v1.4.5`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/blossomtales-v1.4.5) | 2 | AArch64 | NextOS, ArkOS / R36S, PortMaster |
-| **Bomb Chicken + Gunbrick Reloaded** | [`bombchicken-gunbrick`](ports-android/bombchicken-gunbrick/) | [`bombchicken-v1.1.7`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/bombchicken-v1.1.7) | 6 | AArch64 | NextOS, ArkOS / R36S, PortMaster |
-| **Castle of Illusion Starring Mickey Mouse** | [`castleofillusion`](ports-android/castleofillusion/) | [`castleofillusion-v1.0.1`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/castleofillusion-v1.0.1) | 1 | AArch64 | NextOS, ArkOS / R36S, PortMaster |
-| **Chrono Trigger** | [`chrono`](ports-android/chrono/) | [`chrono-v1.1.2`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/chrono-v1.1.2) | 11 | ARMv7 + AArch64 | NextOS, ArkOS / R36S, PortMaster, ROCKNIX, muOS |
-| **Dead Trigger** | [`deadtrigger`](ports-android/deadtrigger/) | [`deadtrigger-v1.1.1`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/deadtrigger-v1.1.1) | 9 | ARMv7 + AArch64 | NextOS, ArkOS / R36S, PortMaster |
-| **Door Kickers: Action Squad** | [`actionsquad`](ports-android/actionsquad/) | [`actionsquad-v1.0.5`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/actionsquad-v1.0.5) | 8 | AArch64 | NextOS, ArkOS / R36S, PortMaster |
-| **Final Fantasy IV** | [`ff4`](ports-android/ff4/) | [`ff4-1.0.4_ff4a-1.0.6`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/ff4-1.0.4_ff4a-1.0.6) | 1 | AArch64 | NextOS, ArkOS / R36S, PortMaster, ROCKNIX |
-| **Forager Nuclear** | [`forager`](ports-android/forager/) | [`forager-v1.0.4`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/forager-v1.0.4) | 5 | ARMv7 + AArch64 | NextOS, ArkOS / R36S, PortMaster |
-| **Freedom Planet 2** | [`fp2`](ports-android/fp2/) | [`fp2-v1.1.5`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/fp2-v1.1.5) | 3 | AArch64 | NextOS, ArkOS / R36S, PortMaster, ROCKNIX, muOS |
-| **Geometry Dash + Geometry Dash SubZero** | [`geometrydash`](ports-android/geometrydash/) | [`gdsubzero-v1.0.3`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/gdsubzero-v1.0.3) | 4 | AArch64 | NextOS, ArkOS / R36S |
-| **Hitman GO** | [`hitmango`](ports-android/hitmango/) | [`hitmango-v1.2.2`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/hitmango-v1.2.2) | 5 | AArch64 | NextOS, ArkOS / R36S |
-| **Horizon Chase** | [`horizonchase`](ports-android/horizonchase/) | [`horizonchase-v1.2.2`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/horizonchase-v1.2.2) | 10 | AArch64 | NextOS, ArkOS / R36S, PortMaster, ROCKNIX |
-| **Huntdown** | [`huntdown`](ports-android/huntdown/) | [`huntdown-v1.0.7`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/huntdown-v1.0.7) | 3 | AArch64 | NextOS, ArkOS / R36S, PortMaster, ROCKNIX, muOS |
-| **Magic Rampage** | [`magicrampage`](ports-android/magicrampage/) | [`magicrampage-v1.1.9`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/magicrampage-v1.1.9) | 11 | AArch64 | NextOS, ArkOS / R36S, PortMaster |
-| **Merchant of the Skies** | [`merchantskies`](ports-android/merchantskies/) | [`merchantskies-v1.0.0`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/merchantskies-v1.0.0) | 1 | AArch64 | NextOS, ArkOS / R36S, PortMaster |
-| **Nameless Cat** | [`namelesscat`](ports-android/namelesscat/) | [`namelesscat-v1.2.8`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/namelesscat-v1.2.8) | 2 | AArch64 | NextOS, ArkOS / R36S, PortMaster, ROCKNIX, muOS |
-| **Oceanhorn: Chronos Dungeon 4.0b54** | [`oceanhorn`](ports-android/oceanhorn/) | [`oceanhorn-v2.0.1`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/oceanhorn-v2.0.1) | 9 | AArch64 | NextOS, ArkOS / R36S, PortMaster, ROCKNIX, muOS |
-| **Off The Road** | [`offtheroad`](ports-android/offtheroad/) | [`offtheroad-v1.0.5`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/offtheroad-v1.0.5) | 4 | AArch64 | NextOS, ArkOS / R36S, PortMaster, ROCKNIX |
-| **Party Hard GO** | [`partyhard`](ports-android/partyhard/) | [`partyhard-v1.0.8-rc1`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/partyhard-v1.0.8-rc1) | 7 | AArch64 | NextOS, ArkOS / R36S, PortMaster, ROCKNIX, muOS |
-| **Prizefighters 2 v1.09.3** | [`prizefighters2`](ports-android/prizefighters2/) | [`prizefighters2-v1.0.3`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/prizefighters2-v1.0.3) | 4 | ARMv7 + AArch64 | NextOS, ArkOS / R36S, PortMaster, muOS |
-| **Retro City Rampage DX** | [`rcrdx`](ports-android/rcrdx/) | [`rcrdx-v1.0.0`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/rcrdx-v1.0.0) | 1 | AArch64 | NextOS, ArkOS / R36S, PortMaster |
-| **Sally Face** | [`sallyface`](ports-android/sallyface/) | [`sallyface-v1.1.4`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/sallyface-v1.1.4) | 2 | AArch64 | NextOS, ArkOS / R36S, PortMaster |
-| **ScourgeBringer 1.61.x** | [`scourgebringer`](ports-android/scourgebringer/) | [`scourgebringer-v1.0.0`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/scourgebringer-v1.0.0) | 2 | AArch64 | NextOS, ArkOS / R36S, PortMaster |
-| **Skateboard Party 3** | [`skate3`](ports-android/skate3/) | [`skate3-v1.0.0`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/skate3-v1.0.0) | 1 | AArch64 | NextOS, ArkOS / R36S, PortMaster |
-| **Sonic The Hedgehog 4: Episode II** | [`sonic4ep2`](ports-android/sonic4ep2/) | [`sonic4ep2-v6`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/sonic4ep2-v6) | 1 | ARMv7 + AArch64 | NextOS, ArkOS / R36S, PortMaster |
-| **Star Wars: Knights of the Old Republic** | [`kotor`](ports-android/kotor/) | [`kotor-v1.1.7`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/kotor-v1.1.7) | 3 | ARMv7 + AArch64 | NextOS, ArkOS / R36S, PortMaster, muOS |
-| **Stardew Valley** | [`stardewvalley`](ports-android/stardewvalley/) | [`stardewvalley-v1.1.8`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/stardewvalley-v1.1.8) | 10 | AArch64 | NextOS, ArkOS / R36S, PortMaster, ROCKNIX, muOS |
-| **Streets of Rage 4** | [`sor4`](ports-android/sor4/) | [`sor4-v2.0.2`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/sor4-v2.0.2) | 3 | AArch64 | NextOS, ArkOS / R36S, PortMaster |
-| **Summertime Saga Preview** | [`summertimesaga`](ports-android/summertimesaga/) | [`summertimesaga-v1.1.1`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/summertimesaga-v1.1.1) | 2 | AArch64 | NextOS, ArkOS / R36S, PortMaster, ROCKNIX |
-| **Suzy Cube** | [`suzycube`](ports-android/suzycube/) | [`suzycube-v1.1.12`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/suzycube-v1.1.12) | 11 | AArch64 | NextOS, ArkOS / R36S, PortMaster |
-| **Swordigo** | [`swordigo`](ports-android/swordigo/) | [`swordigo-v1.0.15`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/swordigo-v1.0.15) | 2 | AArch64 | NextOS, ArkOS / R36S, PortMaster, ROCKNIX, muOS |
-| **Tearscape** | [`tearscape`](ports-android/tearscape/) | [`tearscape-v0.2.18`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/tearscape-v0.2.18) | 3 | AArch64 | NextOS, ArkOS / R36S, PortMaster, ROCKNIX, muOS |
-| **Terraria Android 1.4.5&#46;6.4 / 1.4.5&#46;8.5** | [`terraria`](ports-android/terraria/) | [`terraria-v2.0.2`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/terraria-v2.0.2) | 11 | AArch64 | NextOS, ArkOS / R36S, PortMaster, muOS |
-| **The Amazing Spider-Man 2 1.2.7d /** | [`tasm2`](ports-android/tasm2/) | [`tasm2-v1.1.9`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/tasm2-v1.1.9) | 7 | ARMv7 + AArch64 | NextOS, ArkOS / R36S, PortMaster, ROCKNIX, muOS |
-| **Tightrope Theatre 1.0.5-test.1** | [`tightrope`](ports-android/tightrope/) | [`tightrope-v1.0.8`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/tightrope-v1.0.8) | 6 | AArch64 | NextOS, ArkOS / R36S, PortMaster, ROCKNIX |
-| **Titan Souls** | [`titansouls`](ports-android/titansouls/) | [`titansouls-v1.0.7`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/titansouls-v1.0.7) | 9 | ARMv7 + AArch64 | NextOS, ArkOS / R36S, PortMaster, ROCKNIX |
+## English
 
-## 🍎 Ports iOS
+Browse the [NextOS Ports catalog](https://nextos-ports.github.io/nextos-universal-ports/) to find a port, check its supported game edition and download the versioned ZIP. Supply the files from your own copy. Use the filters to select the source platform or ARM architecture.
 
-Rodam o executável original do iPhone (ARMv7) com um runtime próprio; você fornece o seu `.ipa`. / Run the original iPhone executable (ARMv7) through a purpose-built runtime; you provide your own `.ipa`.
-
-| Jogo | Pasta | Release de referência | Versões | Arquitetura | Sistemas |
-|---|---|---|---|---|---|
-| **Resident Evil 4 Platinum (iOS 1.04.10)** | [`residentevil4-ios`](ports-ios/residentevil4-ios/) | [`residentevil4-ios-v1.0.2`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/residentevil4-ios-v1.0.2) | 1 | ARMv7 (ARMhf) | ArkOS / R36S (dArkOS), PortMaster |
-
-## 🎮 Ports Switch
-
-Em breve / coming soon. Pasta: [`ports-switch/`](ports-switch/)
-
-## 🟣 Ports GameCube
-
-Em breve / coming soon. Pasta: [`ports-gamecube/`](ports-gamecube/)
-
-## 🎴 Ports Vita
-
-Em breve / coming soon. Pasta: [`ports-vita/`](ports-vita/)
-
-## 🛠️ Ferramentas / Tools
-
-| Ferramenta | Pasta | Release de referência | Versões | Arquitetura | Sistemas |
-|---|---|---|---|---|---|
-| **NXExtract** | [`nxextract`](tools/nxextract/) | [`nxextract-v1.1.2`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/nxextract-v1.1.2) | 3 | AArch64 | NextOS, ArkOS / R36S |
-
-## 🧭 Legenda / Legend
-
-- **Arquitetura**: `AArch64` = pacote 64-bit; `ARMv7 + AArch64` = o pacote também atende firmwares 32-bit (ARMHF).
-- **Sistemas**: onde o port foi validado. `NextOS` inclui os aparelhos Amlogic Mali-450 (NextOS Retro Elite); `ArkOS / R36S` cobre os RK3326/RK3566 e derivados (dArkOS, AmberELEC); `PortMaster` indica pacote compatível com HarbourMaster.
-- **Versões**: quantidade de releases publicadas para o jogo. Prefira sempre a mais recente.
-
-## 🐞 Problemas / Issues
-
-Abra uma [issue](https://github.com/NextOs-Ports/nextos-universal-ports/issues/new/choose) informando aparelho, firmware, jogo, versão do port e o log gerado na pasta do port. Pedidos de jogos são bem-vindos na mesma página.
+For help or bug reports, [join the NextOS Discord](https://discord.gg/DHfY62eDNN) and open [#port-help](https://discord.com/channels/1463624170662531082/1531881380349480970). Include the port version, device, firmware and error log when available.
 
 ## ⚖️ Aviso legal / Legal notice
 

@@ -127,7 +127,7 @@
   "key": "castleofillusion",
   "title": "Castle of Illusion Starring Mickey Mouse",
   "folder": "ports-android/castleofillusion",
-  "release_tag": "castleofillusion-v1.0.1",
+  "release_tag": "castleofillusion-v1.0.2",
   "asset": "castleofillusion.zip",
   "portmaster": true,
   "genres": [
@@ -138,7 +138,12 @@
   "screenshot_source": "local",
   "first_seen": "2026-08-05",
   "legacy_downloads": 125,
-  "desc": "Castle of Illusion Starring Mickey Mouse — native AArch64 port for Linux handhelds (BYO game data)"
+  "desc": "Castle of Illusion Starring Mickey Mouse — native AArch64 port for Linux handhelds (BYO game data)",
+  "arch": [
+   "aarch64"
+  ],
+  "inst": "Use os arquivos da edição Android descrita no guia.",
+  "note": "Adiciona seleção de idioma e atualiza o NXExtract."
  },
  {
   "key": "chrono",
@@ -303,7 +308,7 @@
   "key": "horizonchase",
   "title": "Horizon Chase",
   "folder": "ports-android/horizonchase",
-  "release_tag": "horizonchase-v1.2.2",
+  "release_tag": "horizonchase-v1.3.0",
   "asset": "horizonchase.zip",
   "portmaster": true,
   "genres": [
@@ -315,7 +320,12 @@
   "screenshot_source": "zip",
   "first_seen": "2026-08-06",
   "legacy_downloads": 423,
-  "desc": "Horizon Chase 2.6.9 universal AArch64 Unity/IL2CPP loader for NextOS, ArkOS/R36S and PortMaster."
+  "desc": "Horizon Chase 2.6.9 universal AArch64 Unity/IL2CPP loader for NextOS, ArkOS/R36S and PortMaster.",
+  "arch": [
+   "aarch64"
+  ],
+  "inst": "Use a cópia original de Horizon Chase Android 2.6.9 para ARM64.",
+  "note": "Corrige a tela preta no TrimUI Smart Pro com muOS e adiciona aceleração manual opcional."
  },
  {
   "key": "huntdown",
@@ -747,7 +757,7 @@
   "key": "residentevil4-ios",
   "title": "Resident Evil 4 Platinum (iOS)",
   "folder": "ports-ios/residentevil4-ios",
-  "release_tag": "residentevil4-ios-v1.0.2",
+  "release_tag": "residentevil4-ios-v1.0.6",
   "asset": "residentevil4-ios.zip",
   "portmaster": true,
   "platform": "ios",
@@ -761,7 +771,11 @@
   "first_seen": "2026-09-21",
   "legacy_downloads": 0,
   "desc": "Resident Evil 4 Platinum (iOS 1.04.10) running the original ARMv7 iPhone executable on ARMhf PortMaster handhelds (Framework V6). Bring your own IPA.",
-  "inst": "Coloque o seu .ipa do Resident Evil 4 Platinum 1.04.10 em residentevil4-ios/gamedata/ e abra o port; o NXExtract extrai na primeira abertura. / Put your Resident Evil 4 Platinum 1.04.10 .ipa in residentevil4-ios/gamedata/ and launch; NXExtract extracts it on first launch."
+  "inst": "Use o IPA original de Resident Evil 4 Platinum 1.04.10. O port requer suporte a ARMHF de 32 bits.",
+  "arch": [
+   "armhf"
+  ],
+  "note": "Atualiza os controles e adiciona uma saída de áudio alternativa no dArkOS."
  },
  {
   "key": "gow-collection-vita",
@@ -1030,5 +1044,177 @@
   "desc": "Port da edição Android de The Messenger para Linux ARM64.",
   "inst": "Use somente o APK original e completo da edição Android 1.2 (versionCode 1), sem splits nem OBB.",
   "note": "Controles e gameplay validados no R36T/K36S com dArkOS, usando dados já preparados."
+ },
+ {
+  "key": "vampiresurvivors",
+  "title": "Vampire Survivors",
+  "folder": "ports-pc/vampiresurvivors",
+  "platform": "pc",
+  "screenshot": "vampiresurvivors.screenshot.jpg",
+  "genres": [
+   "action"
+  ],
+  "portmaster": null,
+  "desc": "Port de Vampire Survivors para portáteis Linux.",
+  "release_tag": "vampiresurvivors-v1.0.2",
+  "asset": "vampiresurvivors.zip",
+  "arch": [
+   "aarch64"
+  ],
+  "inst": "Use os arquivos Windows da edição Phaser 1.5.101 do ramo old-engine da Steam.",
+  "note": ""
+ },
+ {
+  "key": "cotm-switch",
+  "title": "Bloodstained: Curse of the Moon",
+  "folder": "ports-switch/cotm-switch",
+  "platform": "switch",
+  "screenshot": "cotm-switch.screenshot.jpg",
+  "genres": [
+   "platformer"
+  ],
+  "portmaster": null,
+  "desc": "Port de Bloodstained: Curse of the Moon para portáteis Linux.",
+  "release_tag": "cotm-switch-v1.0.7",
+  "asset": "cotm-switch.zip",
+  "arch": [
+   "aarch64"
+  ],
+  "inst": "Use a cópia original de Switch 1.0.0 em NSP. Consulte o guia para os requisitos do preparo.",
+  "note": "A instalação limpa foi validada no dArkOS."
+ },
+ {
+  "key": "ritas-rewind",
+  "title": "Mighty Morphin Power Rangers: Rita's Rewind",
+  "folder": "ports-switch/ritas-rewind",
+  "platform": "switch",
+  "screenshot": "ritas-rewind.screenshot.jpg",
+  "genres": [
+   "action"
+  ],
+  "portmaster": null,
+  "desc": "Port de Mighty Morphin Power Rangers: Rita's Rewind para portáteis Linux.",
+  "release_tag": "ritas-rewind-v0.1.0",
+  "asset": "ritas-rewind.zip",
+  "arch": [
+   "aarch64"
+  ],
+  "inst": "Use a base e a atualização v458752 da sua cópia Switch. Consulte o guia para os arquivos exigidos e o tempo de preparo.",
+  "note": "O preparo inicial pode demorar várias horas."
+ },
+ {
+  "key": "mombo",
+  "title": "Super Mombo Quest",
+  "folder": "ports-android/mombo",
+  "platform": "android",
+  "screenshot": "mombo.screenshot.jpg",
+  "genres": [
+   "platformer"
+  ],
+  "portmaster": null,
+  "desc": "Port de Super Mombo Quest para portáteis Linux.",
+  "release_tag": "mombo-v1.0.1",
+  "asset": "mombo.zip",
+  "arch": [
+   "aarch64"
+  ],
+  "inst": "Use um APK, XAPK, APKM ou APKS original da versão Android 1.2.43.",
+  "note": "Esta versão corrige o golpe para baixo no tutorial."
+ },
+ {
+  "key": "acpirates",
+  "title": "Assassin's Creed Pirates",
+  "folder": "ports-android/acpirates",
+  "platform": "android",
+  "screenshot": "acpirates.screenshot.jpg",
+  "genres": [
+   "adventure"
+  ],
+  "portmaster": null,
+  "desc": "Port de Assassin's Creed Pirates para portáteis Linux.",
+  "release_tag": "acpirates-v1.0.1",
+  "asset": "acpirates.zip",
+  "arch": [
+   "armhf"
+  ],
+  "inst": "Use a edição Android 2.9.1. O guia indica o APK e a expansão OBB exigidos.",
+  "note": "Testado no dArkOS e no NextOS com Mali-450."
+ },
+ {
+  "key": "brotato",
+  "title": "Brotato: Premium",
+  "folder": "ports-android/brotato",
+  "platform": "android",
+  "screenshot": "brotato.screenshot.jpg",
+  "genres": [
+   "action"
+  ],
+  "portmaster": null,
+  "desc": "Port de Brotato: Premium para portáteis Linux.",
+  "release_tag": "brotato-v1.0.8",
+  "asset": "brotato.zip",
+  "arch": [
+   "aarch64"
+  ],
+  "inst": "Use o pacote Android original Brotato: Premium 1.3.489 para ARM64.",
+  "note": "Inclui perfis gráficos e ajustes de memória para aparelhos com pouca RAM."
+ },
+ {
+  "key": "mmw",
+  "title": "Mega Man W",
+  "folder": "ports-android/mmw",
+  "platform": "android",
+  "screenshot": "mmw.screenshot.jpg",
+  "genres": [
+   "platformer"
+  ],
+  "portmaster": null,
+  "desc": "Port de Mega Man W para portáteis Linux.",
+  "release_tag": "mmw-v1.0.4",
+  "asset": "mmw.zip",
+  "arch": [
+   "aarch64"
+  ],
+  "inst": "Use a cópia original de Mega Man W 2 em APK, APKM, APKS ou XAPK.",
+  "note": "",
+  "availability": "free"
+ },
+ {
+  "key": "strangerthings3",
+  "title": "Stranger Things 3: The Game",
+  "folder": "ports-android/strangerthings3",
+  "platform": "android",
+  "screenshot": "strangerthings3.screenshot.jpg",
+  "genres": [
+   "adventure"
+  ],
+  "portmaster": null,
+  "desc": "Port de Stranger Things 3: The Game para portáteis Linux.",
+  "release_tag": "strangerthings3-v1.0.2",
+  "asset": "strangerthings3.zip",
+  "arch": [
+   "aarch64"
+  ],
+  "inst": "Use o pacote original Android 1.4.7 para ARM64. Consulte o guia para os formatos aceitos.",
+  "note": ""
+ },
+ {
+  "key": "isaac-ios",
+  "title": "The Binding of Isaac: Rebirth (iOS)",
+  "folder": "ports-ios/isaac-ios",
+  "platform": "ios",
+  "screenshot": "isaac-ios.screenshot.jpg",
+  "genres": [
+   "action"
+  ],
+  "portmaster": null,
+  "desc": "Port de The Binding of Isaac: Rebirth (iOS) para portáteis Linux.",
+  "release_tag": "isaac-ios-v2.0.3",
+  "asset": "isaac-ios.zip",
+  "arch": [
+   "aarch64"
+  ],
+  "inst": "Use o IPA original da edição iOS 1.4. Consulte o guia para o build e o espaço necessário.",
+  "note": "Instalação limpa validada com NXExtract."
  }
 ]

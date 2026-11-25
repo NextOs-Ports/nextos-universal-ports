@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20261125">
-  <script defer src="app.js?v=20261125-2"></script>
+  <link rel="stylesheet" href="style.css?v=20261125-3">
+  <script defer src="app.js?v=20261125-3"></script>
 </head>
 <body>
   <a class="skip" href="#catalogo" data-t="skip">Ir para o catálogo</a>
@@ -24,6 +24,7 @@
         <a href="#catalogo" data-t="catalog">Catálogo</a>
         <a href="#atualizacoes" data-t="updates">Atualizações</a>
         <a href="#instalar" data-t="install">Como instalar</a>
+        <a href="#suporte" data-t="support">Suporte</a>
       </nav>
       <div class="header-actions">
         <a class="button button-quiet github" href="https://github.com/NextOs-Ports/nextos-universal-ports">GitHub <span aria-hidden="true">↗</span></a>
@@ -77,6 +78,9 @@
         <label><span data-t="installMode">Instalação</span><select id="install-mode">
           <option value="all" data-t="all">Todos</option><option value="portmaster">PortMaster</option><option value="manual" data-t="manual">Manual</option>
         </select></label>
+        <label><span data-t="architecture">Arquitetura</span><select id="architecture">
+          <option value="all" data-t="all">Todos</option><option value="aarch64">ARM64</option><option value="armhf">ARM 32 bits</option>
+        </select></label>
         <button type="button" class="button button-quiet" id="reset" data-t="reset">Limpar filtros</button>
       </div>
       <p id="results" class="results" role="status" data-t="loading">Carregando catálogo…</p>
@@ -105,6 +109,19 @@
         <p data-t="pmCopy">Baixe o arquivo da fonte e coloque em PortMaster/config/. Os ports compatíveis aparecerão quando você abrir o aplicativo novamente.</p>
         <a href="https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/040_nextos.source.json">040_nextos.source.json ↗</a>
       </details>
+    </section>
+    <section class="section support-panel" id="suporte" aria-labelledby="support-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="support-title" data-t="discordSupport">Suporte no Discord</h2>
+          <p data-t="supportCopy">Para pedir ajuda ou relatar um bug, use o canal #port-help.</p>
+        </div>
+      </div>
+      <p class="support-details" data-t="supportDetails">Inclua o nome e a versão do port, o modelo do aparelho, o firmware e o log do erro, se houver.</p>
+      <div class="support-actions">
+        <a class="button button-primary" href="https://discord.gg/DHfY62eDNN" target="_blank" rel="noopener noreferrer" data-t="joinDiscord">Entrar no servidor ↗</a>
+        <a class="button button-quiet" href="https://discord.com/channels/1463624170662531082/1531881380349480970" target="_blank" rel="noopener noreferrer" data-t="openHelp">Abrir #port-help ↗</a>
+      </div>
     </section>
   </main>
   <footer class="footer">

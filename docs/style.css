@@ -121,6 +121,10 @@ select { color: var(--text); min-height: 40px; max-width: 100%; border: 1px soli
 .compatibility summary { font-weight: 700; }
 .compatibility p { margin: 10px 0 8px; }
 .compatibility a, .dialog-link { color: var(--accent); }
+.support-panel { padding: clamp(18px, 4vw, 30px); background: linear-gradient(115deg, #152830, var(--panel) 70%); border: 1px solid #315750; border-radius: 12px; }
+.support-panel .section-heading { margin-bottom: 10px; }
+.support-details { color: var(--muted); font-size: 13px; }
+.support-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
 .footer { border-top: 1px solid var(--line); background: #0e1720; padding: 22px 0 25px; }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 22px; }
 .footer p, .footer nav { color: var(--muted); font-size: 12px; }
@@ -143,7 +147,7 @@ dialog::backdrop { background: #050b12cb; backdrop-filter: blur(4px); }
 @media (max-width: 720px) {
   .wrap { width: calc(100% - 28px); }
   .header-inner { min-height: 62px; flex-wrap: wrap; gap: 0 12px; padding-top: 8px; }
-  .nav { order: 3; width: 100%; justify-content: center; gap: 24px; padding: 6px 0 10px; }
+  .nav { order: 3; width: 100%; flex-wrap: wrap; justify-content: center; gap: 4px 16px; padding: 6px 0 10px; }
   .wordmark { font-size: 24px; }
   .header-actions .button { min-height: 34px; }
   .hero { margin-top: 14px; min-height: 380px; align-items: end; border-radius: 14px; }

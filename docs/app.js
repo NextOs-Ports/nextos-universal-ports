@@ -3,6 +3,10 @@
 const text = {
   pt: {
     skip: "Ir para o catálogo", catalog: "Catálogo", updates: "Atualizações", install: "Como instalar",
+    support: "Suporte", architecture: "Arquitetura", discordSupport: "Suporte no Discord",
+    supportCopy: "Para pedir ajuda ou relatar um bug, use o canal #port-help.",
+    supportDetails: "Inclua o nome e a versão do port, o modelo do aparelho, o firmware e o log do erro, se houver.",
+    joinDiscord: "Entrar no servidor ↗", openHelp: "Abrir #port-help ↗", reportBug: "Relatar bug no Discord ↗",
     heroLabel: "PORTS PARA PORTÁTEIS LINUX", heroLine1: "Jogue onde", heroLine2: "quiser.",
     heroCopy: "Encontre seu próximo port, confira os requisitos e baixe o pacote direto do GitHub.",
     explore: "Explorar catálogo", available: "ports disponíveis", origins: "plataformas de origem",
@@ -26,6 +30,10 @@ const text = {
   },
   en: {
     skip: "Skip to catalog", catalog: "Catalog", updates: "Updates", install: "How to install",
+    support: "Support", architecture: "Architecture", discordSupport: "Discord support",
+    supportCopy: "Ask for help or report a bug in #port-help.",
+    supportDetails: "Include the port name and version, your device model, firmware, and error log if available.",
+    joinDiscord: "Join the server ↗", openHelp: "Open #port-help ↗", reportBug: "Report a bug on Discord ↗",
     heroLabel: "PORTS FOR LINUX HANDHELDS", heroLine1: "Play wherever", heroLine2: "you want.",
     heroCopy: "Find your next port, check the requirements and download it straight from GitHub.",
     explore: "Explore the catalog", available: "ports available", origins: "source platforms",
@@ -65,7 +73,7 @@ const pageSize = 12;
 const repo = "https://github.com/NextOs-Ports/nextos-universal-ports";
 const query = (selector) => document.querySelector(selector);
 const search = query("#search");
-const facetIds = ["genre", "availability", "install-mode"];
+const facetIds = ["genre", "availability", "install-mode", "architecture"];
 const dialog = query("#port-dialog");
 const state = { lang: "pt", platform: "all", ports: null, limit: pageSize, activePort: null, failed: false };
 
@@ -209,7 +217,7 @@ function renderGenres() {
 }
 
 function filteredPorts() {
-  const [genre, availability, mode] = facetIds.map((id) => query("#" + id).value);
+  const [genre, availability, mode, architecture] = facetIds.map((id) => query("#" + id).value);
   const queryTerms = clean(search.value.trim()).split(/\s+/).filter(Boolean);
   const list = state.ports.filter(({ name, attr, source }) => {
     const haystack = clean([attr.title, name, source.platform, platforms[source.platform], ...(attr.genres || []).map(genreLabel)].join(" "));
@@ -217,6 +225,8 @@ function filteredPorts() {
       (genre === "all" || (attr.genres || []).includes(genre)) &&
       (availability === "all" || attr.availability === availability) &&
       (mode === "all" || source.portmaster === (mode === "portmaster")) &&
+      (architecture === "all" || (attr.arch || []).some((abi) =>
+        architecture === "aarch64" ? /^(aarch64|arm64|arm64-v8a)$/i.test(abi) : /^(armhf|armv7l?|arm32|armeabi-v7a)$/i.test(abi))) &&
       queryTerms.every((term) => haystack.includes(term));
   });
   const rank = (port) => featured.includes(port.name) ? featured.indexOf(port.name) : featured.length;
@@ -225,7 +235,7 @@ function filteredPorts() {
     featured: (a, b) => rank(a) - rank(b) || byName(a, b), recent: (a, b) => recent(a, b) || byName(a, b),
     name: byName, downloads: (a, b) => downloadCount(b) - downloadCount(a) || byName(a, b),
   };
-  const active = [genre, availability, mode].filter((filter) => filter !== "all").length;
+  const active = [genre, availability, mode, architecture].filter((filter) => filter !== "all").length;
   query("#filter-count").hidden = active === 0;
   query("#filter-count").textContent = active;
   return list.sort(by[query("#sort").value]);
@@ -273,6 +283,8 @@ function renderDialog(port) {
   if (zip) actions.append(zip);
   const guide = githubURL(source.guide_url || source.readme_url) || repo + "/tree/main/" + source.folder;
   actions.append(external(t("guide"), guide, "button button-quiet"), releaseLink(port, "button button-quiet"));
+  const help = query("#suporte a[href*='discord.com/channels/']").href;
+  actions.append(external(t("reportBug"), help, "button button-quiet"));
   info.append(actions);
   query("#port-content").replaceChildren(image, info);
 }
