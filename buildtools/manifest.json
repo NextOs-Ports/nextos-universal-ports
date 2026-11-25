@@ -952,5 +952,43 @@
   "desc": "Port da edição Wii norte-americana, com a mira corrigida e perfil X3.",
   "inst": "Use a imagem do disco americano RWLE01, revisão 0, em um dos formatos descritos no guia.",
   "note": "O perfil X3 é a edição com cadência mais leve. Consulte o guia para ajustar o perfil de vídeo."
+ },
+ {
+  "key": "danmanclassic",
+  "title": "Dan the Man Classic",
+  "folder": "ports-android/danmanclassic",
+  "platform": "android",
+  "release_tag": "danmanclassic-v1.0.4",
+  "asset": "danmanclassic.zip",
+  "screenshot": "danmanclassic.screenshot.jpg",
+  "genres": [
+   "action"
+  ],
+  "portmaster": null,
+  "arch": [
+   "aarch64"
+  ],
+  "desc": "Port da edição Android de Dan the Man Classic com controles físicos.",
+  "inst": "Use o APK/XAPK original da versão 1.14.92 para arm64-v8a.",
+  "note": "Testado no NextOS com Mali-450 e no R36T/K36S com dArkOS e Mali-G31."
+ },
+ {
+  "key": "shakedown-ios",
+  "title": "Shakedown: Hawaii",
+  "folder": "ports-ios/shakedown-ios",
+  "platform": "ios",
+  "release_tag": "shakedown-ios-v1.0.2",
+  "asset": "shakedown-ios.zip",
+  "screenshot": "shakedown-ios.screenshot.jpg",
+  "genres": [
+   "action"
+  ],
+  "portmaster": null,
+  "arch": [
+   "aarch64"
+  ],
+  "desc": "Port da edição iOS de Shakedown: Hawaii.",
+  "inst": "Use o IPA original da edição iOS 1.0.2.",
+  "note": "A abertura da versão 1.0.2 foi validada no caminho gráfico Mali do NextOS."
  }
 ]
