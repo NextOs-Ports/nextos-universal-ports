@@ -762,5 +762,195 @@
   "legacy_downloads": 0,
   "desc": "Resident Evil 4 Platinum (iOS 1.04.10) running the original ARMv7 iPhone executable on ARMhf PortMaster handhelds (Framework V6). Bring your own IPA.",
   "inst": "Coloque o seu .ipa do Resident Evil 4 Platinum 1.04.10 em residentevil4-ios/gamedata/ e abra o port; o NXExtract extrai na primeira abertura. / Put your Resident Evil 4 Platinum 1.04.10 .ipa in residentevil4-ios/gamedata/ and launch; NXExtract extracts it on first launch."
+ },
+ {
+  "key": "gow-collection-vita",
+  "title": "God of War Collection",
+  "folder": "ports-vita/gow-collection-vita",
+  "platform": "vita",
+  "release_tag": "gow-collection-vita-v1.9.0",
+  "asset": "gow-collection-vita.zip",
+  "screenshot": "gow-collection-vita.screenshot.jpg",
+  "genres": [
+   "action"
+  ],
+  "portmaster": null,
+  "arch": [
+   "armhf"
+  ],
+  "desc": "Port da coletânea de PS Vita com God of War I e II.",
+  "inst": "ZIP original da edição americana PCSA00126 01.00. Consulte o guia para os formatos e a licença da sua cópia.",
+  "note": "Prova física no R36T/K36S com dArkOS4Clone e Mali-G31."
+ },
+ {
+  "key": "twinsanity",
+  "title": "Crash Twinsanity",
+  "folder": "ports-ps2/twinsanity",
+  "platform": "ps2",
+  "release_tag": "twinsanity-v1.1.0",
+  "asset": "twinsanity.zip",
+  "screenshot": "twinsanity.screenshot.jpg",
+  "genres": [
+   "platformer"
+  ],
+  "portmaster": null,
+  "arch": [
+   "aarch64"
+  ],
+  "desc": "Port da edição de PlayStation 2.",
+  "inst": "Use uma ISO americana SLUS-20909 v2.00 ou europeia SLES-52568.",
+  "note": "Prova física no R36T/K36S com dArkOS4Clone e Mali-G31 usando o disco americano."
+ },
+ {
+  "key": "gt4",
+  "title": "Gran Turismo 4",
+  "folder": "ports-ps2/gt4",
+  "platform": "ps2",
+  "release_tag": "gt4-v1.1.0",
+  "asset": "gt4.zip",
+  "screenshot": "gt4.screenshot.jpg",
+  "genres": [
+   "racing"
+  ],
+  "portmaster": null,
+  "arch": [
+   "aarch64"
+  ],
+  "desc": "Port de PlayStation 2 com suporte ao Gran Turismo 4 original e ao Spec II 1.10.",
+  "inst": "Use uma ISO americana do GT4 ou uma ISO do Spec II 1.10 já preparada. O cartão precisa ser exFAT ou ext4.",
+  "note": "Prova física no R36T/K36S com dArkOS4Clone e Mali-G31."
+ },
+ {
+  "key": "rockmanxsurvivors",
+  "title": "Rockman X Survivors",
+  "folder": "ports-web/rockmanxsurvivors",
+  "platform": "web",
+  "release_tag": "rockmanxsurvivors-v1.0.2",
+  "asset": "rockmanxsurvivors.zip",
+  "screenshot": "rockmanxsurvivors.screenshot.jpg",
+  "genres": [
+   "action"
+  ],
+  "portmaster": null,
+  "arch": [
+   "aarch64"
+  ],
+  "desc": "Port da edição Web 1.6.2 para Linux ARM64.",
+  "inst": "Use o ZIP completo da edição Web 1.6.2.",
+  "note": "Prova física no R36T/K36S com dArkOS4Clone e Mali-G31."
+ },
+ {
+  "key": "neondrive",
+  "title": "Neon Drive",
+  "folder": "ports-ios/neondrive",
+  "platform": "ios",
+  "release_tag": "neondrive-v0.1.1",
+  "asset": "neondrive.zip",
+  "screenshot": "neondrive.screenshot.jpg",
+  "genres": [
+   "rhythm"
+  ],
+  "portmaster": null,
+  "arch": [
+   "aarch64"
+  ],
+  "desc": "Port da edição iOS 1.51 (build 1.52), com controles físicos.",
+  "inst": "Use um IPA original compatível da edição iOS.",
+  "note": "Testado no NextOS com Mali-450 e no R36T/K36S com dArkOS4Clone e Mali-G31."
+ },
+ {
+  "key": "lordsofexile",
+  "title": "Lords of Exile",
+  "folder": "ports-pc/lordsofexile",
+  "platform": "pc",
+  "release_tag": "lordsofexile-v1.3.13",
+  "asset": "lordsofexile.zip",
+  "screenshot": "lordsofexile.screenshot.jpg",
+  "genres": [
+   "platformer"
+  ],
+  "portmaster": null,
+  "arch": [
+   "aarch64"
+  ],
+  "desc": "Port da edição Windows para Linux ARM64.",
+  "inst": "Use os arquivos originais da edição Windows. O guia explica a preparação para cada loja.",
+  "note": "A versão 1.3.13 mantém o runtime da versão anterior e corrige o lançador. O novo lançador foi validado no PC."
+ },
+ {
+  "key": "wind-waker-nextos",
+  "title": "The Legend of Zelda: The Wind Waker",
+  "folder": "ports-gamecube/wind-waker-nextos",
+  "platform": "gamecube",
+  "release_tag": "wind-waker-nextos-v0.2.34",
+  "asset": "wind-waker-nextos.zip",
+  "screenshot": "wind-waker-nextos.screenshot.jpg",
+  "genres": [
+   "adventure"
+  ],
+  "portmaster": null,
+  "arch": [
+   "aarch64"
+  ],
+  "desc": "Port da edição GameCube de The Legend of Zelda: The Wind Waker.",
+  "inst": "Use a imagem do disco original conforme a região e o formato descritos no guia.",
+  "note": "Consulte o guia para as edições de GameCube aceitas."
+ },
+ {
+  "key": "isaac-android-nextos",
+  "title": "The Binding of Isaac: Rebirth",
+  "folder": "ports-android/isaac-android-nextos",
+  "platform": "android",
+  "release_tag": "isaac-android-nextos-v3.1.2",
+  "asset": "isaac-android-nextos.zip",
+  "screenshot": "isaac-android-nextos.screenshot.jpg",
+  "genres": [
+   "action"
+  ],
+  "portmaster": null,
+  "arch": [
+   "aarch64"
+  ],
+  "desc": "Port da edição Android de The Binding of Isaac: Rebirth, com o motor Repentance.",
+  "inst": "Use o APK Android completo 1.7771 (arm64-v8a).",
+  "note": "Testado no NextOS/Mali-450 e no R36T/K36S com dArkOS4Clone/Mali-G31."
+ },
+ {
+  "key": "avgn12deluxe",
+  "title": "AVGN I & II Deluxe",
+  "folder": "ports-android/avgn12deluxe",
+  "platform": "android",
+  "release_tag": "avgn12deluxe-v1.0.1-docs1",
+  "asset": "avgn12deluxe.zip",
+  "screenshot": "avgn12deluxe.screenshot.jpg",
+  "genres": [
+   "platformer"
+  ],
+  "portmaster": null,
+  "arch": [
+   "aarch64"
+  ],
+  "desc": "Port da edição Android 1.2.5.",
+  "inst": "Use o pacote original em um dos formatos do guia.",
+  "note": "O sufixo docs1 identifica a revisão do guia. O runtime é o mesmo da versão 1.0.1 aprovada."
+ },
+ {
+  "key": "wario-shakeit",
+  "title": "Wario Land: Shake It!",
+  "folder": "ports-wii/wario-shakeit",
+  "platform": "wii",
+  "release_tag": "wario-shakeit-v1.0.1-x3",
+  "asset": "wario-shakeit.zip",
+  "screenshot": "wario-shakeit.screenshot.jpg",
+  "genres": [
+   "platformer"
+  ],
+  "portmaster": null,
+  "arch": [
+   "aarch64"
+  ],
+  "desc": "Port da edição Wii norte-americana, com a mira corrigida e perfil X3.",
+  "inst": "Use a imagem do disco americano RWLE01, revisão 0, em um dos formatos descritos no guia.",
+  "note": "O perfil X3 é a edição com cadência mais leve. Consulte o guia para ajustar o perfil de vídeo."
  }
 ]

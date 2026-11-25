@@ -11,7 +11,7 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parents[1]
 REPO = "https://github.com/NextOs-Ports/nextos-universal-ports"
 RAW = "https://raw.githubusercontent.com/NextOs-Ports/nextos-universal-ports/main"
-PLATFORMS = ("android", "ios", "switch", "gamecube", "vita")
+PLATFORMS = ("android", "ios", "switch", "gamecube", "wii", "ps2", "vita", "pc", "web")
 TAG = re.compile(r"(?P<slug>[a-z0-9._-]+?)-v(?P<version>\d+(?:\.\d+){0,2})(?:-r(?P<revision>\d+))?", re.I)
 ASSET_VERSION = re.compile(r"\d+\.\d+(?:\.\d+)?")
 SLUG = re.compile(r"[a-z0-9][a-z0-9._-]*")
@@ -120,6 +120,9 @@ def catalog(manifest, existing, release_list):
                 previous.pop(key, None)
             attr.pop("min_glibc", None)
             attr.pop("inst", None)
+        for key in ("arch", "desc", "inst"):
+            if key in entry:
+                attr[key] = entry[key]
         folder = entry["folder"]
         image_path = f'{folder}/{entry["screenshot"]}'
         result.append({

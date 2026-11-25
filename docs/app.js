@@ -49,7 +49,10 @@ const text = {
   }
 };
 
-const platforms = { android: "Android", ios: "iOS", switch: "Switch", gamecube: "GameCube", vita: "PS Vita" };
+const platforms = {
+  android: "Android", ios: "iOS", switch: "Switch", gamecube: "GameCube", wii: "Wii",
+  ps2: "PlayStation 2", vita: "PS Vita", pc: "PC", web: "Web",
+};
 const genres = {
   action: "Ação", adventure: "Aventura", arcade: "Arcade", casual: "Casual", platformer: "Plataforma",
   puzzle: "Quebra-cabeça", racing: "Corrida", rpg: "RPG", shooter: "Tiro", simulation: "Simulação",
