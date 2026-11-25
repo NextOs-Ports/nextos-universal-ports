@@ -62,15 +62,15 @@ For help or bug reports, [join the NextOS Discord](https://discord.gg/DHfY62eDNN
 
 ## ⚖️ Aviso legal / Legal notice
 
-Os pacotes contêm apenas código de compatibilidade e documentação. **Nenhum jogo, dado de
-jogo, biblioteca proprietária ou asset é distribuído.** O usuário precisa possuir a cópia
-legítima do jogo. Todas as marcas e jogos pertencem aos seus respectivos detentores.
+Os ZIPs distribuem o port, suas dependências e a documentação. **Os dados originais do
+jogo vêm da cópia do jogador.** Consulte os avisos de licença incluídos no ZIP.
+Todas as marcas e jogos pertencem aos seus respectivos detentores.
 Detentores de direitos que queiram falar conosco: abram uma issue ou contatem pelo Discord.
 
-Packages contain compatibility code and documentation only. **No game, game data,
-proprietary library or asset is distributed.** Users must own a legitimate copy of the
-game. All trademarks and games belong to their respective owners. Rights holders: please
-open an issue or reach us on Discord.
+Packages contain the port, its dependencies, and documentation. **Supply the original
+game data from your own copy.** See the license notices included in the ZIP.
+All trademarks and games belong to their respective owners. Rights holders can open an
+issue or contact us on Discord.
 
 ---
 
