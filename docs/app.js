@@ -7,12 +7,15 @@ const text = {
     supportCopy: "Para pedir ajuda ou relatar um bug, use o canal #port-help.",
     supportDetails: "Inclua o nome e a versão do port, o modelo do aparelho, o firmware e o log do erro, se houver.",
     joinDiscord: "Entrar no servidor ↗", openHelp: "Abrir #port-help ↗", reportBug: "Relatar bug no Discord ↗",
-    heroLabel: "PORTS PARA PORTÁTEIS LINUX", heroLine1: "Jogue onde", heroLine2: "quiser.",
-    heroCopy: "Encontre seu próximo port, confira os requisitos e baixe o pacote direto do GitHub.",
-    explore: "Explorar catálogo", available: "ports disponíveis", origins: "plataformas de origem",
-    fromGithub: "Downloads pelo GitHub", catalogCopy: "Os ZIPs incluem o port. Use os dados da sua cópia do jogo.",
-    search: "Buscar um jogo…", searchLabel: "Buscar um jogo", sourcePlatform: "Plataforma de origem",
-    sortBy: "Ordenar por", featured: "Em destaque", recent: "Mais recentes", alphabetical: "Nome A–Z",
+    heroLabel: "EM DESTAQUE · PS VITA", heroCopy: "God of War I e II em um port da edição de PS Vita para portáteis Linux.",
+    viewPort: "Ver port ↗", joinCommunity: "Entrar no Discord",
+    explore: "Explorar catálogo ↓", available: "ports disponíveis", origins: "plataformas de origem",
+    catalogCopy: "Os ZIPs incluem o port. Use os dados da sua cópia do jogo.",
+    search: "Buscar por jogo, apelido ou plataforma…", searchLabel: "Buscar ports", sourcePlatform: "Plataforma de origem",
+    sortBy: "Ordenar por", featured: "Em destaque", newest: "Adicionados recentemente", recent: "Atualizados recentemente", alphabetical: "Nome A–Z",
+    device: "Aparelho testado", firmware: "Firmware testado", tested: "Testado nesta versão",
+    coverage: "Os filtros de aparelho e firmware mostram as combinações com teste registrado para o ZIP publicado.",
+    remove: "Remover filtro", copyLink: "Copiar link", linkCopied: "Link copiado", copyFromAddress: "Copie o link na barra de endereço",
     mostDownloaded: "Mais baixados", filters: "Filtros", genre: "Gênero", gameType: "Tipo de jogo",
     installMode: "Instalação", all: "Todos", free: "Gratuito", paid: "Pago", manual: "Manual",
     reset: "Limpar filtros", loading: "Carregando catálogo…", showMore: "Carregar mais ports",
@@ -34,12 +37,15 @@ const text = {
     supportCopy: "Ask for help or report a bug in #port-help.",
     supportDetails: "Include the port name and version, your device model, firmware, and error log if available.",
     joinDiscord: "Join the server ↗", openHelp: "Open #port-help ↗", reportBug: "Report a bug on Discord ↗",
-    heroLabel: "PORTS FOR LINUX HANDHELDS", heroLine1: "Play wherever", heroLine2: "you want.",
-    heroCopy: "Find your next port, check the requirements and download it straight from GitHub.",
-    explore: "Explore the catalog", available: "ports available", origins: "source platforms",
-    fromGithub: "Downloads from GitHub", catalogCopy: "The ZIPs contain the port. Use the data from your own copy of the game.",
-    search: "Search for a game…", searchLabel: "Search for a game", sourcePlatform: "Source platform",
-    sortBy: "Sort by", featured: "Featured", recent: "Most recent", alphabetical: "Name A–Z",
+    heroLabel: "FEATURED · PS VITA", heroCopy: "God of War I and II in a port of the PS Vita edition for Linux handhelds.",
+    viewPort: "View port ↗", joinCommunity: "Join Discord",
+    explore: "Explore the catalog ↓", available: "ports available", origins: "source platforms",
+    catalogCopy: "The ZIPs contain the port. Use the data from your own copy of the game.",
+    search: "Search by game, nickname or platform…", searchLabel: "Search ports", sourcePlatform: "Source platform",
+    sortBy: "Sort by", featured: "Featured", newest: "Recently added", recent: "Recently updated", alphabetical: "Name A–Z",
+    device: "Tested device", firmware: "Tested firmware", tested: "Tested on this version",
+    coverage: "Device and firmware filters show the combinations with recorded tests for the published ZIP.",
+    remove: "Remove filter", copyLink: "Copy link", linkCopied: "Link copied", copyFromAddress: "Copy the link from the address bar",
     mostDownloaded: "Most downloaded", filters: "Filters", genre: "Genre", gameType: "Game type",
     installMode: "Installation", all: "All", free: "Free", paid: "Paid", manual: "Manual",
     reset: "Clear filters", loading: "Loading catalog…", showMore: "Load more ports",
@@ -68,12 +74,23 @@ const genres = {
   fps: "Tiro em primeira pessoa", rhythm: "Ritmo", "visual novel": "Visual novel",
   beatemup: "Beat ’em up", fighting: "Luta", metroidvania: "Metroidvania",
 };
-const featured = ["horizonchase.zip", "Stardew.Valley.NextOS.zip", "sor4.zip", "oceanhorn.zip", "castleofillusion.zip", "sonic4ep2.zip", "actionsquad.zip", "titansouls.zip"];
+const featured = ["gow-collection-vita.zip", "wind-waker-nextos.zip", "gt4.zip", "twinsanity.zip",
+  "residentevil4-ios.zip", "asm2.zip", "horizonchase.zip", "Stardew.Valley.NextOS.zip", "sor4.zip"];
+const aliases = {
+  "gow-collection-vita.zip": "gow gow1 gow2 god of war 1 god of war 2 kratos",
+  "wind-waker-nextos.zip": "zelda wind waker tww",
+  "gt4.zip": "gt4 gt 4 gran turismo",
+  "twinsanity.zip": "crash bandicoot",
+  "residentevil4-ios.zip": "re4 resident evil biohazard",
+  "asm2.zip": "tasm2 homem aranha spider man 2",
+  "acpirates.zip": "ac pirates assassins creed",
+};
+const platformAliases = { ios: "iphone ipad", ps2: "ps2 playstation2", vita: "vita psvita", gamecube: "gc ngc", switch: "nintendo switch", pc: "windows" };
 const pageSize = 12;
 const repo = "https://github.com/NextOs-Ports/nextos-universal-ports";
 const query = (selector) => document.querySelector(selector);
 const search = query("#search");
-const facetIds = ["genre", "availability", "install-mode", "architecture"];
+const facetIds = ["genre", "availability", "install-mode", "architecture", "device", "firmware"];
 const dialog = query("#port-dialog");
 const state = { lang: "pt", platform: "all", ports: null, limit: pageSize, activePort: null, failed: false };
 
@@ -84,7 +101,7 @@ try {
 const t = (key) => text[state.lang][key];
 const locale = () => state.lang === "pt" ? "pt-BR" : "en";
 const genreLabel = (key) => state.lang === "pt" ? genres[key] || key : key.replaceAll("-", " ").replace(/^./, (character) => character.toUpperCase());
-const clean = (value) => value.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+const clean = (value) => value.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
 const releaseName = (source) => source.release_version ? "v" + source.release_version : source.release_tag;
 const dateKey = (port) => port.source.published_at || port.source.date_updated || "";
 const recent = (a, b) => dateKey(b).localeCompare(dateKey(a));
@@ -121,9 +138,16 @@ function external(label, href, className) {
 }
 
 function portLink(port, label, className) {
-  const anchor = link(label, "?port=" + encodeURIComponent(port.name.replace(/\.zip$/, "")) + "#catalogo", className);
+  const anchor = link(label, portURL(port), className);
   anchor.dataset.port = port.name;
   return anchor;
+}
+
+function portURL(port) {
+  const url = new URL(location.pathname, location.origin);
+  url.searchParams.set("port", port.name.replace(/\.zip$/, ""));
+  url.hash = "catalogo";
+  return url.href;
 }
 
 function screenshot(port) {
@@ -216,26 +240,74 @@ function renderGenres() {
   select.value = allGenres.has(previous) ? previous : "all";
 }
 
+function renderTestedOptions() {
+  for (const field of ["device", "firmware"]) {
+    const select = query("#" + field);
+    const previous = select.value;
+    const values = new Set(state.ports.flatMap(({ source }) => (source.verified_on || []).map((test) => test[field])));
+    select.replaceChildren(new Option(t("all"), "all"),
+      ...[...values].sort((a, b) => a.localeCompare(b, locale())).map((value) => new Option(value, value)));
+    select.value = values.has(previous) ? previous : "all";
+    select.disabled = values.size === 0;
+  }
+}
+
+function renderChips() {
+  const applied = facetIds.map((id) => [id, query("#" + id).selectedOptions[0]?.textContent])
+    .filter(([id]) => query("#" + id).value !== "all");
+  if (state.platform !== "all") applied.unshift(["platform", platforms[state.platform]]);
+  if (search.value.trim()) applied.unshift(["q", search.value.trim()]);
+  query("#active-filters").hidden = applied.length === 0;
+  const chips = applied.map(([id, label]) => {
+    const button = element("button", "chip", label + " ×");
+    button.type = "button";
+    button.setAttribute("aria-label", t("remove") + " " + label);
+    button.addEventListener("click", () => {
+      if (id === "platform") {
+        state.platform = "all";
+        renderPlatforms();
+      } else if (id === "q") {
+        search.value = "";
+      } else {
+        query("#" + id).value = "all";
+      }
+      resetLimit();
+      query("#chips button")?.focus();
+      if (!query("#chips button")) search.focus();
+    });
+    return button;
+  });
+  query("#chips").replaceChildren(...chips);
+}
+
 function filteredPorts() {
-  const [genre, availability, mode, architecture] = facetIds.map((id) => query("#" + id).value);
-  const queryTerms = clean(search.value.trim()).split(/\s+/).filter(Boolean);
+  const [genre, availability, mode, architecture, device, firmware] = facetIds.map((id) => query("#" + id).value);
+  const term = clean(search.value);
+  const queryTerms = term ? term.split(" ") : [];
+  const testedFilter = device !== "all" || firmware !== "all";
   const list = state.ports.filter(({ name, attr, source }) => {
-    const haystack = clean([attr.title, name, source.platform, platforms[source.platform], ...(attr.genres || []).map(genreLabel)].join(" "));
+    const haystack = clean([attr.title, name, aliases[name], source.platform, platforms[source.platform],
+      platformAliases[source.platform], ...(attr.genres || []).flatMap((key) => [key, genreLabel(key)])].join(" "));
     return (state.platform === "all" || source.platform === state.platform) &&
       (genre === "all" || (attr.genres || []).includes(genre)) &&
       (availability === "all" || attr.availability === availability) &&
       (mode === "all" || source.portmaster === (mode === "portmaster")) &&
       (architecture === "all" || (attr.arch || []).some((abi) =>
         architecture === "aarch64" ? /^(aarch64|arm64|arm64-v8a)$/i.test(abi) : /^(armhf|armv7l?|arm32|armeabi-v7a)$/i.test(abi))) &&
+      (!testedFilter || (source.verified_on || []).some((record) =>
+        (device === "all" || device === record.device) && (firmware === "all" || firmware === record.firmware))) &&
       queryTerms.every((term) => haystack.includes(term));
   });
   const rank = (port) => featured.includes(port.name) ? featured.indexOf(port.name) : featured.length;
+  const relevance = (port) => term && [clean(port.attr.title), clean(port.name.replace(/\.zip$/, ""))].includes(term) ? 1 : 0;
   const byName = (a, b) => a.attr.title.localeCompare(b.attr.title, locale());
+  const added = (port) => port.source.first_seen || dateKey(port);
   const by = {
-    featured: (a, b) => rank(a) - rank(b) || byName(a, b), recent: (a, b) => recent(a, b) || byName(a, b),
+    featured: (a, b) => relevance(b) - relevance(a) || rank(a) - rank(b) || byName(a, b),
+    added: (a, b) => added(b).localeCompare(added(a)) || byName(a, b), recent: (a, b) => recent(a, b) || byName(a, b),
     name: byName, downloads: (a, b) => downloadCount(b) - downloadCount(a) || byName(a, b),
   };
-  const active = [genre, availability, mode, architecture].filter((filter) => filter !== "all").length;
+  const active = [genre, availability, mode, architecture, device, firmware].filter((filter) => filter !== "all").length;
   query("#filter-count").hidden = active === 0;
   query("#filter-count").textContent = active;
   return list.sort(by[query("#sort").value]);
@@ -243,6 +315,7 @@ function filteredPorts() {
 
 function renderCatalog() {
   if (!state.ports) return;
+  renderChips();
   const list = filteredPorts();
   const visible = list.slice(0, state.limit);
   query("#grid").replaceChildren(...(visible.length ? visible.map(card) : [element("p", "empty", t("noResults"))]));
@@ -278,6 +351,11 @@ function renderDialog(port) {
   if (attr.desc) info.append(element("h3", "", t("details")), element("p", "", attr.desc));
   info.append(element("h3", "", t("install")), element("p", "", attr.inst || t("guideCopy")));
   if (source.note) info.append(element("p", "", source.note));
+  if (source.verified_on?.length) {
+    const tested = element("ul", "tested-list");
+    tested.append(...source.verified_on.map(({ device, firmware }) => element("li", "", device + " · " + firmware)));
+    info.append(element("h3", "", t("tested")), tested);
+  }
   const actions = element("div", "dialog-actions");
   const zip = download(port, "button button-primary");
   if (zip) actions.append(zip);
@@ -285,6 +363,18 @@ function renderDialog(port) {
   actions.append(external(t("guide"), guide, "button button-quiet"), releaseLink(port, "button button-quiet"));
   const help = query("#suporte a[href*='discord.com/channels/']").href;
   actions.append(external(t("reportBug"), help, "button button-quiet"));
+  const copy = element("button", "button button-quiet", t("copyLink"));
+  copy.type = "button";
+  copy.setAttribute("aria-live", "polite");
+  copy.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(portURL(port));
+      copy.textContent = t("linkCopied");
+    } catch {
+      copy.textContent = t("copyFromAddress");
+    }
+  });
+  actions.append(copy);
   info.append(actions);
   query("#port-content").replaceChildren(image, info);
 }
@@ -323,14 +413,39 @@ function applyLanguage() {
   if (state.ports) {
     renderPlatforms();
     renderGenres();
+    renderTestedOptions();
     renderCatalog();
     renderUpdates();
   } else if (state.failed) renderFailure();
   if (state.activePort) renderDialog(state.activePort);
 }
 
+function filterURL() {
+  const url = new URL(location.href);
+  const filters = { q: search.value.trim(), platform: state.platform, sort: query("#sort").value };
+  for (const id of facetIds) filters[id] = query("#" + id).value;
+  for (const [id, value] of Object.entries(filters)) {
+    if (!value || value === "all" || (id === "sort" && value === "featured")) url.searchParams.delete(id);
+    else url.searchParams.set(id, value);
+  }
+  history.replaceState(null, "", url);
+}
+
+function restoreFilters() {
+  const params = new URLSearchParams(location.search);
+  search.value = params.get("q") || "";
+  const platform = params.get("platform");
+  if (state.ports.some(({ source }) => source.platform === platform)) state.platform = platform;
+  for (const id of [...facetIds, "sort"]) {
+    const select = query("#" + id);
+    const value = params.get(id);
+    if ([...select.options].some((option) => option.value === value)) select.value = value;
+  }
+}
+
 function resetLimit() {
   state.limit = pageSize;
+  if (state.ports) filterURL();
   renderCatalog();
 }
 
@@ -344,6 +459,9 @@ async function loadCatalog() {
     const ports = await response.json();
     if (!Array.isArray(ports)) throw new Error("Invalid catalog");
     state.ports = ports;
+    renderGenres();
+    renderTestedOptions();
+    restoreFilters();
     applyLanguage();
     const key = new URLSearchParams(location.search).get("port");
     if (key) openPort(key.endsWith(".zip") ? key : key + ".zip");
@@ -379,6 +497,7 @@ query("#reset").addEventListener("click", () => {
   facetIds.forEach((id) => { query("#" + id).value = "all"; });
   if (state.ports) renderPlatforms();
   resetLimit();
+  search.focus();
 });
 query("#show-more").addEventListener("click", () => {
   const firstNew = state.limit;
@@ -398,14 +517,24 @@ document.addEventListener("keydown", (event) => {
     search.focus();
   }
 });
-dialog.addEventListener("click", (event) => {
-  if (event.target === dialog) dialog.close();
-});
-dialog.addEventListener("close", () => {
+function closePort() {
   state.activePort = null;
   const url = new URL(location.href);
   url.searchParams.delete("port");
   history.replaceState(null, "", url);
+  dialog.close();
+}
+
+dialog.addEventListener("click", (event) => {
+  if (event.target === dialog) closePort();
+});
+dialog.addEventListener("cancel", (event) => {
+  event.preventDefault();
+  closePort();
+});
+dialog.querySelector("form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  closePort();
 });
 applyLanguage();
 loadCatalog();

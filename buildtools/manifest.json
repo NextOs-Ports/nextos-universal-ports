@@ -794,7 +794,16 @@
   ],
   "desc": "Port da coletânea de PS Vita com God of War I e II.",
   "inst": "ZIP original da edição americana PCSA00126 01.00. Consulte o guia para os formatos e a licença da sua cópia.",
-  "note": "Prova física no R36T/K36S com dArkOS4Clone e Mali-G31."
+  "note": "Prova física no R36T/K36S com dArkOS4Clone e Mali-G31.",
+  "verification": {
+   "digest": "sha256:01174c9ac68c28a3a2bdd3143460d1843131ecaa3372618917517e671395d311",
+   "tested_on": [
+    {
+     "device": "R36T / K36S (Mali-G31)",
+     "firmware": "dArkOS4Clone"
+    }
+   ]
+  }
  },
  {
   "key": "twinsanity",
@@ -813,7 +822,16 @@
   ],
   "desc": "Port da edição de PlayStation 2.",
   "inst": "Use uma ISO americana SLUS-20909 v2.00 ou europeia SLES-52568.",
-  "note": "Prova física no R36T/K36S com dArkOS4Clone e Mali-G31 usando o disco americano."
+  "note": "Prova física no R36T/K36S com dArkOS4Clone e Mali-G31 usando o disco americano.",
+  "verification": {
+   "digest": "sha256:4c8eab1904da230034b0bf3d481f96390de6ce0a38d337f1689615d369c6104c",
+   "tested_on": [
+    {
+     "device": "R36T / K36S (Mali-G31)",
+     "firmware": "dArkOS4Clone"
+    }
+   ]
+  }
  },
  {
   "key": "gt4",
@@ -832,7 +850,16 @@
   ],
   "desc": "Port de PlayStation 2 com suporte ao Gran Turismo 4 original e ao Spec II 1.10.",
   "inst": "Use uma ISO americana do GT4 ou uma ISO do Spec II 1.10 já preparada. O cartão precisa ser exFAT ou ext4.",
-  "note": "Prova física no R36T/K36S com dArkOS4Clone e Mali-G31."
+  "note": "Prova física no R36T/K36S com dArkOS4Clone e Mali-G31.",
+  "verification": {
+   "digest": "sha256:995404b59e9c8c63b5a9ef046933d999a0dd9d53a7718ff40ddbcd74c75338f1",
+   "tested_on": [
+    {
+     "device": "R36T / K36S (Mali-G31)",
+     "firmware": "dArkOS4Clone"
+    }
+   ]
+  }
  },
  {
   "key": "rockmanxsurvivors",
@@ -851,7 +878,16 @@
   ],
   "desc": "Port da edição Web 1.6.2 para Linux ARM64.",
   "inst": "Use o ZIP completo da edição Web 1.6.2.",
-  "note": "Prova física no R36T/K36S com dArkOS4Clone e Mali-G31."
+  "note": "Prova física no R36T/K36S com dArkOS4Clone e Mali-G31.",
+  "verification": {
+   "digest": "sha256:740ff82b6713e87fc5f454656a1981fa1208f3f214b560e3b07d21ffadc7e1df",
+   "tested_on": [
+    {
+     "device": "R36T / K36S (Mali-G31)",
+     "firmware": "dArkOS4Clone"
+    }
+   ]
+  }
  },
  {
   "key": "neondrive",
@@ -870,7 +906,20 @@
   ],
   "desc": "Port da edição iOS 1.51 (build 1.52), com controles físicos.",
   "inst": "Use um IPA original compatível da edição iOS.",
-  "note": "Testado no NextOS com Mali-450 e no R36T/K36S com dArkOS4Clone e Mali-G31."
+  "note": "Testado no NextOS com Mali-450 e no R36T/K36S com dArkOS4Clone e Mali-G31.",
+  "verification": {
+   "digest": "sha256:07d6ecbcc4912f9a611b1d58eeff5f6a6e7ddad9ba60b125390a33a433697422",
+   "tested_on": [
+    {
+     "device": "R36T / K36S (Mali-G31)",
+     "firmware": "dArkOS4Clone"
+    },
+    {
+     "device": "Amlogic (Mali-450)",
+     "firmware": "NextOS"
+    }
+   ]
+  }
  },
  {
   "key": "lordsofexile",
@@ -927,7 +976,20 @@
   ],
   "desc": "Port da edição Android de The Binding of Isaac: Rebirth, com o motor Repentance.",
   "inst": "Use o APK Android completo 1.7771 (arm64-v8a).",
-  "note": "Testado no NextOS/Mali-450 e no R36T/K36S com dArkOS4Clone/Mali-G31."
+  "note": "Testado no NextOS/Mali-450 e no R36T/K36S com dArkOS4Clone/Mali-G31.",
+  "verification": {
+   "digest": "sha256:be0758432df40532c0585bc879d3b70e75cb85dea7191b1cb2241324d76fe044",
+   "tested_on": [
+    {
+     "device": "R36T / K36S (Mali-G31)",
+     "firmware": "dArkOS4Clone"
+    },
+    {
+     "device": "Amlogic (Mali-450)",
+     "firmware": "NextOS"
+    }
+   ]
+  }
  },
  {
   "key": "avgn12deluxe",
@@ -984,7 +1046,20 @@
   ],
   "desc": "Port da edição Android de Dan the Man Classic com controles físicos.",
   "inst": "Use o APK/XAPK original da versão 1.14.92 para arm64-v8a.",
-  "note": "Testado no NextOS com Mali-450 e no R36T/K36S com dArkOS e Mali-G31."
+  "note": "Testado no NextOS com Mali-450 e no R36T/K36S com dArkOS e Mali-G31.",
+  "verification": {
+   "digest": "sha256:2e77fd05c76ec78ab0b8dcf8c71b5c5af4b81699d4b7c6fc377352ac076babef",
+   "tested_on": [
+    {
+     "device": "R36T / K36S (Mali-G31)",
+     "firmware": "dArkOS"
+    },
+    {
+     "device": "Amlogic (Mali-450)",
+     "firmware": "NextOS"
+    }
+   ]
+  }
  },
  {
   "key": "shakedown-ios",

@@ -125,6 +125,13 @@ def catalog(manifest, existing, release_list):
                 attr[key] = entry[key]
         folder = entry["folder"]
         image_path = f'{folder}/{entry["screenshot"]}'
+        verification = entry.get("verification", {})
+        verified_on = verification.get("tested_on", []) if verification.get("digest") == asset.get("digest") else []
+        anchor = TAG.match(entry["release_tag"])
+        family = anchor["slug"].lower() if anchor else entry["key"].lower()
+        history = [item["published_at"] for _, item in stable.get(family, [])
+                   if asset_for(item, [name, entry["asset"]])]
+        first_seen = entry.get("first_seen") or min([release["published_at"], *history])[:10]
         result.append({
             **previous, "version": 4, "name": name, "attr": attr,
             "source": {
@@ -138,10 +145,11 @@ def catalog(manifest, existing, release_list):
                 "release_url": release["html_url"], "download_url": asset["browser_download_url"],
                 "asset": asset["name"], "size": asset["size"], "published_at": release["published_at"],
                 "digest": asset.get("digest"),
-                "date_updated": release["published_at"][:10], "first_seen": entry.get("first_seen"),
+                "date_updated": release["published_at"][:10], "first_seen": first_seen,
                 "downloads": asset["download_count"], "legacy_downloads": entry.get("legacy_downloads", 0),
                 "portmaster": entry.get("portmaster", True), "prerelease": release["prerelease"],
                 "note": entry.get("note", ""),
+                "verified_on": verified_on,
             },
         })
     return result
