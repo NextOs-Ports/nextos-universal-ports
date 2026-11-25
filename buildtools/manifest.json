@@ -16,7 +16,15 @@
   "first_seen": "2026-08-19",
   "legacy_downloads": 115,
   "desc": "AArch64 PortMaster adapter for Door Kickers: Action Squad",
-  "steam_appid": 686200
+  "steam_appid": 686200,
+  "package_credits": {
+   "digest": "sha256:11958da4c9e1260de399ab387857cc5d13c0e7b4af49d826f18688919c793344",
+   "notices": [
+    "actionsquad/LICENSE",
+    "actionsquad/NOTICE.md",
+    "actionsquad/licenses/"
+   ]
+  }
  },
  {
   "key": "angrybirds",
@@ -34,7 +42,15 @@
   "screenshot_source": "local",
   "first_seen": "2026-09-03",
   "legacy_downloads": 36,
-  "desc": "Angry Birds Classic 8.0.3 universal ARMHF Android compatibility port for NextOS, ArkOS and PortMaster handhelds."
+  "desc": "Angry Birds Classic 8.0.3 universal ARMHF Android compatibility port for NextOS, ArkOS and PortMaster handhelds.",
+  "package_credits": {
+   "digest": "sha256:073cd1b67fba0ade5340e1c7b4e07add75c43941befba69d56c06be09b899a11",
+   "notices": [
+    "angrybirds/LICENSE",
+    "angrybirds/NOTICE.md",
+    "angrybirds/licenses/"
+   ]
+  }
  },
  {
   "key": "asm2",
@@ -52,7 +68,19 @@
   "screenshot_source": "zip",
   "first_seen": "2026-08-02",
   "legacy_downloads": 602,
-  "desc": "The Amazing Spider-Man 2 1.2.7d universal ARMHF/X5M compatibility port for NextOS, ArkOS/R36S and PortMaster."
+  "desc": "The Amazing Spider-Man 2 1.2.7d universal ARMHF/X5M compatibility port for NextOS, ArkOS/R36S and PortMaster.",
+  "package_credits": {
+   "digest": "sha256:d1a2a200b2e4680265d947fb4766f953a640b90f32251759c4ce0dc47b2d15d2",
+   "notices": [
+    "asm2_127/NOTICE.md",
+    "asm2_127/licenses/"
+   ],
+   "components": [
+    "NXExtract",
+    "Box64",
+    "sdl2-compat"
+   ]
+  }
  },
  {
   "key": "bbracing2",
@@ -69,7 +97,14 @@
   "screenshot_source": "local",
   "first_seen": "2026-09-06",
   "legacy_downloads": 24,
-  "desc": "Beach Buggy Racing 2 — native AArch64 port (so-loader, GLES2, SDL3) for NextOS, dArkOS/R36S and aarch64 CFW handhelds."
+  "desc": "Beach Buggy Racing 2 — native AArch64 port (so-loader, GLES2, SDL3) for NextOS, dArkOS/R36S and aarch64 CFW handhelds.",
+  "package_credits": {
+   "digest": "sha256:6ce405390cbbd9e42723542870b4b4cd3789d91cd3f2c09393e1fda1e499f853",
+   "notices": [
+    "bbracing2/LICENSE",
+    "bbracing2/NOTICE.md"
+   ]
+  }
  },
  {
   "key": "beachbuggy",
@@ -86,7 +121,14 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-09-06",
   "legacy_downloads": 22,
-  "desc": "Beach Buggy Racing — native AArch64 port (so-loader, GLES2, SDL3) for NextOS, dArkOS/R36S and aarch64 CFW handhelds."
+  "desc": "Beach Buggy Racing — native AArch64 port (so-loader, GLES2, SDL3) for NextOS, dArkOS/R36S and aarch64 CFW handhelds.",
+  "package_credits": {
+   "digest": "sha256:b5602409500503ead201b38dae978095896c08672e3dda362ca525dc83d312e5",
+   "notices": [
+    "beachbuggy/LICENSE",
+    "beachbuggy/THIRD-PARTY-NOTICES.md"
+   ]
+  }
  },
  {
   "key": "blossomtales",
@@ -105,7 +147,14 @@
   "first_seen": "2026-09-04",
   "legacy_downloads": 22,
   "desc": "Blossom Tales: The Sleeping King 1.0.0 — universal AArch64 MonoGame/.NET-for-Android so-loader for NextOS, ArkOS/R36S-class and PortMaster handhelds.",
-  "steam_appid": 446810
+  "steam_appid": 446810,
+  "package_credits": {
+   "digest": "sha256:c3324e54439a9521748e8163a7e5461df8158d13061da1895da5b89ab01a2962",
+   "notices": [
+    "blossomtales/LICENSE",
+    "blossomtales/NOTICE.md"
+   ]
+  }
  },
  {
   "key": "bombchicken",
@@ -124,7 +173,18 @@
   "first_seen": "2026-08-13",
   "legacy_downloads": 67,
   "desc": "Bomb Chicken — validated universal AArch64 port for NextOS and PortMaster handhelds.",
-  "steam_appid": 658780
+  "steam_appid": 658780,
+  "package_credits": {
+   "digest": "sha256:fb0ca006b1918fc4a5ea170148ce75ceadaf4a1fe49340e171c93aaf4bab2fb5",
+   "notices": [
+    "bombchicken/LICENSE",
+    "bombchicken/NOTICE.md",
+    "bombchicken/licenses/"
+   ],
+   "components": [
+    "NXExtract"
+   ]
+  }
  },
  {
   "key": "castleofillusion",
@@ -146,7 +206,18 @@
    "aarch64"
   ],
   "inst": "Use os arquivos da edição Android descrita no guia.",
-  "note": "Adiciona seleção de idioma e atualiza o NXExtract."
+  "note": "Adiciona seleção de idioma e atualiza o NXExtract.",
+  "package_credits": {
+   "digest": "sha256:5c0ce2da2d4a7cc0c975ad2dd106062ff26b69207d1b5366a6c1a4537d6b90bc",
+   "notices": [
+    "castleofillusion/LICENSE",
+    "castleofillusion/NOTICE.md",
+    "castleofillusion/licenses/"
+   ],
+   "components": [
+    "NXExtract"
+   ]
+  }
  },
  {
   "key": "chrono",
@@ -164,7 +235,19 @@
   "first_seen": "2026-09-06",
   "legacy_downloads": 21,
   "desc": "A native Linux port of the Android release of Chrono Trigger (Cocos2d-x 3.14.1, GLES2) for retro handhelds. The port is a compatibility loader: it maps the game's original AArch64 Android libraries into a Linux process, replaces the Android runtime they expect (JNI, OpenSL ES, asset manager, Cocos2dxBitmap text rendering) and drives the Cocos2d-x render loop on the firmware's own SDL2/EGL/GLES2.",
-  "steam_appid": 613830
+  "steam_appid": 613830,
+  "package_credits": {
+   "digest": "sha256:83fcdcdb5e48e58b2048ad10a4d6c28d6fe6e04fc8400078e309f226330e7553",
+   "notices": [
+    "chrono/LICENSE",
+    "chrono/NOTICE.md",
+    "chrono/licenses/"
+   ],
+   "components": [
+    "NXExtract",
+    "Noto Sans"
+   ]
+  }
  },
  {
   "key": "deadtrigger",
@@ -182,7 +265,15 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-08-12",
   "legacy_downloads": 43,
-  "desc": "Validated NextOS port of Dead Trigger with reproducible low-glibc compatibility runtime"
+  "desc": "Validated NextOS port of Dead Trigger with reproducible low-glibc compatibility runtime",
+  "package_credits": {
+   "digest": "sha256:3033321807465370f4b42a71fa1f71c02c02e8b3b913692cf616b336aa89cf3b",
+   "notices": [
+    "deadtrigger/LICENSE",
+    "deadtrigger/NOTICE.md",
+    "deadtrigger/licenses/"
+   ]
+  }
  },
  {
   "key": "ff4",
@@ -200,7 +291,15 @@
   "first_seen": "2026-08-25",
   "legacy_downloads": 99,
   "desc": "Final Fantasy IV (3D Remake) — native AArch64 port (so-loader, GLES1) for NextOS, dArkOS/R36S, ROCKNIX and PortMaster handhelds.",
-  "steam_appid": 312750
+  "steam_appid": 312750,
+  "package_credits": {
+   "digest": "sha256:39386eb2e6727d8fba2b246f1613565ababc5e298cd9885ae65f476c3265494a",
+   "notices": [
+    "ff4/LICENSE",
+    "ff4/NOTICE.md",
+    "ff4/licenses/"
+   ]
+  }
  },
  {
   "key": "ff4a",
@@ -218,7 +317,15 @@
   "first_seen": "2026-08-25",
   "legacy_downloads": 99,
   "desc": "Final Fantasy IV: The After Years — native AArch64 port (so-loader, GLES1) for NextOS, dArkOS/R36S, ROCKNIX and PortMaster handhelds.",
-  "steam_appid": 346830
+  "steam_appid": 346830,
+  "package_credits": {
+   "digest": "sha256:05319c171dc3c83c48f53d63827051d7875c10ecb70f70cb537629eeaf4c8af8",
+   "notices": [
+    "ff4a/LICENSE",
+    "ff4a/NOTICE.md",
+    "ff4a/licenses/"
+   ]
+  }
  },
  {
   "key": "fp2",
@@ -237,7 +344,16 @@
   "first_seen": "2026-09-04",
   "legacy_downloads": 23,
   "desc": "Freedom Planet 2 1.2.8 — universal AArch64 Unity 2018.4/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds.",
-  "steam_appid": 595500
+  "steam_appid": 595500,
+  "package_credits": {
+   "digest": "sha256:d473c2877e4adb19dfcd940c5c668fe88d8f6ce581967247789dff21b5c8c771",
+   "notices": [
+    "fp2/LICENSE",
+    "fp2/NOTICE.md",
+    "fp2/nxextract/licenses/"
+   ]
+  },
+  "game_rightsholder": "GalaxyTrail, LLC"
  },
  {
   "key": "gdsubzero",
@@ -255,7 +371,19 @@
   "screenshot_source": "local",
   "first_seen": "2026-08-17",
   "legacy_downloads": 65,
-  "desc": "Geometry Dash SubZero (RobTop, Cocos2d-x 2.x) — native AArch64 port for Linux handhelds."
+  "desc": "Geometry Dash SubZero (RobTop, Cocos2d-x 2.x) — native AArch64 port for Linux handhelds.",
+  "package_credits": {
+   "digest": "sha256:197cbd5b8262eba1bacd24e8a7fbe6129a3f7040f12ba083977bc19f3c7907b4",
+   "notices": [
+    "gdsubzero/LICENSE",
+    "gdsubzero/NOTICE.md",
+    "gdsubzero/licenses/"
+   ],
+   "components": [
+    "NXExtract"
+   ]
+  },
+  "game_rightsholder": "RobTop Games AB"
  },
  {
   "key": "geometrydash",
@@ -274,7 +402,19 @@
   "first_seen": "2026-08-08",
   "legacy_downloads": 210,
   "desc": "Geometry Dash (RobTop, Cocos2d-x 2.x) — native AArch64 port for Linux handhelds.",
-  "steam_appid": 322170
+  "steam_appid": 322170,
+  "package_credits": {
+   "digest": "sha256:ca1f143cea9c69792e7285533f52fcc2aee15c1d8113ff572fecdcbbb52c4551",
+   "notices": [
+    "geometrydash/LICENSE",
+    "geometrydash/NOTICE.md",
+    "geometrydash/licenses/"
+   ],
+   "components": [
+    "NXExtract"
+   ]
+  },
+  "game_rightsholder": "RobTop Games AB"
  },
  {
   "key": "gunbrick",
@@ -293,7 +433,18 @@
   "first_seen": "2026-08-11",
   "legacy_downloads": 56,
   "desc": "Gunbrick: Reloaded — validated universal AArch64 port for NextOS and PortMaster handhelds.",
-  "steam_appid": 1222270
+  "steam_appid": 1222270,
+  "package_credits": {
+   "digest": "sha256:92d948031559694dcae6347e1ceb120379b9ee9d1e5d9c07b28e7f085438b0d7",
+   "notices": [
+    "gunbrick/LICENSE",
+    "gunbrick/NOTICE.md",
+    "gunbrick/licenses/"
+   ],
+   "components": [
+    "NXExtract"
+   ]
+  }
  },
  {
   "key": "hitmango",
@@ -311,7 +462,15 @@
   "screenshot_source": "local",
   "first_seen": "2026-08-18",
   "legacy_downloads": 21,
-  "desc": "Hitman GO 1.18.1 universal AArch64 Unity/IL2CPP loader — NextOS/Mali-450 + multi-device. BYO-data; backup privado."
+  "desc": "Hitman GO 1.18.1 universal AArch64 Unity/IL2CPP loader — NextOS/Mali-450 + multi-device. BYO-data; backup privado.",
+  "package_credits": {
+   "digest": "sha256:18532bde58ddacffd1f248c17c2b39bed069449d58fc80dea160c42f9617cbb9",
+   "notices": [
+    "hitmango/LICENSE",
+    "hitmango/NOTICE.md",
+    "hitmango/licenses/"
+   ]
+  }
  },
  {
   "key": "horizonchase",
@@ -334,7 +493,18 @@
    "aarch64"
   ],
   "inst": "Use a cópia original de Horizon Chase Android 2.6.9 para ARM64.",
-  "note": "Corrige a tela preta no TrimUI Smart Pro com muOS e adiciona aceleração manual opcional."
+  "note": "Corrige a tela preta no TrimUI Smart Pro com muOS e adiciona aceleração manual opcional.",
+  "package_credits": {
+   "digest": "sha256:ef60f12f2b48790ea1b53df9e188a752535c75ac2ccb8ee36d163829757c80cc",
+   "notices": [
+    "horizonchase/NOTICE.md",
+    "horizonchase/licenses/"
+   ],
+   "components": [
+    "Arm astcenc",
+    "NXExtract"
+   ]
+  }
  },
  {
   "key": "huntdown",
@@ -353,7 +523,15 @@
   "first_seen": "2026-08-31",
   "legacy_downloads": 71,
   "desc": "Huntdown universal PortMaster port for AArch64 handhelds",
-  "steam_appid": 598550
+  "steam_appid": 598550,
+  "package_credits": {
+   "digest": "sha256:222c4d31dcafdf3167f8a78970815d49c357a40a9763d5e55597f018120aaa05",
+   "notices": [
+    "huntdown/LICENSE",
+    "huntdown/NOTICE.md",
+    "huntdown/licenses/"
+   ]
+  }
  },
  {
   "key": "kotor",
@@ -371,7 +549,18 @@
   "first_seen": "2026-08-12",
   "legacy_downloads": 132,
   "desc": "Star Wars: KOTOR — universal ARMv7 so-loader for Linux handhelds (NextOS, ArkOS/R36S). BYO game data; no game files included.",
-  "steam_appid": 32370
+  "steam_appid": 32370,
+  "package_credits": {
+   "digest": "sha256:a7549f2936028be4b83d5f486ffc1b6ce6cefc8ceed5e5aeb4c7a01bc2c33583",
+   "notices": [
+    "kotor/LICENSE",
+    "kotor/NOTICE.md",
+    "kotor/licenses/"
+   ],
+   "components": [
+    "minimp3"
+   ]
+  }
  },
  {
   "key": "magicrampage",
@@ -390,7 +579,15 @@
   "first_seen": "2026-08-20",
   "legacy_downloads": 44,
   "desc": "Universal PortMaster port of Magic Rampage for NextOS and ARM handhelds",
-  "steam_appid": 704920
+  "steam_appid": 704920,
+  "package_credits": {
+   "digest": "sha256:d5cc5684f5b13c6a7c630f87a35d1a83222fadd1f431c8d53249645d02d50b39",
+   "notices": [
+    "magicrampage/LICENSE",
+    "magicrampage/NOTICE.md",
+    "magicrampage/licenses/"
+   ]
+  }
  },
  {
   "key": "merchantskies",
@@ -409,7 +606,17 @@
   "first_seen": "2026-08-28",
   "legacy_downloads": 27,
   "desc": "Merchant of the Skies 2.0 — universal AArch64 Unity 6/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds.",
-  "steam_appid": 1040070
+  "steam_appid": 1040070,
+  "package_credits": {
+   "digest": "sha256:341ddacde6384f76f16c233491d8735d25e5af5c72a81269414b85e9ba991700",
+   "notices": [
+    "merchantskies/LICENSE"
+   ],
+   "components": [
+    "NXExtract"
+   ]
+  },
+  "game_rightsholder": "Coldwild Games"
  },
  {
   "key": "namelesscat",
@@ -427,7 +634,16 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-09-04",
   "legacy_downloads": 23,
-  "desc": "Nameless Cat 1.15.2 — universal AArch64 Unity 6/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds."
+  "desc": "Nameless Cat 1.15.2 — universal AArch64 Unity 6/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds.",
+  "package_credits": {
+   "digest": "sha256:5d0cb6b73c6236f27660418cfd4b5fd6eac7f06c0b15ff4a2c1dd6692aa26dbc",
+   "notices": [
+    "namelesscat/LICENSE",
+    "namelesscat/NOTICE.md",
+    "namelesscat/licenses/"
+   ]
+  },
+  "game_rightsholder": "Kotoba Games"
  },
  {
   "key": "nxforager",
@@ -446,7 +662,15 @@
   "first_seen": "2026-08-18",
   "legacy_downloads": 58,
   "desc": "Forager Nuclear Android compatibility port for PortMaster",
-  "steam_appid": 751780
+  "steam_appid": 751780,
+  "package_credits": {
+   "digest": "sha256:1788368e6081af543c80365204be6079f34e11580da1d3e2af8455f775e1ca3e",
+   "notices": [
+    "nxforager/LICENSE",
+    "nxforager/NOTICE.md",
+    "nxforager/licenses/"
+   ]
+  }
  },
  {
   "key": "oceanhorn",
@@ -465,7 +689,15 @@
   "first_seen": "2026-08-26",
   "legacy_downloads": 41,
   "desc": "Native AArch64 port of Oceanhorn: Chronos Dungeon 4.0b54 for Linux handhelds. It drives the original Android Unity 2022.3.61f1 IL2CPP libraries through a native so-loader and keeps the Android lifecycle order intact. No game data is distributed here — you bring your own legal copy (see INSTALLATION.md).",
-  "steam_appid": 3025560
+  "steam_appid": 3025560,
+  "package_credits": {
+   "digest": "sha256:1c0a837d47932cc3363a812c6c6c4a5a16dd19ce4e0ca5b66954466c5fd65d0c",
+   "notices": [
+    "oceanhorn/LICENSE",
+    "oceanhorn/NOTICE.md",
+    "oceanhorn/licenses/"
+   ]
+  }
  },
  {
   "key": "offtheroad",
@@ -483,7 +715,15 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-08-29",
   "legacy_downloads": 83,
-  "desc": "Off The Road — Open World Driving 1.18.2 — universal AArch64 so-loader (xGen/Horde3D/bgfx) for NextOS, ArkOS/R36S-class and PortMaster handhelds."
+  "desc": "Off The Road — Open World Driving 1.18.2 — universal AArch64 so-loader (xGen/Horde3D/bgfx) for NextOS, ArkOS/R36S-class and PortMaster handhelds.",
+  "package_credits": {
+   "digest": "sha256:86d94339fb90ab879a40ce0c7a6669e6ddfff7a4d7e617b2e85aeaf3a63cde90",
+   "notices": [
+    "offtheroad/LICENSE",
+    "offtheroad/NOTICE.md",
+    "offtheroad/licenses/"
+   ]
+  }
  },
  {
   "key": "partyhard",
@@ -502,7 +742,15 @@
   "first_seen": "2026-09-08",
   "legacy_downloads": 11,
   "desc": "Universal AArch64 PortMaster port of Party Hard GO",
-  "steam_appid": 356570
+  "steam_appid": 356570,
+  "package_credits": {
+   "digest": "sha256:25556bba372a1d4cf2bbbb05fcfd6d4e5f277ca4914f19abecd0c0fdb70a3881",
+   "notices": [
+    "partyhard/LICENSE",
+    "partyhard/NOTICE.md",
+    "partyhard/nxextract/licenses/"
+   ]
+  }
  },
  {
   "key": "pf2",
@@ -520,7 +768,21 @@
   "first_seen": "2026-08-08",
   "legacy_downloads": 34,
   "desc": "Public native ARM64 BYO-data port of Prizefighters 2 for Linux handhelds",
-  "steam_appid": 1510210
+  "steam_appid": 1510210,
+  "package_credits": {
+   "digest": "sha256:34d1e96bef39f6acb9cdcf314f3b9aeda09a8f1fb9fb87e7b318d2064fd4bbb2",
+   "notices": [
+    "pf2/LICENSE",
+    "pf2/NOTICE.md",
+    "pf2/licenses/"
+   ],
+   "components": [
+    "NXExtract",
+    "LZ4",
+    "UnityPy",
+    "attrs"
+   ]
+  }
  },
  {
   "key": "rcrdx",
@@ -539,7 +801,15 @@
   "first_seen": "2026-08-18",
   "legacy_downloads": 66,
   "desc": "Port nativo AArch64 que carrega a biblioteca Android original de Retro City Rampage DX e reproduz o fluxo real do aplicativo: construtores, JNI_OnLoad, superfície, nativeInit e SDL_main. O jogo e seus dados não são distribuídos.",
-  "steam_appid": 204630
+  "steam_appid": 204630,
+  "package_credits": {
+   "digest": "sha256:d2674db50c17e94fb763ddded001a51a293e7446ef533c95d01bb56a1d6cd586",
+   "notices": [
+    "rcrdx/LICENSE",
+    "rcrdx/NOTICE.md",
+    "rcrdx/licenses/"
+   ]
+  }
  },
  {
   "key": "sallyface",
@@ -557,7 +827,19 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-08-29",
   "legacy_downloads": 44,
-  "desc": "Sally Face 1.5.5x — universal AArch64 Unity 2022.3/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds."
+  "desc": "Sally Face 1.5.5x — universal AArch64 Unity 2022.3/IL2CPP loader for NextOS, ArkOS/R36S-class and PortMaster handhelds.",
+  "package_credits": {
+   "digest": "sha256:81979c3b557946adf3e81ad80ab313290e51e0356adaa8103d7675e356e0fbde",
+   "notices": [
+    "sallyface/LICENSE",
+    "sallyface/NOTICE.md"
+   ],
+   "components": [
+    "NXExtract",
+    "NXSplash"
+   ]
+  },
+  "game_rightsholder": "Portable Moose"
  },
  {
   "key": "scourgebringer",
@@ -576,7 +858,19 @@
   "first_seen": "2026-08-18",
   "legacy_downloads": 42,
   "desc": "ScourgeBringer 1.61.x AArch64 MonoGame/.NET Android loader for NextOS and PortMaster.",
-  "steam_appid": 1037020
+  "steam_appid": 1037020,
+  "package_credits": {
+   "digest": "sha256:18c8239cc6c2aa571cd16016aee5ebe83561deb126da0eaeed7c4d1f5a897c23",
+   "notices": [
+    "scourgebringer/LICENSE",
+    "scourgebringer/NOTICE",
+    "scourgebringer/licenses/"
+   ],
+   "components": [
+    "syberia_arm64 (mtojek)",
+    "lswtcs_arm64 (mtojek)"
+   ]
+  }
  },
  {
   "key": "skate3",
@@ -593,7 +887,20 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-08-20",
   "legacy_downloads": 74,
-  "desc": "Port nativo do build Android (Unity 2022.3.45f1, IL2CPP, arm64-v8a) para o NextOS Retro Elite Edition. O jogo roda pelo so-loader: as bibliotecas originais (libmain.so, libunity.so, libil2cpp.so) são carregadas por um loader ELF próprio que implementa a JNI, o bionic e o ciclo de vida do UnityPlayer que elas esperam."
+  "desc": "Port nativo do build Android (Unity 2022.3.45f1, IL2CPP, arm64-v8a) para o NextOS Retro Elite Edition. O jogo roda pelo so-loader: as bibliotecas originais (libmain.so, libunity.so, libil2cpp.so) são carregadas por um loader ELF próprio que implementa a JNI, o bionic e o ciclo de vida do UnityPlayer que elas esperam.",
+  "package_credits": {
+   "digest": "sha256:9ae41a4a69248f78b50936e492c0b57f4611a00f17d262dfbd377c1c4fa75d5c",
+   "notices": [
+    "skate3/LICENSE",
+    "skate3/NOTICE.md",
+    "skate3/licenses/"
+   ],
+   "components": [
+    "syberia_arm64",
+    "lswtcs_arm64"
+   ]
+  },
+  "game_rightsholder": "Ratrod Studio"
  },
  {
   "key": "sonic4ep2",
@@ -611,7 +918,19 @@
   "first_seen": "2026-07-29",
   "legacy_downloads": 97,
   "desc": "Sonic 4 Episode II — native AArch64 port (BYO-data): SEGA's libfox.so engine on a Linux loader, runs on Mali-450 handhelds. No game data included.",
-  "steam_appid": 203650
+  "steam_appid": 203650,
+  "package_credits": {
+   "digest": "sha256:5d4c7647494cf8212f33bc96bedca4dbcd723c0b6e682c93a372b84bb93fffc6",
+   "notices": [
+    "sonic4ep2/LICENSE.md",
+    "sonic4ep2/licenses/"
+   ],
+   "components": [
+    "mpg123",
+    "Ogg/Vorbis",
+    "SDL"
+   ]
+  }
  },
  {
   "key": "sor4",
@@ -629,7 +948,20 @@
   "first_seen": "2026-07-29",
   "legacy_downloads": 444,
   "desc": "Streets of Rage 4 — native AArch64 port (BYO-data): .NET 9 host + MonoGame GLES, runs on 1GB handhelds (R36S/RG351/RG353...). No game data included.",
-  "steam_appid": 985890
+  "steam_appid": 985890,
+  "package_credits": {
+   "digest": "sha256:5e4641ffc00e59261539de71534f99c77f24c7a469c975532bc0312ad23aa48c",
+   "notices": [
+    "sor4/licenses/"
+   ],
+   "components": [
+    "MonoGame",
+    ".NET",
+    "Mono.Cecil",
+    "Java.Interop",
+    "LZ4"
+   ]
+  }
  },
  {
   "key": "Stardew.Valley.NextOS",
@@ -649,7 +981,14 @@
   "legacy_downloads": 167,
   "note": "Pacote em layout próprio (instalação manual, ver README). / Custom layout, manual install.",
   "desc": "Stardew Valley — native AArch64 port of the Android release (BYO-data): the Mono/.NET 8 runtime booted on plain Linux, playable on Mali-450 and R36S handhelds. No game data included.",
-  "steam_appid": 413150
+  "steam_appid": 413150,
+  "package_credits": {
+   "digest": "sha256:a501093701d0d544ed90dbfb4b023413b98fca1c1852c270f442325c4fa9978d",
+   "notices": [
+    "ports/sdvnextos/LICENSE",
+    "ports/sdvnextos/licenses/"
+   ]
+  }
  },
  {
   "key": "summertimesaga",
@@ -666,7 +1005,21 @@
   "screenshot_source": "local",
   "first_seen": "2026-07-31",
   "legacy_downloads": 280,
-  "desc": "Summertime Saga (free Preview) universal AArch64 Ren'Py loader for NextOS, ArkOS/R36S and PortMaster. 18+."
+  "desc": "Summertime Saga (free Preview) universal AArch64 Ren'Py loader for NextOS, ArkOS/R36S and PortMaster. 18+.",
+  "package_credits": {
+   "digest": "sha256:88210cd2ad1f271f592ed5bbf9a8c2efbebc2c48c266bf140e62dc05fcdf5f32",
+   "notices": [
+    "summertimesaga/NOTICE.md",
+    "summertimesaga/licenses/"
+   ],
+   "components": [
+    "NXExtract",
+    "Ren’Py",
+    "python-ecdsa",
+    "six"
+   ]
+  },
+  "game_rightsholder": "Kompas Productions"
  },
  {
   "key": "suzycube",
@@ -684,7 +1037,15 @@
   "first_seen": "2026-08-18",
   "legacy_downloads": 39,
   "desc": "Suzy Cube 1.0.13 universal AArch64 Unity/IL2CPP loader for NextOS, ArkOS/R36S and PortMaster.",
-  "steam_appid": 780500
+  "steam_appid": 780500,
+  "package_credits": {
+   "digest": "sha256:097baef48fde50a82283fc7b7436e1fb495c7e1164d8ab8daf45ea4841a00798",
+   "notices": [
+    "suzycube/LICENSE",
+    "suzycube/NOTICE.md",
+    "suzycube/licenses/"
+   ]
+  }
  },
  {
   "key": "swordigo",
@@ -702,7 +1063,20 @@
   "screenshot_source": "placeholder",
   "first_seen": "2026-08-12",
   "legacy_downloads": 85,
-  "desc": "Universal Swordigo port for NextOS/PortMaster handhelds (BYO data)"
+  "desc": "Universal Swordigo port for NextOS/PortMaster handhelds (BYO data)",
+  "package_credits": {
+   "digest": "sha256:544315cf6ab44c600a801d4dd5fc681f6428ebf6638021b9ccf28a51643d5d24",
+   "notices": [
+    "swordigo/LICENSE",
+    "swordigo/NOTICE.md",
+    "swordigo/licenses/"
+   ],
+   "components": [
+    "NXExtract",
+    "swordigo_nx (NaGaa95)"
+   ]
+  },
+  "game_rightsholder": "TouchFoo"
  },
  {
   "key": "tearscape",
@@ -721,7 +1095,21 @@
   "first_seen": "2026-09-04",
   "legacy_downloads": 25,
   "desc": "Tearscape 1.0.0 — universal AArch64 Godot 4.6.1 Mono port for NextOS, ArkOS/R36S-class, ROCKNIX, muOS and PortMaster handhelds.",
-  "steam_appid": 3216340
+  "steam_appid": 3216340,
+  "package_credits": {
+   "digest": "sha256:c841671241c4c2b80ad1134eb9a9fe08877de2922c76fc1d107bf7e53147123f",
+   "notices": [
+    "tearscape/LICENSE",
+    "tearscape/NOTICE.md",
+    "tearscape/licenses/"
+   ],
+   "components": [
+    "Godot",
+    "SDL",
+    ".NET",
+    "Khronos"
+   ]
+  }
  },
  {
   "key": "terraria",
@@ -740,7 +1128,18 @@
   "first_seen": "2026-09-08",
   "legacy_downloads": 52,
   "desc": "Universal BYO-data Terraria Android Unity/IL2CPP loader for NextOS and R36S-class AArch64 handhelds",
-  "steam_appid": 105600
+  "steam_appid": 105600,
+  "package_credits": {
+   "digest": "sha256:9e2db013e8d39ae42eabd9d59bc89727a067c50717d1f469f04395065cfb6c91",
+   "notices": [
+    "terraria/LICENSE",
+    "terraria/NOTICE.md",
+    "terraria/licenses/"
+   ],
+   "components": [
+    "NXExtract"
+   ]
+  }
  },
  {
   "key": "tightrope",
@@ -759,7 +1158,15 @@
   "first_seen": "2026-08-19",
   "legacy_downloads": 12,
   "desc": "Tightrope Theatre 1.0.5 — universal AArch64 Stencyl/Haxe-OpenFL-Lime loader for Linux handhelds (NextOS, ArkOS/R36S). BYO-data: no game files are distributed.",
-  "steam_appid": 1891140
+  "steam_appid": 1891140,
+  "package_credits": {
+   "digest": "sha256:4dd832f5091514455670c79b17a0200d7f2ee4777d3f21a26820ab3545642017",
+   "notices": [
+    "tightrope/LICENSE",
+    "tightrope/NOTICE.md",
+    "tightrope/licenses/"
+   ]
+  }
  },
  {
   "key": "titansouls",
@@ -786,7 +1193,18 @@
     "asset": "titansouls-1.0.8-spruce-test.1.zip"
    }
   ],
-  "steam_appid": 297130
+  "steam_appid": 297130,
+  "package_credits": {
+   "digest": "sha256:a5fb17fc7ac6f23fafaf10f1a19891d36f4da969bc68edd55789fe5321cff248",
+   "notices": [
+    "titansouls/LICENSE",
+    "titansouls/NOTICE.md",
+    "titansouls/licenses/"
+   ],
+   "components": [
+    "NXExtract"
+   ]
+  }
  },
  {
   "key": "residentevil4-ios",
@@ -814,7 +1232,15 @@
   "requirements": {
    "glibc": "2.28"
   },
-  "requirements_digest": "sha256:4793926dae236fedc7cc4de4c6735e73b1e6b6ece7d4c726968f38f45e716387"
+  "requirements_digest": "sha256:4793926dae236fedc7cc4de4c6735e73b1e6b6ece7d4c726968f38f45e716387",
+  "package_credits": {
+   "digest": "sha256:4793926dae236fedc7cc4de4c6735e73b1e6b6ece7d4c726968f38f45e716387",
+   "notices": [
+    "residentevil4-ios/LICENSE",
+    "residentevil4-ios/NOTICE.md",
+    "residentevil4-ios/licenses/"
+   ]
+  }
  },
  {
   "key": "gow-collection-vita",
@@ -846,7 +1272,23 @@
   "requirements": {
    "glibc": "2.28"
   },
-  "requirements_digest": "sha256:01174c9ac68c28a3a2bdd3143460d1843131ecaa3372618917517e671395d311"
+  "requirements_digest": "sha256:01174c9ac68c28a3a2bdd3143460d1843131ecaa3372618917517e671395d311",
+  "package_credits": {
+   "digest": "sha256:01174c9ac68c28a3a2bdd3143460d1843131ecaa3372618917517e671395d311",
+   "notices": [
+    "gow-collection-vita/LICENSES/",
+    "gow-collection-vita/runtime/translations/CREDITOS.txt"
+   ],
+   "components": [
+    "7-Zip",
+    "OpenSSL",
+    "SPIRV-Cross",
+    "SPIRV-Tools",
+    "Vita3K",
+    "VitaRT (luisxl15)"
+   ]
+  },
+  "screenshot_source": "provided-cover"
  },
  {
   "key": "twinsanity",
@@ -878,7 +1320,17 @@
   "requirements": {
    "glibc": "2.28"
   },
-  "requirements_digest": "sha256:4c8eab1904da230034b0bf3d481f96390de6ce0a38d337f1689615d369c6104c"
+  "requirements_digest": "sha256:4c8eab1904da230034b0bf3d481f96390de6ce0a38d337f1689615d369c6104c",
+  "package_credits": {
+   "digest": "sha256:4c8eab1904da230034b0bf3d481f96390de6ce0a38d337f1689615d369c6104c",
+   "notices": [
+    "twinsanity/LICENSES/"
+   ],
+   "components": [
+    "TwinsanityEvolved",
+    "FFmpeg"
+   ]
+  }
  },
  {
   "key": "gt4",
@@ -910,7 +1362,16 @@
   "requirements": {
    "glibc": "2.27"
   },
-  "requirements_digest": "sha256:995404b59e9c8c63b5a9ef046933d999a0dd9d53a7718ff40ddbcd74c75338f1"
+  "requirements_digest": "sha256:995404b59e9c8c63b5a9ef046933d999a0dd9d53a7718ff40ddbcd74c75338f1",
+  "package_credits": {
+   "digest": "sha256:995404b59e9c8c63b5a9ef046933d999a0dd9d53a7718ff40ddbcd74c75338f1",
+   "notices": [
+    "gt4/LICENSES/"
+   ],
+   "components": [
+    "OpenGT4"
+   ]
+  }
  },
  {
   "key": "rockmanxsurvivors",
@@ -942,7 +1403,18 @@
   "requirements": {
    "glibc": "2.28"
   },
-  "requirements_digest": "sha256:740ff82b6713e87fc5f454656a1981fa1208f3f214b560e3b07d21ffadc7e1df"
+  "requirements_digest": "sha256:740ff82b6713e87fc5f454656a1981fa1208f3f214b560e3b07d21ffadc7e1df",
+  "package_credits": {
+   "digest": "sha256:740ff82b6713e87fc5f454656a1981fa1208f3f214b560e3b07d21ffadc7e1df",
+   "notices": [
+    "rockmanxsurvivors/LICENSES/"
+   ],
+   "components": [
+    "WABT",
+    "FFmpeg",
+    "UnityPy"
+   ]
+  }
  },
  {
   "key": "neondrive",
@@ -979,7 +1451,20 @@
   "requirements": {
    "glibc": "2.28"
   },
-  "requirements_digest": "sha256:07d6ecbcc4912f9a611b1d58eeff5f6a6e7ddad9ba60b125390a33a433697422"
+  "requirements_digest": "sha256:07d6ecbcc4912f9a611b1d58eeff5f6a6e7ddad9ba60b125390a33a433697422",
+  "package_credits": {
+   "digest": "sha256:07d6ecbcc4912f9a611b1d58eeff5f6a6e7ddad9ba60b125390a33a433697422",
+   "notices": [
+    "neondrive/NOTICE.md",
+    "neondrive/licenses/"
+   ],
+   "components": [
+    "FFmpeg",
+    "FreeType",
+    "ICU",
+    "OpenSSL"
+   ]
+  }
  },
  {
   "key": "lordsofexile",
@@ -1004,7 +1489,18 @@
   "requirements": {
    "glibc": "2.28"
   },
-  "requirements_digest": "sha256:0e8c46c3924526f86bd544f636ed70713f831d3484aa89dd1a50c6485df508e4"
+  "requirements_digest": "sha256:0e8c46c3924526f86bd544f636ed70713f831d3484aa89dd1a50c6485df508e4",
+  "package_credits": {
+   "digest": "sha256:0e8c46c3924526f86bd544f636ed70713f831d3484aa89dd1a50c6485df508e4",
+   "notices": [
+    "lordsofexile/LICENSE",
+    "lordsofexile/licenses/"
+   ],
+   "components": [
+    "gmloader-next",
+    "innoextract"
+   ]
+  }
  },
  {
   "key": "wind-waker-nextos",
@@ -1027,7 +1523,14 @@
   "requirements": {
    "glibc": "2.28"
   },
-  "requirements_digest": "sha256:c6c7612bf13688463e405eeff64740e860bb72227f16432e36087aa73f23b935"
+  "requirements_digest": "sha256:c6c7612bf13688463e405eeff64740e860bb72227f16432e36087aa73f23b935",
+  "package_credits": {
+   "digest": "sha256:c6c7612bf13688463e405eeff64740e860bb72227f16432e36087aa73f23b935",
+   "notices": [
+    "wind-waker-nextos/LICENSES/",
+    "wind-waker-nextos/runtime/nxextract/LICENSE"
+   ]
+  }
  },
  {
   "key": "isaac-android-nextos",
@@ -1064,7 +1567,13 @@
   "requirements": {
    "glibc": "2.27"
   },
-  "requirements_digest": "sha256:be0758432df40532c0585bc879d3b70e75cb85dea7191b1cb2241324d76fe044"
+  "requirements_digest": "sha256:be0758432df40532c0585bc879d3b70e75cb85dea7191b1cb2241324d76fe044",
+  "package_credits": {
+   "digest": "sha256:be0758432df40532c0585bc879d3b70e75cb85dea7191b1cb2241324d76fe044",
+   "notices": [
+    "isaac-android-nextos/LICENSES/"
+   ]
+  }
  },
  {
   "key": "avgn12deluxe",
@@ -1088,7 +1597,14 @@
   "requirements": {
    "glibc": "2.27"
   },
-  "requirements_digest": "sha256:c95000675ca7c898ebf33f403cb4aa57b55c0b02052e50b210622a81ab9a0230"
+  "requirements_digest": "sha256:c95000675ca7c898ebf33f403cb4aa57b55c0b02052e50b210622a81ab9a0230",
+  "package_credits": {
+   "digest": "sha256:c95000675ca7c898ebf33f403cb4aa57b55c0b02052e50b210622a81ab9a0230",
+   "notices": [
+    "avgn12deluxe/LICENSE",
+    "avgn12deluxe/licenses/"
+   ]
+  }
  },
  {
   "key": "wario-shakeit",
@@ -1111,7 +1627,13 @@
   "requirements": {
    "glibc": "2.28"
   },
-  "requirements_digest": "sha256:971013f74c493469de32e6fca2400d21b1fd5b2a33bc879b369e5dcb1d6a92a1"
+  "requirements_digest": "sha256:971013f74c493469de32e6fca2400d21b1fd5b2a33bc879b369e5dcb1d6a92a1",
+  "package_credits": {
+   "digest": "sha256:971013f74c493469de32e6fca2400d21b1fd5b2a33bc879b369e5dcb1d6a92a1",
+   "notices": [
+    "wario-shakeit/licenses/"
+   ]
+  }
  },
  {
   "key": "danmanclassic",
@@ -1147,7 +1669,14 @@
   "requirements": {
    "glibc": "2.27"
   },
-  "requirements_digest": "sha256:2e77fd05c76ec78ab0b8dcf8c71b5c5af4b81699d4b7c6fc377352ac076babef"
+  "requirements_digest": "sha256:2e77fd05c76ec78ab0b8dcf8c71b5c5af4b81699d4b7c6fc377352ac076babef",
+  "package_credits": {
+   "digest": "sha256:2e77fd05c76ec78ab0b8dcf8c71b5c5af4b81699d4b7c6fc377352ac076babef",
+   "notices": [
+    "danmanclassic/THIRD-PARTY-NOTICES.txt",
+    "danmanclassic/licenses/"
+   ]
+  }
  },
  {
   "key": "shakedown-ios",
@@ -1171,7 +1700,15 @@
   "requirements": {
    "glibc": "2.28"
   },
-  "requirements_digest": "sha256:083e3a021d7cec1420bfaeb22ebf0efaa8b96490f80bd7b7af10ff3d57371427"
+  "requirements_digest": "sha256:083e3a021d7cec1420bfaeb22ebf0efaa8b96490f80bd7b7af10ff3d57371427",
+  "package_credits": {
+   "digest": "sha256:083e3a021d7cec1420bfaeb22ebf0efaa8b96490f80bd7b7af10ff3d57371427",
+   "notices": [
+    "shakedown-ios/LICENSE",
+    "shakedown-ios/NOTICE.md",
+    "shakedown-ios/licenses/"
+   ]
+  }
  },
  {
   "key": "ducktales",
@@ -1196,7 +1733,15 @@
   "requirements": {
    "glibc": "2.28"
   },
-  "requirements_digest": "sha256:9922ea45a9c409089f9ba1bf97fbf96240746d5e138e691246a5db68243257c0"
+  "requirements_digest": "sha256:9922ea45a9c409089f9ba1bf97fbf96240746d5e138e691246a5db68243257c0",
+  "package_credits": {
+   "digest": "sha256:9922ea45a9c409089f9ba1bf97fbf96240746d5e138e691246a5db68243257c0",
+   "notices": [
+    "ducktales/LICENSES/",
+    "ducktales/NOTICE.md",
+    "ducktales/runtime/nxextract/LICENSE"
+   ]
+  }
  },
  {
   "key": "the-messenger-android",
@@ -1225,7 +1770,13 @@
    ],
    "glibc": "2.28"
   },
-  "requirements_digest": "sha256:10ed78b1ec69a96c5dce7dac0bdca3b8fb725709318729b274aaae85c2085b4e"
+  "requirements_digest": "sha256:10ed78b1ec69a96c5dce7dac0bdca3b8fb725709318729b274aaae85c2085b4e",
+  "package_credits": {
+   "digest": "sha256:10ed78b1ec69a96c5dce7dac0bdca3b8fb725709318729b274aaae85c2085b4e",
+   "notices": [
+    "the-messenger-android/licenses/"
+   ]
+  }
  },
  {
   "key": "vampiresurvivors",
@@ -1253,7 +1804,13 @@
     "SDL2"
    ]
   },
-  "requirements_digest": "sha256:a981bb507576c8a9c2518b1440594e1045877e27ffe52cc87e145ef6a38737be"
+  "requirements_digest": "sha256:a981bb507576c8a9c2518b1440594e1045877e27ffe52cc87e145ef6a38737be",
+  "package_credits": {
+   "digest": "sha256:a981bb507576c8a9c2518b1440594e1045877e27ffe52cc87e145ef6a38737be",
+   "notices": [
+    "vampiresurvivors/LICENSES/"
+   ]
+  }
  },
  {
   "key": "cotm-switch",
@@ -1284,7 +1841,15 @@
     "Python 3"
    ]
   },
-  "requirements_digest": "sha256:18d458a39f32c640e58e95ae984783885f53780bcbc772d5516712e584e8ccc6"
+  "requirements_digest": "sha256:18d458a39f32c640e58e95ae984783885f53780bcbc772d5516712e584e8ccc6",
+  "package_credits": {
+   "digest": "sha256:18d458a39f32c640e58e95ae984783885f53780bcbc772d5516712e584e8ccc6",
+   "notices": [
+    "cotm-switch/LICENSE",
+    "cotm-switch/THIRD-PARTY-NOTICES.txt",
+    "cotm-switch/licenses/"
+   ]
+  }
  },
  {
   "key": "ritas-rewind",
@@ -1309,7 +1874,14 @@
   "requirements": {
    "glibc": "2.28"
   },
-  "requirements_digest": "sha256:cdf9cea0bd0c04f4d47d2d42832055001e4de5c3f60cc1de405b5c48915992a2"
+  "requirements_digest": "sha256:cdf9cea0bd0c04f4d47d2d42832055001e4de5c3f60cc1de405b5c48915992a2",
+  "package_credits": {
+   "digest": "sha256:cdf9cea0bd0c04f4d47d2d42832055001e4de5c3f60cc1de405b5c48915992a2",
+   "notices": [
+    "ritas-rewind/THIRD-PARTY-NOTICES.txt",
+    "ritas-rewind/licenses/"
+   ]
+  }
  },
  {
   "key": "mombo",
@@ -1333,7 +1905,15 @@
   "requirements": {
    "glibc": "2.27"
   },
-  "requirements_digest": "sha256:2456b85dece301e857d11965df159b43c768f9a6ee752352a74f459a6ccb1b59"
+  "requirements_digest": "sha256:2456b85dece301e857d11965df159b43c768f9a6ee752352a74f459a6ccb1b59",
+  "package_credits": {
+   "digest": "sha256:2456b85dece301e857d11965df159b43c768f9a6ee752352a74f459a6ccb1b59",
+   "notices": [
+    "mombo/LICENSES/",
+    "mombo/NOTICE.md",
+    "mombo/runtime/nxextract/LICENSE"
+   ]
+  }
  },
  {
   "key": "acpirates",
@@ -1357,7 +1937,14 @@
   "requirements": {
    "glibc": "2.17"
   },
-  "requirements_digest": "sha256:6edb258690bb41a6e9b166f1891c1213338758159aec7a7ee13450f022b698f1"
+  "requirements_digest": "sha256:6edb258690bb41a6e9b166f1891c1213338758159aec7a7ee13450f022b698f1",
+  "package_credits": {
+   "digest": "sha256:6edb258690bb41a6e9b166f1891c1213338758159aec7a7ee13450f022b698f1",
+   "notices": [
+    "acpirates/LICENSE",
+    "acpirates/NOTICE.md"
+   ]
+  }
  },
  {
   "key": "brotato",
@@ -1382,7 +1969,21 @@
   "requirements": {
    "glibc": "2.27"
   },
-  "requirements_digest": "sha256:01638888385d5872ab712dee92a2a064517872946222f27cb61ebe3dbdb42bb9"
+  "requirements_digest": "sha256:01638888385d5872ab712dee92a2a064517872946222f27cb61ebe3dbdb42bb9",
+  "package_credits": {
+   "digest": "sha256:01638888385d5872ab712dee92a2a064517872946222f27cb61ebe3dbdb42bb9",
+   "notices": [
+    "brotato/LICENSE",
+    "brotato/NOTICE.md",
+    "brotato/licenses/"
+   ],
+   "components": [
+    "UnityPy",
+    "attrs",
+    "fsspec",
+    "NXExtract"
+   ]
+  }
  },
  {
   "key": "mmw",
@@ -1407,7 +2008,18 @@
   "requirements": {
    "glibc": "2.27"
   },
-  "requirements_digest": "sha256:b7ed930beabb925cc4f95b2ac99fc758976424591e44f0538f540cfb2a57b0c3"
+  "requirements_digest": "sha256:b7ed930beabb925cc4f95b2ac99fc758976424591e44f0538f540cfb2a57b0c3",
+  "package_credits": {
+   "digest": "sha256:b7ed930beabb925cc4f95b2ac99fc758976424591e44f0538f540cfb2a57b0c3",
+   "notices": [
+    "mmw/LICENSE",
+    "mmw/NOTICE.md",
+    "mmw/licenses/"
+   ],
+   "components": [
+    "Godot"
+   ]
+  }
  },
  {
   "key": "strangerthings3",
@@ -1431,7 +2043,15 @@
   "requirements": {
    "glibc": "2.27"
   },
-  "requirements_digest": "sha256:a73acf533ff34c77d9df95c507391bcb8fa97415f6c573dae8f6858c30be94be"
+  "requirements_digest": "sha256:a73acf533ff34c77d9df95c507391bcb8fa97415f6c573dae8f6858c30be94be",
+  "package_credits": {
+   "digest": "sha256:a73acf533ff34c77d9df95c507391bcb8fa97415f6c573dae8f6858c30be94be",
+   "notices": [
+    "strangerthings3/LICENSE",
+    "strangerthings3/NOTICE.md",
+    "strangerthings3/licenses/"
+   ]
+  }
  },
  {
   "key": "isaac-ios",
@@ -1457,6 +2077,13 @@
    "tested_ram_mb": 1024,
    "glibc": "2.27"
   },
-  "requirements_digest": "sha256:b9732336ce17de64bd4e2da6cfaef41db88b3bdf7ff40d2bde823c5efdb06c21"
+  "requirements_digest": "sha256:b9732336ce17de64bd4e2da6cfaef41db88b3bdf7ff40d2bde823c5efdb06c21",
+  "package_credits": {
+   "digest": "sha256:b9732336ce17de64bd4e2da6cfaef41db88b3bdf7ff40d2bde823c5efdb06c21",
+   "notices": [
+    "isaac-ios/LICENSE",
+    "isaac-ios/NOTICE.md"
+   ]
+  }
  }
 ]

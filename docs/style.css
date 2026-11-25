@@ -241,3 +241,8 @@ dialog::backdrop { background: #050b12cb; backdrop-filter: blur(4px); }
 @media (max-width: 420px) {
   .check-fields, .related { grid-template-columns: 1fr; }
 }
+
+#direitos > p { max-width: 78ch; color: var(--muted); margin: 8px 0; font-size: 14px; }
+#direitos > h3 { margin-top: 20px; }
+.port-credits p { overflow-wrap: anywhere; }
+.port-credits .button, #direitos .button { white-space: normal; text-align: center; max-width: 100%; }

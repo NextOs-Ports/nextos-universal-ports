@@ -148,6 +148,8 @@ def catalog(manifest, existing, release_list):
                     "size": variant_asset["size"],
                     "digest": variant_asset.get("digest"),
                 })
+        recorded = entry.get("package_credits", {})
+        credits = recorded if asset.get("digest") and recorded.get("digest") == asset["digest"] else {}
         result.append({
             **previous, "version": 4, "name": name, "attr": attr,
             "source": {
@@ -166,6 +168,11 @@ def catalog(manifest, existing, release_list):
                 "portmaster": entry.get("portmaster", True), "prerelease": release["prerelease"],
                 "note": entry.get("note", ""),
                 "verified_on": verified_on,
+                "credits": {
+                    "integration": "NextOS", "game_rightsholder": entry.get("game_rightsholder"),
+                    "image_source": entry.get("screenshot_source"),
+                    "components": credits.get("components", []), "notices": credits.get("notices", []),
+                },
                 "steam_appid": entry.get("steam_appid"),
                 "requirements": entry.get("requirements", {}) if tag_matches and entry.get("requirements_digest", asset.get("digest")) == asset.get("digest") else {},
                 "variants": variants,

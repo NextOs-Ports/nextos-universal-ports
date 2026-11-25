@@ -2,6 +2,16 @@
 
 const text = {
   pt: {
+    rights: "Direitos e créditos", rightsContact: "Correções de crédito e pedidos de retirada",
+    rightsIntro: "A NextOS desenvolve e integra ports para portáteis Linux e mantém este catálogo. Os jogos, marcas e artes pertencem aos respectivos titulares. Os dados originais do jogo vêm da cópia legítima do jogador.",
+    rightsComponents: "Consulte os créditos do port na ficha do jogo e os avisos de licença no ZIP da versão que você baixou.",
+    rightsHelp: "Informe o título do jogo, o link da ficha, o material em questão e o ajuste solicitado.",
+    rightsIssue: "Abrir solicitação no GitHub ↗", rightsDiscord: "Contatar a equipe no Discord ↗",
+    integration: "Integração do port", authors: "Autoria do port", holder: "Direitos do jogo", components: "Projetos e componentes",
+    notices: "Avisos dentro do ZIP", readCredits: "Documentação do port ↗", artSource: "Fonte da imagem",
+    artLocal: "Acervo NextOS", artProvided: "Capa fornecida para o catálogo", artZip: "Imagem do pacote do port", artPlaceholder: "Imagem de identificação do catálogo",
+    contactRights: "Solicitar correção de crédito ou retirada ↗",
+
     specSource: "Especificações de referência · PortMaster ↗", steamFilter: "Biblioteca Steam", owned: "Tenho na Steam", notOwned: "Não tenho na Steam", forget: "Esquecer biblioteca",
     importSteam: "Importar biblioteca Steam", openSteam: "Abrir minha lista na Steam ↗", steamFile: "Arquivo da biblioteca",
     steamHelp: "Com a loja Steam conectada, abra sua lista, salve a página como JSON e selecione o arquivo abaixo. Os IDs ficam neste navegador. Confira no guia a edição exigida pelo port.",
@@ -46,6 +56,16 @@ const text = {
     count: (shown, total) => shown < total ? "Mostrando " + shown + " de " + total + " ports" : total + (total === 1 ? " port encontrado" : " ports encontrados"),
   },
   en: {
+    rights: "Rights and credits", rightsContact: "Credit corrections and removal requests",
+    rightsIntro: "NextOS develops and integrates ports for Linux handhelds and maintains this catalog. Games, trademarks and artwork belong to their respective rights holders. Players supply the original game data from their own legitimate copies.",
+    rightsComponents: "See the port credits on the game page and the license notices in the ZIP for the version you downloaded.",
+    rightsHelp: "Include the game title, catalog link, material in question and the change requested.",
+    rightsIssue: "Open a request on GitHub ↗", rightsDiscord: "Contact the team on Discord ↗",
+    integration: "Port integration", authors: "Port authors", holder: "Game rights", components: "Projects and components",
+    notices: "Notices inside the ZIP", readCredits: "Port documentation ↗", artSource: "Image source",
+    artLocal: "NextOS collection", artProvided: "Cover supplied for the catalog", artZip: "Image from the port package", artPlaceholder: "Catalog identification image",
+    contactRights: "Request a credit correction or removal ↗",
+
     specSource: "Reference specifications · PortMaster ↗", steamFilter: "Steam library", owned: "I own it on Steam", notOwned: "I don’t own it on Steam", forget: "Forget library",
     importSteam: "Import Steam library", openSteam: "Open my Steam list ↗", steamFile: "Library file",
     steamHelp: "Sign in to the Steam store, open your list, save the page as JSON and select the file below. IDs stay in this browser. Check the port guide for the required edition.",
@@ -535,6 +555,39 @@ query("#steam-forget").addEventListener("click", () => {
   resetLimit();
 });
 
+function portCredits(port) {
+  const { attr, source } = port;
+  const credits = source.credits || {};
+  const panel = element("details", "compatibility port-credits");
+  panel.append(element("summary", "", t("rights")));
+  function line(label, value) {
+    const item = element("p");
+    item.append(element("strong", "", t(label) + " · "), value);
+    panel.append(item);
+  }
+  line("integration", credits.integration || "NextOS");
+  const porters = [attr.porter || []].flat().filter((name) => !["nextos", "nextos-ports"].includes(String(name).toLowerCase()));
+  if (porters.length) line("authors", porters.join(", "));
+  if (credits.game_rightsholder) line("holder", credits.game_rightsholder);
+  if (credits.components?.length) line("components", credits.components.join(", "));
+  if (credits.notices?.length) line("notices", credits.notices.join(" · "));
+  const image = credits.image_source;
+  const origins = { local: "artLocal", zip: "artZip", placeholder: "artPlaceholder", "provided-cover": "artProvided" };
+  if (Object.hasOwn(origins, image)) line("artSource", t(origins[image]));
+  else if (typeof image === "string" && image.startsWith("https://")) {
+    line("artSource", external(new URL(image).hostname + " ↗", image, "dialog-link"));
+  }
+  const actions = element("div", "dialog-actions");
+  const docs = githubURL(source.readme_url);
+  if (docs) actions.append(external(t("readCredits"), docs, "button button-quiet"));
+  const request = new URL(repo + "/issues/new");
+  request.searchParams.set("title", t("rights") + " · " + attr.title + " · " + releaseName(source));
+  request.searchParams.set("body", portURL(port) + "\n" + source.release_url + "\n\n");
+  actions.append(external(t("contactRights"), request.href, "button button-quiet"));
+  panel.append(actions);
+  return panel;
+}
+
 function renderDialog(port) {
   const { attr, source } = port;
   const image = screenshot(port);
@@ -586,7 +639,7 @@ function renderDialog(port) {
       info.append(row);
     }
   }
-  info.append(deviceChecker(port));
+  info.append(portCredits(port), deviceChecker(port));
   const related = relatedGames(port);
   if (related.length) {
     info.append(element("h3", "", t("similar")));

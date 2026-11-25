@@ -22,7 +22,7 @@ Este pacote universal AArch64 contém o runtime do port e o Framework V6
 fixado em `FRAMEWORK-PIN.json`. **Não contém o jogo, chaves ou saves.**
 Requer Linux AArch64, glibc 2.30 ou posterior, Python 3, OpenSSL libcrypto,
 SDL2/EGL/GLES2 do sistema e um controle reconhecido pela SDL2.
-Três arquivos de fontes acompanham o ZIP: `cotm-switch-source-1.0.7.tar.gz`
+A documentação do ZIP identifica três arquivos de fontes correspondentes. Os nomes registrados são `cotm-switch-source-1.0.7.tar.gz`
 (fontes próprias), `cotm-switch-framework-source.tar.gz` (framework usado na
 compilação do ELF) e `cotm-switch-framework-package-source.tar.gz`
 (framework do launcher e do pacote atual). Não os extraia na instalação do jogo.
@@ -102,7 +102,7 @@ This AArch64 package contains the port runtime and the Framework V6 composition
 pinned in `FRAMEWORK-PIN.json`. **Game data, keys and saves are not included.**
 It requires AArch64 Linux, glibc 2.30 or newer, Python 3, OpenSSL libcrypto,
 system SDL2/EGL/GLES2 and an SDL2-recognized controller.
-Three source archives accompany the ZIP: `cotm-switch-source-1.0.7.tar.gz`
+The ZIP documentation identifies three corresponding source archives. The recorded names are `cotm-switch-source-1.0.7.tar.gz`
 (port sources), `cotm-switch-framework-source.tar.gz` (framework used to build
 the ELF), and `cotm-switch-framework-package-source.tar.gz` (current
 launcher/package framework). Do not extract them into the game installation.

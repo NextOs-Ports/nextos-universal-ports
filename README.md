@@ -66,6 +66,8 @@ For help or bug reports, [join the NextOS Discord](https://discord.gg/DHfY62eDNN
 
 ## ⚖️ Aviso legal / Legal notice
 
+[Direitos e créditos / Rights and credits](https://nextos-ports.github.io/nextos-universal-ports/#direitos) · [Solicitar correção ou retirada / Request a correction or removal](https://github.com/NextOs-Ports/nextos-universal-ports/issues/new)
+
 Os ZIPs distribuem o port, suas dependências e a documentação. **Os dados originais do
 jogo vêm da cópia do jogador.** Consulte os avisos de licença incluídos no ZIP.
 Todas as marcas e jogos pertencem aos seus respectivos detentores.

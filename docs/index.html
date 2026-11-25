@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20261125-11">
-  <script defer src="app.js?v=20261125-11"></script>
+  <link rel="stylesheet" href="style.css?v=20261125-12">
+  <script defer src="app.js?v=20261125-12"></script>
 </head>
 <body>
   <a class="skip" href="#catalogo" data-t="skip">Ir para o catálogo</a>
@@ -168,11 +168,22 @@
         <a class="button button-quiet" href="https://discord.com/channels/1463624170662531082/1531881380349480970" target="_blank" rel="noopener noreferrer" data-t="openHelp">Abrir #port-help ↗</a>
       </div>
     </section>
+    <section class="section support-panel" id="direitos" aria-labelledby="rights-title">
+      <div class="section-heading"><h2 id="rights-title" data-t="rights">Direitos e créditos</h2></div>
+      <p data-t="rightsIntro">A NextOS desenvolve e integra ports para portáteis Linux e mantém este catálogo. Os jogos, marcas e artes pertencem aos respectivos titulares. Os dados originais do jogo vêm da cópia legítima do jogador.</p>
+      <p data-t="rightsComponents">Consulte os créditos do port na ficha do jogo e os avisos de licença no ZIP da versão que você baixou.</p>
+      <h3 data-t="rightsContact">Correções de crédito e pedidos de retirada</h3>
+      <p data-t="rightsHelp">Informe o título do jogo, o link da ficha, o material em questão e o ajuste solicitado.</p>
+      <div class="support-actions">
+        <a class="button button-quiet" href="https://github.com/NextOs-Ports/nextos-universal-ports/issues/new" data-t="rightsIssue">Abrir solicitação no GitHub ↗</a>
+        <a class="button button-quiet" href="https://discord.gg/DHfY62eDNN" data-t="rightsDiscord">Contatar a equipe no Discord ↗</a>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="wrap footer-inner">
       <div><a class="wordmark" href="#inicio"><span class="brand-mark" aria-hidden="true">N</span><span>NEXT<span class="accent">OS</span><small>PORTS</small></span></a><p data-t="legal">Os jogos e suas marcas pertencem aos respectivos titulares.</p></div>
-      <nav aria-label="Links do projeto"><a href="https://github.com/NextOs-Ports/nextos-universal-ports">GitHub ↗</a><a href="https://discord.gg/DHfY62eDNN">Discord ↗</a><a href="ports.json" data-t="jsonCatalog">Catálogo JSON ↗</a></nav>
+      <nav aria-label="Links do projeto"><a href="#direitos" data-t="rights">Direitos e créditos</a><a href="https://github.com/NextOs-Ports/nextos-universal-ports">GitHub ↗</a><a href="https://discord.gg/DHfY62eDNN">Discord ↗</a><a href="ports.json" data-t="jsonCatalog">Catálogo JSON ↗</a></nav>
     </div>
   </footer>
   <dialog id="port-dialog" aria-labelledby="port-title">

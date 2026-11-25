@@ -26,3 +26,9 @@ O campo `steam_appid` associa um título à loja Steam para o filtro de bibliote
 O workflow guarda a primeira amostra diária dos contadores da API GitHub no artefato `nextos-download-history`. O ranking usa a diferença observada em até sete dias de histórico, acompanhando o ID dos anexos quando a versão muda. O período efetivo aparece no site. A coleta inicial usa o inventário público das Releases de 25/11/2026.
 
 Os perfis de referência em `docs/hardware.json` usam arquitetura, RAM e glibc do [inventário público de aparelhos do PortMaster](https://portmaster.games/assets/json/device_info.json). São especificações do conjunto aparelho/firmware. Os testes físicos da NextOS continuam vinculados ao digest da release.
+
+### Créditos de uma release
+
+Ao preparar o ZIP, preserve os avisos de copyright, as licenças e os créditos dos componentes distribuídos. Confira as condições de distribuição de cada componente e da imagem do catálogo. Confirme com o proprietário como atender às condições aplicáveis antes de distribuir o componente. Qualquer publicação de código-fonte de um port depende de um pedido explícito do proprietário.
+
+No manifesto, registre os caminhos de avisos em `package_credits.notices` e os projetos identificados em `components`, dentro de `package_credits`. O `digest` desse registro vincula os dados ao ZIP conferido. Use `game_rightsholder` quando houver titular identificado na documentação e `screenshot_source` para a origem da imagem. Uma URL HTTPS de divulgação aparece na ficha como link de crédito. Guarde a autorização ou os termos aplicáveis junto da documentação de origem.
