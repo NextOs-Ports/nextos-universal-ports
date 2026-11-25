@@ -1295,7 +1295,7 @@
   "title": "Crash Twinsanity",
   "folder": "ports-ps2/twinsanity",
   "platform": "ps2",
-  "release_tag": "twinsanity-v1.1.0",
+  "release_tag": "twinsanity-v1.1.1",
   "asset": "twinsanity.zip",
   "screenshot": "twinsanity.screenshot.jpg",
   "genres": [
@@ -1309,7 +1309,7 @@
   "inst": "Use uma ISO americana SLUS-20909 v2.00 ou europeia SLES-52568.",
   "note": "Prova física no R36T/K36S com dArkOS4Clone e Mali-G31 usando o disco americano.",
   "verification": {
-   "digest": "sha256:4c8eab1904da230034b0bf3d481f96390de6ce0a38d337f1689615d369c6104c",
+   "digest": "sha256:f05587ab515068065baa72c60ad514606a929abdd246fc6971efe773d3b6f7d5",
    "tested_on": [
     {
      "device": "R36T / K36S (Mali-G31)",
@@ -1320,9 +1320,9 @@
   "requirements": {
    "glibc": "2.28"
   },
-  "requirements_digest": "sha256:4c8eab1904da230034b0bf3d481f96390de6ce0a38d337f1689615d369c6104c",
+  "requirements_digest": "sha256:f05587ab515068065baa72c60ad514606a929abdd246fc6971efe773d3b6f7d5",
   "package_credits": {
-   "digest": "sha256:4c8eab1904da230034b0bf3d481f96390de6ce0a38d337f1689615d369c6104c",
+   "digest": "sha256:f05587ab515068065baa72c60ad514606a929abdd246fc6971efe773d3b6f7d5",
    "notices": [
     "twinsanity/LICENSES/"
    ],

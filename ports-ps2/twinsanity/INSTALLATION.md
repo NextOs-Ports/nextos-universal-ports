@@ -1,6 +1,6 @@
 # Crash Twinsanity – instalação / installation
 
-Use o guia abaixo da versão 1.1.0. The port ships with this guide in `gamedata/README.txt`.
+Use o guia abaixo da versão 1.1.1. The port ships with this guide in `gamedata/README.txt`.
 
 ~~~text
 Game: Crash Twinsanity (PlayStation 2), NTSC-U SLUS-20909 version 2.00, or PAL SLES-52568.
