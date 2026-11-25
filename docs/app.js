@@ -1,121 +1,396 @@
-(() => {
-  const RAW = "https://raw.githubusercontent.com/NextOs-Ports/nextos-universal-ports/main/";
-  const PLAT = { android: "Android", ios: "iOS", switch: "Switch", gamecube: "GameCube", vita: "PS Vita" };
-  const I18N = {
-    pt: { tagline: "Ports universais de jogos para portáteis Linux AArch64 · NextOS · ArkOS / R36S · ROCKNIX · muOS · PortMaster",
-      how: "Como instalar", filters: "Filtros", search: "Buscar…", platform: "Plataforma de origem", genre: "Gênero", type: "Tipo", install: "Instalação", sort: "Ordenar",
-      all: "Todos", free: "Jogo gratuito", paid: "Jogo pago", manual: "Manual", alpha: "A–Z", recent: "Mais recentes", downloads: "Mais baixados",
-      download: "Baixar", details: "Detalhes", ports: "ports", releases: "releases", soon: "Em breve", none: "Nenhum port encontrado.",
-      legal: "Nenhum pacote inclui jogo ou dados de jogo. Você precisa da sua própria cópia legítima.",
-      glibc: "glibc", installpm: "PortMaster", installmanual: "manual", updated: "atualizado",
-      howto: `<li>Baixe o <b>.zip</b> do port.</li><li>Copie para a pasta de ports do aparelho: <code>ports/</code> (PortMaster/ArkOS) ou <code>roms/ports</code> (NextOS).</li><li>Coloque o <b>APK/XAPK original</b> do jogo onde o README do port indicar (normalmente <code>&lt;port&gt;/gamedata/</code>).</li><li>Abra pelo menu. A primeira abertura extrai e valida os dados.</li><li><b>SELECT + START</b> sai com segurança.</li>`,
-      pm: `<b>Dentro do app PortMaster:</b> baixe <a href="https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/040_nextos.source.json">040_nextos.source.json</a> e coloque em <code>PortMaster/config/</code> (ao lado de <code>020_portmaster.source.json</code>). Na próxima abertura o PortMaster lista estes ports.`,
-      footer: `Todos os jogos e marcas pertencem aos seus respectivos detentores. Os pacotes contêm apenas código de compatibilidade e documentação. · <a href="https://github.com/NextOs-Ports/nextos-universal-ports#%EF%B8%8F-aviso-legal--legal-notice">Aviso legal</a>` },
-    en: { tagline: "Universal game ports for AArch64 Linux handhelds · NextOS · ArkOS / R36S · ROCKNIX · muOS · PortMaster",
-      how: "How to install", filters: "Filters", search: "Search…", platform: "Source platform", genre: "Genre", type: "Type", install: "Install", sort: "Sort",
-      all: "All", free: "Free game", paid: "Paid game", manual: "Manual", alpha: "A–Z", recent: "Recently updated", downloads: "Most downloaded",
-      download: "Download", details: "Details", ports: "ports", releases: "releases", soon: "Coming soon", none: "No ports found.",
-      legal: "No package includes the game or its data. You need your own legitimate copy.",
-      glibc: "glibc", installpm: "PortMaster", installmanual: "manual", updated: "updated",
-      howto: `<li>Download the port's <b>.zip</b>.</li><li>Copy it to the device's ports folder: <code>ports/</code> (PortMaster/ArkOS) or <code>roms/ports</code> (NextOS).</li><li>Place the game's <b>original APK/XAPK</b> where the port README says (usually <code>&lt;port&gt;/gamedata/</code>).</li><li>Launch from the menu. First launch extracts and validates the data.</li><li><b>SELECT + START</b> exits safely.</li>`,
-      pm: `<b>Inside the PortMaster app:</b> download <a href="https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/040_nextos.source.json">040_nextos.source.json</a> into <code>PortMaster/config/</code> (next to <code>020_portmaster.source.json</code>). PortMaster lists these ports on next launch.`,
-      footer: `All games and trademarks belong to their respective owners. Packages contain compatibility code and documentation only. · <a href="https://github.com/NextOs-Ports/nextos-universal-ports#%EF%B8%8F-aviso-legal--legal-notice">Legal notice</a>` }
+"use strict";
+
+const text = {
+  pt: {
+    skip: "Ir para o catálogo", catalog: "Catálogo", updates: "Atualizações", install: "Como instalar",
+    heroLabel: "PORTS PARA PORTÁTEIS LINUX", heroLine1: "Jogue onde", heroLine2: "quiser.",
+    heroCopy: "Encontre seu próximo port, confira os requisitos e baixe o pacote direto do GitHub.",
+    explore: "Explorar catálogo", available: "ports disponíveis", origins: "plataformas de origem",
+    fromGithub: "Downloads pelo GitHub", catalogCopy: "Os ZIPs incluem o port. Use os dados da sua cópia do jogo.",
+    search: "Buscar um jogo…", searchLabel: "Buscar um jogo", sourcePlatform: "Plataforma de origem",
+    sortBy: "Ordenar por", featured: "Em destaque", recent: "Mais recentes", alphabetical: "Nome A–Z",
+    mostDownloaded: "Mais baixados", filters: "Filtros", genre: "Gênero", gameType: "Tipo de jogo",
+    installMode: "Instalação", all: "Todos", free: "Gratuito", paid: "Pago", manual: "Manual",
+    reset: "Limpar filtros", loading: "Carregando catálogo…", showMore: "Carregar mais ports",
+    updatesCopy: "Versões publicadas recentemente no GitHub.", allReleases: "Todas as releases",
+    guideCopy: "Consulte o guia do port para ver os requisitos do seu aparelho.",
+    step1: "Baixe o port", step1Copy: "Abra os detalhes do jogo e baixe o ZIP da versão que você quer instalar.",
+    step2: "Prepare o aparelho", step2Copy: "Siga a estrutura de pastas indicada no guia. Os caminhos variam por sistema.",
+    step3: "Adicione os dados", step3Copy: "Use os arquivos da sua cópia original e abra o port pelo menu do aparelho.",
+    pmImport: "Adicionar os ports ao PortMaster", pmCopy: "Baixe o arquivo da fonte e coloque em PortMaster/config/. Os ports compatíveis aparecerão quando você abrir o aplicativo novamente.",
+    legal: "Os jogos e suas marcas pertencem aos respectivos titulares.", jsonCatalog: "Catálogo JSON ↗",
+    close: "Fechar", details: "Detalhes", download: "Baixar ZIP", release: "Ver release ↗",
+    guide: "Abrir guia ↗", prerelease: "Prévia", noResults: "Nenhum port encontrado com esses filtros.",
+    unavailable: "O catálogo está temporariamente indisponível.", retry: "Tentar de novo",
+    count: (shown, total) => shown < total ? "Mostrando " + shown + " de " + total + " ports" : total + (total === 1 ? " port encontrado" : " ports encontrados"),
+  },
+  en: {
+    skip: "Skip to catalog", catalog: "Catalog", updates: "Updates", install: "How to install",
+    heroLabel: "PORTS FOR LINUX HANDHELDS", heroLine1: "Play wherever", heroLine2: "you want.",
+    heroCopy: "Find your next port, check the requirements and download it straight from GitHub.",
+    explore: "Explore the catalog", available: "ports available", origins: "source platforms",
+    fromGithub: "Downloads from GitHub", catalogCopy: "The ZIPs contain the port. Use the data from your own copy of the game.",
+    search: "Search for a game…", searchLabel: "Search for a game", sourcePlatform: "Source platform",
+    sortBy: "Sort by", featured: "Featured", recent: "Most recent", alphabetical: "Name A–Z",
+    mostDownloaded: "Most downloaded", filters: "Filters", genre: "Genre", gameType: "Game type",
+    installMode: "Installation", all: "All", free: "Free", paid: "Paid", manual: "Manual",
+    reset: "Clear filters", loading: "Loading catalog…", showMore: "Load more ports",
+    updatesCopy: "Versions published recently on GitHub.", allReleases: "All releases",
+    guideCopy: "Read the port’s guide for your device requirements.",
+    step1: "Download the port", step1Copy: "Open the game’s details and download the ZIP for the version you want to install.",
+    step2: "Prepare your device", step2Copy: "Follow the folder structure in the guide. Paths vary by system.",
+    step3: "Add your game data", step3Copy: "Use the files from your own copy of the game and launch the port from your device menu.",
+    pmImport: "Add ports to PortMaster", pmCopy: "Download the source file and place it in PortMaster/config/. Compatible ports will appear the next time you open the app.",
+    legal: "Games and trademarks belong to their respective owners.", jsonCatalog: "JSON catalog ↗",
+    close: "Close", details: "Details", download: "Download ZIP", release: "View release ↗",
+    guide: "Open guide ↗", prerelease: "Preview", noResults: "No ports match these filters.",
+    unavailable: "The catalog is temporarily unavailable.", retry: "Try again",
+    count: (shown, total) => shown < total ? "Showing " + shown + " of " + total + " ports" : total + (total === 1 ? " port found" : " ports found"),
+  }
+};
+
+const platforms = { android: "Android", ios: "iOS", switch: "Switch", gamecube: "GameCube", vita: "PS Vita" };
+const genres = {
+  action: "Ação", adventure: "Aventura", arcade: "Arcade", casual: "Casual", platformer: "Plataforma",
+  puzzle: "Quebra-cabeça", racing: "Corrida", rpg: "RPG", shooter: "Tiro", simulation: "Simulação",
+  sports: "Esportes", strategy: "Estratégia", horror: "Terror", other: "Outros",
+  fps: "Tiro em primeira pessoa", rhythm: "Ritmo", "visual novel": "Visual novel",
+  beatemup: "Beat ’em up", fighting: "Luta", metroidvania: "Metroidvania",
+};
+const featured = ["horizonchase.zip", "Stardew.Valley.NextOS.zip", "sor4.zip", "oceanhorn.zip", "castleofillusion.zip", "sonic4ep2.zip", "actionsquad.zip", "titansouls.zip"];
+const pageSize = 12;
+const repo = "https://github.com/NextOs-Ports/nextos-universal-ports";
+const query = (selector) => document.querySelector(selector);
+const search = query("#search");
+const facetIds = ["genre", "availability", "install-mode"];
+const dialog = query("#port-dialog");
+const state = { lang: "pt", platform: "all", ports: null, limit: pageSize, activePort: null, failed: false };
+
+try {
+  state.lang = localStorage.getItem("nxp-lang") === "en" ? "en" : "pt";
+} catch { /* The language switch works without storage. */ }
+
+const t = (key) => text[state.lang][key];
+const locale = () => state.lang === "pt" ? "pt-BR" : "en";
+const genreLabel = (key) => state.lang === "pt" ? genres[key] || key : key.replaceAll("-", " ").replace(/^./, (character) => character.toUpperCase());
+const clean = (value) => value.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+const releaseName = (source) => source.release_version ? "v" + source.release_version : source.release_tag;
+const dateKey = (port) => port.source.published_at || port.source.date_updated || "";
+const recent = (a, b) => dateKey(b).localeCompare(dateKey(a));
+const downloadCount = (port) => port.source.downloads ?? port.source.legacy_downloads ?? 0;
+
+function element(tag, className, label) {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (label) node.textContent = label;
+  return node;
+}
+
+function githubURL(value) {
+  try {
+    const url = new URL(value);
+    if (url.protocol === "https:" && ["github.com", "raw.githubusercontent.com"].includes(url.hostname)) {
+      return url.href;
+    }
+  } catch { /* Missing optional URL. */ }
+  return null;
+}
+
+function link(label, href, className) {
+  const anchor = element("a", className, label);
+  anchor.href = href;
+  return anchor;
+}
+
+function external(label, href, className) {
+  const anchor = link(label, href, className);
+  anchor.target = "_blank";
+  anchor.rel = "noopener noreferrer";
+  return anchor;
+}
+
+function portLink(port, label, className) {
+  const anchor = link(label, "?port=" + encodeURIComponent(port.name.replace(/\.zip$/, "")) + "#catalogo", className);
+  anchor.dataset.port = port.name;
+  return anchor;
+}
+
+function screenshot(port) {
+  const image = element("div", "shot");
+  image.dataset.title = port.attr.title;
+  const source = githubURL(port.source.screenshot_url);
+  if (source) {
+    const img = element("img");
+    img.src = source;
+    img.alt = "";
+    img.loading = "lazy";
+    img.decoding = "async";
+    img.addEventListener("error", () => img.remove(), { once: true });
+    image.append(img);
+  }
+  return image;
+}
+
+function sizeLabel(bytes) {
+  if (!Number.isFinite(bytes) || bytes <= 0) return "";
+  const [size, unit] = bytes >= 1e9 ? [bytes / 1e9, "GB"] : bytes >= 1e6 ? [bytes / 1e6, "MB"] : [bytes / 1e3, "KB"];
+  return new Intl.NumberFormat(locale(), { maximumFractionDigits: 1 }).format(size) + " " + unit;
+}
+
+function dateLabel(value) {
+  return new Intl.DateTimeFormat(locale(), { dateStyle: "medium", timeZone: "UTC" }).format(new Date(value));
+}
+
+function download(port, className) {
+  const url = githubURL(port.source.download_url);
+  return url ? link("↓ " + t("download"), url, className) : null;
+}
+
+function releaseLink(port, className) {
+  const url = githubURL(port.source.release_url) || repo + "/releases";
+  return external(t("release"), url, className);
+}
+
+function card(port) {
+  const { attr, source } = port;
+  const article = element("article", "card");
+  const cover = portLink(port, "", "card-image");
+  cover.tabIndex = -1;
+  cover.setAttribute("aria-hidden", "true");
+  cover.append(screenshot(port), element("span", "badge", platforms[source.platform] || source.platform));
+  const info = element("div", "card-info");
+  const heading = element("h3", "card-title");
+  heading.append(portLink(port, attr.title));
+
+  const meta = [source.portmaster ? "PortMaster" : source.portmaster === false ? t("manual") : "",
+    ...(attr.genres || []).slice(0, 2).map(genreLabel)].filter(Boolean);
+  const actions = element("div", "card-actions");
+  const zip = download(port, "button card-download");
+  if (zip) actions.append(zip);
+  actions.append(portLink(port, t("details"), "button button-quiet"));
+
+  const file = element("div", "file-meta");
+  file.append(element("span", "", releaseName(source) + (source.prerelease ? " · " + t("prerelease") : "")),
+    element("span", "", sizeLabel(source.size)));
+  info.append(heading, element("p", "card-meta", meta.join(" · ")), actions, file);
+  article.append(cover, info);
+  return article;
+}
+
+function renderPlatforms() {
+  const container = query("#platforms");
+  const counts = new Map([["all", state.ports.length]]);
+  for (const { source } of state.ports) counts.set(source.platform, (counts.get(source.platform) || 0) + 1);
+  const focused = container.contains(document.activeElement) ? document.activeElement.dataset.platform : null;
+  container.replaceChildren(...[["all", t("all")], ...Object.entries(platforms)].filter(([key]) => counts.has(key)).map(([key, label]) => {
+    const button = element("button", "pill", label);
+    button.type = "button";
+    button.dataset.platform = key;
+    button.setAttribute("aria-pressed", String(key === state.platform));
+    button.append(element("small", "", String(counts.get(key))));
+    return button;
+  }));
+  if (focused) container.querySelector('[data-platform="' + focused + '"]')?.focus();
+  query("#port-count").textContent = state.ports.length;
+  query("#source-count").textContent = counts.size - 1;
+}
+
+function renderGenres() {
+  const select = query("#genre");
+  const previous = select.value;
+  const allGenres = new Set(state.ports.flatMap(({ attr }) => attr.genres || []));
+  select.replaceChildren(new Option(t("all"), "all"), ...[...allGenres]
+    .sort((a, b) => genreLabel(a).localeCompare(genreLabel(b), locale()))
+    .map((key) => new Option(genreLabel(key), key)));
+  select.value = allGenres.has(previous) ? previous : "all";
+}
+
+function filteredPorts() {
+  const [genre, availability, mode] = facetIds.map((id) => query("#" + id).value);
+  const queryTerms = clean(search.value.trim()).split(/\s+/).filter(Boolean);
+  const list = state.ports.filter(({ name, attr, source }) => {
+    const haystack = clean([attr.title, name, source.platform, platforms[source.platform], ...(attr.genres || []).map(genreLabel)].join(" "));
+    return (state.platform === "all" || source.platform === state.platform) &&
+      (genre === "all" || (attr.genres || []).includes(genre)) &&
+      (availability === "all" || attr.availability === availability) &&
+      (mode === "all" || source.portmaster === (mode === "portmaster")) &&
+      queryTerms.every((term) => haystack.includes(term));
+  });
+  const rank = (port) => featured.includes(port.name) ? featured.indexOf(port.name) : featured.length;
+  const byName = (a, b) => a.attr.title.localeCompare(b.attr.title, locale());
+  const by = {
+    featured: (a, b) => rank(a) - rank(b) || byName(a, b), recent: (a, b) => recent(a, b) || byName(a, b),
+    name: byName, downloads: (a, b) => downloadCount(b) - downloadCount(a) || byName(a, b),
   };
-  let lang = (localStorage.getItem("nxp-lang") || (navigator.language || "pt").slice(0, 2)) === "en" ? "en" : "pt";
-  let ports = [], plat = "all";
-  const $ = (s) => document.querySelector(s);
-  const t = (k) => I18N[lang][k] ?? k;
-  const fmtSize = (b) => b > 1e9 ? (b / 1e9).toFixed(2) + " GB" : b > 1e6 ? (b / 1e6).toFixed(1) + " MB" : Math.round(b / 1e3) + " KB";
-  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const active = [genre, availability, mode].filter((filter) => filter !== "all").length;
+  query("#filter-count").hidden = active === 0;
+  query("#filter-count").textContent = active;
+  return list.sort(by[query("#sort").value]);
+}
 
-  function applyLang() {
-    document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";
-    $("#lang").textContent = lang === "pt" ? "EN" : "PT";
-    document.querySelectorAll("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
-    document.querySelectorAll("[data-i18n-html]").forEach((el) => { el.innerHTML = t(el.dataset.i18nHtml); });
-    document.querySelectorAll("[data-i18n-ph]").forEach((el) => { el.placeholder = t(el.dataset.i18nPh); });
-    render();
-  }
+function renderCatalog() {
+  if (!state.ports) return;
+  const list = filteredPorts();
+  const visible = list.slice(0, state.limit);
+  query("#grid").replaceChildren(...(visible.length ? visible.map(card) : [element("p", "empty", t("noResults"))]));
+  query("#results").textContent = t("count")(visible.length, list.length);
+  query("#show-more").hidden = list.length <= state.limit;
+}
 
-  function stats() {
-    const n = ports.length, pm = ports.filter((p) => p.source.portmaster).length, dl = ports.reduce((a, p) => a + (p.source.legacy_downloads || 0), 0);
-    $("#stats").innerHTML = `<span class="stat"><b>${n}</b> ${t("ports")}</span><span class="stat"><b>${pm}</b> PortMaster</span><span class="stat"><b>${dl.toLocaleString()}</b> downloads</span>`;
-  }
+function renderUpdates() {
+  const rows = [...state.ports].filter(dateKey).sort(recent).slice(0, 5).map((port) => {
+    const row = element("article", "release-row");
+    const heading = element("h3");
+    heading.append(portLink(port, port.attr.title));
+    const data = element("div");
+    data.append(heading, element("p", "", releaseName(port.source)));
+    const time = element("time", "", dateLabel(dateKey(port)));
+    time.dateTime = dateKey(port);
+    row.append(screenshot(port), data, time, releaseLink(port, "button button-quiet"));
+    return row;
+  });
+  query("#release-list").replaceChildren(...rows);
+}
 
-  function tabs() {
-    const counts = {}; ports.forEach((p) => { counts[p.source.platform] = (counts[p.source.platform] || 0) + 1; });
-    const all = [["all", t("all"), ports.length], ...Object.entries(PLAT).map(([k, v]) => [k, v, counts[k] || 0])];
-    $("#tabs").innerHTML = all.map(([k, v, c]) => `<button class="tab${plat === k ? " active" : ""}" data-p="${k}">${v} <small>${c || (k === "all" ? 0 : "· " + t("soon"))}</small></button>`).join("");
-    $("#tabs").querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => { plat = b.dataset.p; $("#platform").value = plat; tabs(); render(); }));
-  }
+function renderDialog(port) {
+  const { attr, source } = port;
+  const image = screenshot(port);
+  const info = element("div", "dialog-copy");
+  const heading = element("h2", "", attr.title);
+  heading.id = "port-title";
+  const metadata = [platforms[source.platform] || source.platform, releaseName(source), sizeLabel(source.size),
+    source.prerelease ? t("prerelease") : "", source.portmaster === true ? "PortMaster" : "",
+    ...(attr.arch || [])].filter(Boolean);
+  info.append(heading, element("p", "", metadata.join(" · ")));
+  if (attr.desc) info.append(element("h3", "", t("details")), element("p", "", attr.desc));
+  info.append(element("h3", "", t("install")), element("p", "", attr.inst || t("guideCopy")));
+  if (source.note) info.append(element("p", "", source.note));
+  const actions = element("div", "dialog-actions");
+  const zip = download(port, "button button-primary");
+  if (zip) actions.append(zip);
+  const guide = githubURL(source.guide_url || source.readme_url) || repo + "/tree/main/" + source.folder;
+  actions.append(external(t("guide"), guide, "button button-quiet"), releaseLink(port, "button button-quiet"));
+  info.append(actions);
+  query("#port-content").replaceChildren(image, info);
+}
 
-  function genres() {
-    const g = new Set(); ports.forEach((p) => (p.attr.genres || []).forEach((x) => g.add(x)));
-    const sel = $("#genre"); const cur = sel.value;
-    sel.innerHTML = `<option value="all">${t("all")}</option>` + [...g].sort().map((x) => `<option value="${x}">${x}</option>`).join("");
-    sel.value = cur || "all";
-  }
+function openPort(name) {
+  const port = state.ports?.find((entry) => entry.name === name);
+  if (!port) return false;
+  state.activePort = port;
+  renderDialog(port);
+  if (!dialog.open) dialog.showModal();
+  const url = new URL(location.href);
+  url.searchParams.set("port", port.name.replace(/\.zip$/, ""));
+  history.replaceState(null, "", url);
+  return true;
+}
 
-  function card(p) {
-    const a = p.attr, s = p.source;
-    const tags = [s.portmaster ? `<span class="tag pm">PortMaster</span>` : `<span class="tag manual">${t("manual")}</span>`, a.availability === "free" ? `<span class="tag free">${t("free")}</span>` : ""].join("");
-    const meta = [(a.arch || []).join(" / "), a.min_glibc ? `${t("glibc")} ≥ ${a.min_glibc}` : "", ...(a.genres || [])].filter(Boolean).map((x) => `<span>${esc(x)}</span>`).join("");
-    return `<article class="card" data-key="${esc(p.name)}">
-      <div class="shot" style="background-image:url('${s.screenshot_url}')"><div class="tags">${tags}</div></div>
-      <div class="body">
-        <h3 class="title">${esc(a.title)}</h3>
-        <div class="meta">${meta}</div>
-        <p class="desc">${esc(a.desc)}</p>
-        <div class="actions">
-          <a class="btn primary" href="${s.download_url}" rel="noopener">⬇ ${t("download")}</a>
-          <button class="btn details" type="button">${t("details")}</button>
-        </div>
-        <div class="size">${fmtSize(s.size)} · <a href="${s.release_url}" target="_blank" rel="noopener">${esc(s.release_tag)}</a>${s.date_updated ? ` · ${t("updated")} ${s.date_updated}` : ""}</div>
-      </div></article>`;
-  }
+function renderFailure() {
+  query("#results").textContent = t("unavailable");
+  const help = element("div", "empty");
+  const retry = element("button", "button button-quiet", t("retry"));
+  retry.type = "button";
+  retry.addEventListener("click", loadCatalog);
+  help.append(retry, document.createTextNode(" · "), link(t("allReleases"), repo + "/releases"));
+  query("#grid").replaceChildren(help);
+}
 
-  function render() {
-    if (!ports.length) return;
-    const q = $("#q").value.trim().toLowerCase(), g = $("#genre").value, av = $("#avail").value, pmf = $("#pmf").value, sort = $("#sort").value;
-    let list = ports.filter((p) => (plat === "all" || p.source.platform === plat)
-      && (g === "all" || (p.attr.genres || []).includes(g))
-      && (av === "all" || p.attr.availability === av)
-      && (pmf === "all" || (pmf === "pm") === !!p.source.portmaster)
-      && (!q || (p.attr.title + " " + p.name + " " + p.attr.desc + " " + (p.attr.genres || []).join(" ")).toLowerCase().includes(q)));
-    list.sort((x, y) => sort === "recent" ? (y.source.date_updated || "").localeCompare(x.source.date_updated || "")
-      : sort === "downloads" ? (y.source.legacy_downloads || 0) - (x.source.legacy_downloads || 0)
-      : x.attr.title.localeCompare(y.attr.title));
-    $("#grid").innerHTML = list.length ? list.map(card).join("") : `<div class="empty">${t("none")}</div>`;
-    $("#grid").querySelectorAll(".details").forEach((b) => b.addEventListener("click", () => openReadme(b.closest(".card").dataset.key)));
-  }
+function applyLanguage() {
+  document.documentElement.lang = locale();
+  document.querySelectorAll("[data-t]").forEach((node) => { node.textContent = t(node.dataset.t); });
+  document.querySelectorAll("[data-placeholder]").forEach((node) => { node.placeholder = t(node.dataset.placeholder); });
+  document.querySelectorAll("[data-aria]").forEach((node) => { node.setAttribute("aria-label", t(node.dataset.aria)); });
+  const button = query("#lang");
+  button.lang = state.lang === "pt" ? "en" : "pt-BR";
+  button.textContent = state.lang === "pt" ? "EN" : "PT";
+  button.setAttribute("aria-label", state.lang === "pt" ? "English" : "Português");
+  if (state.ports) {
+    renderPlatforms();
+    renderGenres();
+    renderCatalog();
+    renderUpdates();
+  } else if (state.failed) renderFailure();
+  if (state.activePort) renderDialog(state.activePort);
+}
 
-  async function openReadme(name) {
-    const p = ports.find((x) => x.name === name); if (!p) return;
-    $("#modal-title").textContent = p.attr.title; $("#modal-dl").href = p.source.download_url; $("#modal-rel").href = p.source.release_url;
-    $("#modal-body").innerHTML = `<p class="muted">…</p>`; $("#modal").hidden = false; document.body.style.overflow = "hidden";
-    try {
-      const md = await (await fetch(p.source.readme_url, { cache: "no-cache" })).text();
-      const base = p.source.readme_url.replace(/README\.md$/, "");
-      const html = window.marked ? marked.parse(md) : `<pre>${esc(md)}</pre>`;
-      $("#modal-body").innerHTML = (p.source.note ? `<p class="pm">${esc(p.source.note)}</p>` : "") + html;
-      $("#modal-body").querySelectorAll("img").forEach((img) => { const s = img.getAttribute("src"); if (s && !/^https?:/.test(s)) img.src = base + s; });
-      $("#modal-body").querySelectorAll("a").forEach((a) => { a.target = "_blank"; a.rel = "noopener"; const h = a.getAttribute("href"); if (h && !/^(https?:|#|mailto:)/.test(h)) a.href = "https://github.com/NextOs-Ports/nextos-universal-ports/blob/main/" + p.source.folder + "/" + h; });
-    } catch (e) { $("#modal-body").innerHTML = `<p>README indisponível. <a href="${p.source.readme_url}" target="_blank" rel="noopener">${p.source.readme_url}</a></p>`; }
-  }
-  function closeModal() { $("#modal").hidden = true; document.body.style.overflow = ""; }
+function resetLimit() {
+  state.limit = pageSize;
+  renderCatalog();
+}
 
-  async function init() {
-    $("#lang").addEventListener("click", () => { lang = lang === "pt" ? "en" : "pt"; localStorage.setItem("nxp-lang", lang); applyLang(); tabs(); stats(); genres(); });
-    ["#q", "#genre", "#avail", "#pmf", "#sort"].forEach((s) => $(s).addEventListener("input", render));
-    $("#platform").addEventListener("input", () => { plat = $("#platform").value; tabs(); render(); });
-    $("#modal-close").addEventListener("click", closeModal);
-    $("#modal").addEventListener("click", (e) => { if (e.target.id === "modal") closeModal(); });
-    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
-    try { ports = await (await fetch("ports.json", { cache: "no-cache" })).json(); }
-    catch (e) { $("#grid").innerHTML = `<div class="empty">ports.json indisponível</div>`; return; }
-    ports.forEach((p) => { p.source.screenshot_url = p.source.screenshot_url || (RAW + p.source.folder + "/" + p.attr.image.screenshot); });
-    genres(); stats(); tabs(); applyLang();
-    const key = new URLSearchParams(location.search).get("port"); if (key) openReadme(key.endsWith(".zip") ? key : key + ".zip");
+async function loadCatalog() {
+  state.failed = false;
+  query("#results").textContent = t("loading");
+  query("#grid").replaceChildren();
+  try {
+    const response = await fetch("ports.json", { cache: "no-cache" });
+    if (!response.ok) throw new Error("Catalog unavailable");
+    const ports = await response.json();
+    if (!Array.isArray(ports)) throw new Error("Invalid catalog");
+    state.ports = ports;
+    applyLanguage();
+    const key = new URLSearchParams(location.search).get("port");
+    if (key) openPort(key.endsWith(".zip") ? key : key + ".zip");
+  } catch {
+    state.ports = null;
+    state.failed = true;
+    renderFailure();
   }
-  init();
-})();
+}
+
+query("#lang").addEventListener("click", () => {
+  state.lang = state.lang === "pt" ? "en" : "pt";
+  try { localStorage.setItem("nxp-lang", state.lang); } catch { /* Storage is optional. */ }
+  applyLanguage();
+});
+query("#platforms").addEventListener("click", (event) => {
+  const button = event.target.closest("[data-platform]");
+  if (!button) return;
+  state.platform = button.dataset.platform;
+  renderPlatforms();
+  resetLimit();
+});
+query("#filter-toggle").addEventListener("click", (event) => {
+  const panel = query("#extra-filters");
+  panel.hidden = !panel.hidden;
+  event.currentTarget.setAttribute("aria-expanded", String(!panel.hidden));
+});
+search.addEventListener("input", resetLimit);
+[...facetIds, "sort"].forEach((id) => query("#" + id).addEventListener("change", resetLimit));
+query("#reset").addEventListener("click", () => {
+  state.platform = "all";
+  search.value = "";
+  facetIds.forEach((id) => { query("#" + id).value = "all"; });
+  if (state.ports) renderPlatforms();
+  resetLimit();
+});
+query("#show-more").addEventListener("click", () => {
+  const firstNew = state.limit;
+  state.limit += pageSize;
+  renderCatalog();
+  query("#grid").children[firstNew]?.querySelector(".card-title a").focus();
+});
+document.addEventListener("click", (event) => {
+  const anchor = event.target.closest("a[data-port]");
+  if (anchor && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey && openPort(anchor.dataset.port)) {
+    event.preventDefault();
+  }
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "/" && !dialog.open && !event.target.closest("input, textarea, select, [contenteditable]")) {
+    event.preventDefault();
+    search.focus();
+  }
+});
+dialog.addEventListener("click", (event) => {
+  if (event.target === dialog) dialog.close();
+});
+dialog.addEventListener("close", () => {
+  state.activePort = null;
+  const url = new URL(location.href);
+  url.searchParams.delete("port");
+  history.replaceState(null, "", url);
+});
+applyLanguage();
+loadCatalog();

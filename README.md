@@ -30,30 +30,22 @@ the data from the user's own legitimate copy (APK/XAPK, IPA or dump), validates 
 installs it transactionally. One folder per game, organized by source platform; packages
 live in [Releases](https://github.com/NextOs-Ports/nextos-universal-ports/releases), tagged `<game>-vX.Y.Z`.
 
-| Plataforma de origem | Pasta | Ports |
-|---|---|---|
-| 🤖 Android | [`ports-android/`](ports-android/) | 38 |
-| 🍎 iOS | [`ports-ios/`](ports-ios/) | 1 |
-| 🎮 Nintendo Switch | [`ports-switch/`](ports-switch/) | em breve |
-| 🟣 GameCube | [`ports-gamecube/`](ports-gamecube/) | em breve |
-| 🎴 PS Vita | [`ports-vita/`](ports-vita/) | em breve |
-| 🛠️ Ferramentas | [`tools/`](tools/) | 1 |
+## 🌐 Catálogo NextOS Ports / NextOS Ports catalog
 
-## 🌐 Site e app PortMaster / Website and PortMaster app
-
-- **Site:** <https://nextos-ports.github.io/nextos-universal-ports/> — catálogo com capas, filtros por plataforma/gênero e botão de download.
+- **Site:** <https://nextos-ports.github.io/nextos-universal-ports/> — busque por jogo, filtre por plataforma e baixe o ZIP da release. O catálogo é atualizado após publicações no GitHub.
+- **Catálogo JSON:** <https://nextos-ports.github.io/nextos-universal-ports/ports.json> — títulos, imagens, versões e links de download para integração.
 - **Dentro do app PortMaster:** baixe [`040_nextos.source.json`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/download/ports-latest/040_nextos.source.json) e coloque em `PortMaster/config/` (ao lado de `020_portmaster.source.json`):
   - ArkOS e similares: `/roms/ports/PortMaster/config/` (ou `/roms/tools/PortMaster/config/`)
   - ROCKNIX, muOS, Knulli: `.local/share/PortMaster/config/`
   
   Na próxima abertura o PortMaster lista e instala estes ports como se fossem do catálogo oficial.
-- **Release rolante [`ports-latest`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/ports-latest):** sempre a versão mais nova de cada port com nome fixo `<port>.zip`, mais `ports.json` e `images.zip` (catálogo PortMasterV3). As releases versionadas `<jogo>-vX.Y.Z` continuam existindo para histórico.
+- **Release rolante [`ports-latest`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/ports-latest):** a versão selecionada no manifesto de distribuição com nome fixo `<port>.zip`, mais `ports.json` e `images.zip` (catálogo PortMasterV3). As releases versionadas `<jogo>-vX.Y.Z` continuam existindo para histórico.
 
-Website with covers, filters and downloads; drop `040_nextos.source.json` into `PortMaster/config/` to browse and install these ports inside the PortMaster app; `ports-latest` always carries the newest `<port>.zip` of every port plus the PortMasterV3 catalog.
+The website updates its catalog from GitHub Releases. To install compatible ports through PortMaster, place `040_nextos.source.json` in `PortMaster/config/`. The rolling release contains the ZIPs selected in the distribution manifest and the PortMasterV3 catalog.
 
 ## 📥 Instalação / Install
 
-1. Baixe o `.zip` do jogo na release indicada na tabela e confira o `.sha256`.
+1. Baixe o ZIP do port no catálogo e confira o `.sha256` quando estiver disponível na release.
 2. Copie o conteúdo para a pasta de ports do aparelho (`ports/` no PortMaster/ArkOS, `roms/ports` no NextOS).
 3. Coloque o APK/XAPK (ou IPA/dump) **original e completo** do jogo onde o `INSTALLATION.md` da pasta do jogo indicar.
 4. Abra o port pelo menu. A primeira abertura extrai e valida os dados; as seguintes vão direto ao jogo.
@@ -61,13 +53,13 @@ Website with covers, filters and downloads; drop `040_nextos.source.json` into `
 
 Cada pasta tem um `README.md` com controles e requisitos e, quando necessário, um `INSTALLATION.md` detalhado.
 
-Download the game's `.zip` from the release in the table, verify the `.sha256`, copy it to
+Download the port ZIP from the catalog, verify the `.sha256` when provided, copy it to
 the device's ports folder, place your own complete APK/XAPK (or IPA/dump) where the game's
 `INSTALLATION.md` says, and launch from the menu. `SELECT + START` exits safely.
 
 ## 🤖 Ports Android
 
-| Jogo | Pasta | Última release | Versões | Arquitetura | Sistemas |
+| Jogo | Pasta | Release de referência | Versões | Arquitetura | Sistemas |
 |---|---|---|---|---|---|
 | **Angry Birds Classic** | [`angrybirds`](ports-android/angrybirds/) | [`angrybirds-v1.1.9`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/angrybirds-v1.1.9) | 8 | ARMv7 + AArch64 | NextOS, ArkOS / R36S, PortMaster |
 | **Beach Buggy Racing + Beach Buggy Racing 2** | [`beachbuggy`](ports-android/beachbuggy/) | [`beachbuggy-v1.1.2-bbracing2`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/beachbuggy-v1.1.2-bbracing2) | 4 | AArch64 | NextOS, ArkOS / R36S |
@@ -112,7 +104,7 @@ the device's ports folder, place your own complete APK/XAPK (or IPA/dump) where 
 
 Rodam o executável original do iPhone (ARMv7) com um runtime próprio; você fornece o seu `.ipa`. / Run the original iPhone executable (ARMv7) through a purpose-built runtime; you provide your own `.ipa`.
 
-| Jogo | Pasta | Última release | Versões | Arquitetura | Sistemas |
+| Jogo | Pasta | Release de referência | Versões | Arquitetura | Sistemas |
 |---|---|---|---|---|---|
 | **Resident Evil 4 Platinum (iOS 1.04.10)** | [`residentevil4-ios`](ports-ios/residentevil4-ios/) | [`residentevil4-ios-v1.0.2`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/residentevil4-ios-v1.0.2) | 1 | ARMv7 (ARMhf) | ArkOS / R36S (dArkOS), PortMaster |
 
@@ -130,7 +122,7 @@ Em breve / coming soon. Pasta: [`ports-vita/`](ports-vita/)
 
 ## 🛠️ Ferramentas / Tools
 
-| Ferramenta | Pasta | Última release | Versões | Arquitetura | Sistemas |
+| Ferramenta | Pasta | Release de referência | Versões | Arquitetura | Sistemas |
 |---|---|---|---|---|---|
 | **NXExtract** | [`nxextract`](tools/nxextract/) | [`nxextract-v1.1.2`](https://github.com/NextOs-Ports/nextos-universal-ports/releases/tag/nxextract-v1.1.2) | 3 | AArch64 | NextOS, ArkOS / R36S |
 
@@ -160,6 +152,6 @@ open an issue or reach us on Discord.
 
 <div align="center">
 
-38 jogos · 195 releases · [NextOs-Ports](https://github.com/NextOs-Ports)
+[NextOs-Ports](https://github.com/NextOs-Ports)
 
 </div>

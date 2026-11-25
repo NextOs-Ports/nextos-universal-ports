@@ -1,0 +1,46 @@
+name: Site NextOS Ports
+
+on:
+  push:
+    branches: [main]
+    paths: ['docs/**', 'buildtools/manifest.json', 'buildtools/build_site.py', 'ports-*/**', '.github/workflows/site.yml']
+  release:
+    types: [published, edited, deleted, unpublished]
+  schedule:
+    - cron: '31 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: nextos-ports-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.event_name != 'release' || github.event.release.tag_name != 'ports-latest'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Atualizar catálogo com as Releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          site_dir="$RUNNER_TEMP/nextos-ports-site"
+          cp -r docs "$site_dir"
+          gh api --paginate --slurp "repos/$GITHUB_REPOSITORY/releases?per_page=100" |
+            python3 buildtools/build_site.py "$site_dir/ports.json"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/nextos-ports-site
+      - uses: actions/deploy-pages@v4
+        id: deploy
