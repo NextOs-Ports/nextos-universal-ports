@@ -22,12 +22,9 @@ Este pacote universal AArch64 contém o runtime do port e o Framework V6
 fixado em `FRAMEWORK-PIN.json`. **Não contém o jogo, chaves ou saves.**
 Requer Linux AArch64, glibc 2.30 ou posterior, Python 3, OpenSSL libcrypto,
 SDL2/EGL/GLES2 do sistema e um controle reconhecido pela SDL2.
-A documentação do ZIP identifica três arquivos de fontes correspondentes. Os nomes registrados são `cotm-switch-source-1.0.7.tar.gz`
-(fontes próprias), `cotm-switch-framework-source.tar.gz` (framework usado na
-compilação do ELF) e `cotm-switch-framework-package-source.tar.gz`
-(framework do launcher e do pacote atual). Não os extraia na instalação do jogo.
-As identidades estão em `PORT-SOURCE-COMPANION.json`, `FRAMEWORK-SOURCE-COMPANION.json`
-e `FRAMEWORK-PACKAGE-SOURCE-COMPANION.json`; `source/README.md` explica o uso offline.
+
+**Errata da versão 1.0.7.** O texto dentro do ZIP diz que três arquivos de código-fonte acompanham esta release. Os anexos publicados são `cotm-switch.zip` (port para instalação) e `cotm-switch.zip.sha256` (verificação de integridade). Os três arquivos de fontes citados estão ausentes desta release.
+
 O pin de compilação permanece em `FRAMEWORK-BUILD-PIN.json`; o pin do pacote está
 em `FRAMEWORK-PIN.json`. O novo ELF inclui as correções do port e preserva os componentes de compilação pinados.
 A compatibilidade física vale somente para os aparelhos e artefatos registrados
@@ -102,13 +99,10 @@ This AArch64 package contains the port runtime and the Framework V6 composition
 pinned in `FRAMEWORK-PIN.json`. **Game data, keys and saves are not included.**
 It requires AArch64 Linux, glibc 2.30 or newer, Python 3, OpenSSL libcrypto,
 system SDL2/EGL/GLES2 and an SDL2-recognized controller.
-The ZIP documentation identifies three corresponding source archives. The recorded names are `cotm-switch-source-1.0.7.tar.gz`
-(port sources), `cotm-switch-framework-source.tar.gz` (framework used to build
-the ELF), and `cotm-switch-framework-package-source.tar.gz` (current
-launcher/package framework). Do not extract them into the game installation.
-Their identities are in `PORT-SOURCE-COMPANION.json`, `FRAMEWORK-SOURCE-COMPANION.json`
-and `FRAMEWORK-PACKAGE-SOURCE-COMPANION.json`; offline instructions are in
-`source/README.md`. `FRAMEWORK-BUILD-PIN.json` preserves the ELF build identity;
+
+**Version 1.0.7 documentation correction.** The text inside the ZIP says that three source archives accompany this release. The published attachments are `cotm-switch.zip` (installable port) and `cotm-switch.zip.sha256` (checksum). The three referenced source archives are absent from this release.
+
+`FRAMEWORK-BUILD-PIN.json` preserves the ELF build identity;
 `FRAMEWORK-PIN.json` identifies the package. The new ELF includes the port fixes and retains the pinned build components. Physical support applies
 to the devices and exact artifacts recorded with this release; the earlier
 NextOS Elite package is a separate artifact.
