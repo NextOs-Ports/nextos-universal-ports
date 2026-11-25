@@ -153,6 +153,8 @@ dialog::backdrop { background: #050b12cb; backdrop-filter: blur(4px); }
 .dialog-copy h3 { font-size: 15px; margin: 17px 0 5px; }
 .dialog-copy p { color: var(--muted); font-size: 13px; overflow-wrap: anywhere; }
 .dialog-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.variant { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; border: 1px solid var(--line); border-radius: 8px; padding: 9px; margin-top: 8px; }
+.variant p { flex: 1 1 200px; }
 @media (max-width: 980px) {
   .wrap { width: min(100% - 42px, 1200px); }
   .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -198,9 +200,12 @@ dialog::backdrop { background: #050b12cb; backdrop-filter: blur(4px); }
   .card-meta { font-size: 10px; }
 }
 @media (max-width: 360px) {
+  .wordmark { font-size: 22px; gap: 7px; }
+  .wordmark small { font-size: 10px; margin-left: 5px; }
+  .brand-mark { width: 30px; height: 30px; font-size: 21px; }
   .header-actions { gap: 5px; }
   .header-actions .button { padding-inline: 7px; }
-  .nav { gap: 16px; }
+  .nav { gap: 4px 10px; font-size: 12px; }
   .hero-actions .button { padding-inline: 10px; }
 }
 @media (prefers-reduced-motion: reduce) {

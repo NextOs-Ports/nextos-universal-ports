@@ -5,3 +5,5 @@ Port de Brotato: Premium para portáteis Linux. Use o pacote Android original Br
 Inclui perfis gráficos e ajustes de memória para aparelhos com pouca RAM.
 
 [Guia de instalação / Installation guide](INSTALLATION.md) · [Suporte no Discord](https://nextos-ports.github.io/nextos-universal-ports/#suporte)
+
+Imagem de divulgação do jogo. [Fonte original](https://store.steampowered.com/app/1942280/Brotato/)

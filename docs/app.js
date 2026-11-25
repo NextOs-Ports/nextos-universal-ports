@@ -16,6 +16,7 @@ const text = {
     device: "Aparelho testado", firmware: "Firmware testado", tested: "Testado nesta versão",
     coverage: "Os filtros de aparelho e firmware mostram as combinações com teste registrado para o ZIP publicado.",
     remove: "Remover filtro", copyLink: "Copiar link", linkCopied: "Link copiado", copyFromAddress: "Copie o link na barra de endereço",
+    variants: "Outras versões",
     mostDownloaded: "Mais baixados", filters: "Filtros", genre: "Gênero", gameType: "Tipo de jogo",
     installMode: "Instalação", all: "Todos", free: "Gratuito", paid: "Pago", manual: "Manual",
     reset: "Limpar filtros", loading: "Carregando catálogo…", showMore: "Carregar mais ports",
@@ -46,6 +47,7 @@ const text = {
     device: "Tested device", firmware: "Tested firmware", tested: "Tested on this version",
     coverage: "Device and firmware filters show the combinations with recorded tests for the published ZIP.",
     remove: "Remove filter", copyLink: "Copy link", linkCopied: "Link copied", copyFromAddress: "Copy the link from the address bar",
+    variants: "Other versions",
     mostDownloaded: "Most downloaded", filters: "Filters", genre: "Genre", gameType: "Game type",
     installMode: "Installation", all: "All", free: "Free", paid: "Paid", manual: "Manual",
     reset: "Clear filters", loading: "Loading catalog…", showMore: "Load more ports",
@@ -198,7 +200,7 @@ function card(port) {
   heading.append(portLink(port, attr.title));
 
   const meta = [source.portmaster ? "PortMaster" : source.portmaster === false ? t("manual") : "",
-    ...(attr.genres || []).slice(0, 2).map(genreLabel)].filter(Boolean);
+    ...(attr.genres || []).slice(0, 2).map(genreLabel), ...(source.variants || []).map(({ title }) => title)].filter(Boolean);
   const actions = element("div", "card-actions");
   const zip = download(port, "button card-download");
   if (zip) actions.append(zip);
@@ -287,7 +289,8 @@ function filteredPorts() {
   const testedFilter = device !== "all" || firmware !== "all";
   const list = state.ports.filter(({ name, attr, source }) => {
     const haystack = clean([attr.title, name, aliases[name], source.platform, platforms[source.platform],
-      platformAliases[source.platform], ...(attr.genres || []).flatMap((key) => [key, genreLabel(key)])].join(" "));
+      platformAliases[source.platform], ...(attr.genres || []).flatMap((key) => [key, genreLabel(key)]),
+      ...(source.variants || []).map(({ title }) => title)].join(" "));
     return (state.platform === "all" || source.platform === state.platform) &&
       (genre === "all" || (attr.genres || []).includes(genre)) &&
       (availability === "all" || attr.availability === availability) &&
@@ -376,6 +379,19 @@ function renderDialog(port) {
   });
   actions.append(copy);
   info.append(actions);
+  if (source.variants?.length) {
+    info.append(element("h3", "", t("variants")));
+    for (const variant of source.variants) {
+      const row = element("div", "variant");
+      const metadata = [variant.title, "v" + variant.version, variant.prerelease ? t("prerelease") : "", sizeLabel(variant.size)];
+      row.append(element("p", "", metadata.filter(Boolean).join(" · ")));
+      const zipURL = githubURL(variant.download_url);
+      if (zipURL) row.append(link(t("download"), zipURL, "button button-quiet"));
+      const notesURL = githubURL(variant.release_url);
+      if (notesURL) row.append(external(t("release"), notesURL, "button button-quiet"));
+      info.append(row);
+    }
+  }
   query("#port-content").replaceChildren(image, info);
 }
 

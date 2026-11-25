@@ -5,3 +5,5 @@ Port de Mega Man W para portáteis Linux. Use a cópia original de Mega Man W 2 
 
 
 [Guia de instalação / Installation guide](INSTALLATION.md) · [Suporte no Discord](https://nextos-ports.github.io/nextos-universal-ports/#suporte)
+
+Imagem de divulgação do jogo. [Fonte original](https://jumpdashevade.itch.io/mega-man-w)

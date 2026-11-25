@@ -132,6 +132,20 @@ def catalog(manifest, existing, release_list):
         history = [item["published_at"] for _, item in stable.get(family, [])
                    if asset_for(item, [name, entry["asset"]])]
         first_seen = entry.get("first_seen") or min([release["published_at"], *history])[:10]
+        variants = []
+        for variant in entry.get("variants", []):
+            variant_release = releases.get(variant["release_tag"])
+            variant_asset = asset_for(variant_release, [variant["asset"]]) if variant_release else None
+            if variant_asset:
+                variants.append({
+                    "title": variant["title"],
+                    "version": variant["version"],
+                    "prerelease": variant_release["prerelease"],
+                    "download_url": variant_asset["browser_download_url"],
+                    "release_url": variant_release["html_url"],
+                    "size": variant_asset["size"],
+                    "digest": variant_asset.get("digest"),
+                })
         result.append({
             **previous, "version": 4, "name": name, "attr": attr,
             "source": {
@@ -150,6 +164,7 @@ def catalog(manifest, existing, release_list):
                 "portmaster": entry.get("portmaster", True), "prerelease": release["prerelease"],
                 "note": entry.get("note", ""),
                 "verified_on": verified_on,
+                "variants": variants,
             },
         })
     return result

@@ -751,7 +751,15 @@
   "screenshot_source": "local",
   "first_seen": "2026-08-19",
   "legacy_downloads": 7,
-  "desc": "Titan Souls 1.0.3 universal ARMv7 Android compatibility port for NextOS, ArkOS and ROCKNIX. PortMaster"
+  "desc": "Titan Souls 1.0.3 universal ARMv7 Android compatibility port for NextOS, ArkOS and ROCKNIX. PortMaster",
+  "variants": [
+   {
+    "title": "Spruce",
+    "version": "1.0.8-spruce-test.1",
+    "release_tag": "titansouls-v1.0.8-spruce-test.1",
+    "asset": "titansouls-1.0.8-spruce-test.1.zip"
+   }
+  ]
  },
  {
   "key": "residentevil4-ios",
@@ -938,7 +946,8 @@
   ],
   "desc": "Port da edição Windows para Linux ARM64.",
   "inst": "Use os arquivos originais da edição Windows. O guia explica a preparação para cada loja.",
-  "note": "A versão 1.3.13 mantém o runtime da versão anterior e corrige o lançador. O novo lançador foi validado no PC."
+  "note": "A versão 1.3.13 mantém o runtime da versão anterior e corrige o lançador. O novo lançador foi validado no PC.",
+  "screenshot_source": "local"
  },
  {
   "key": "wind-waker-nextos",
@@ -1156,7 +1165,8 @@
    "aarch64"
   ],
   "inst": "Use a cópia original de Switch 1.0.0 em NSP. Consulte o guia para os requisitos do preparo.",
-  "note": "A instalação limpa foi validada no dArkOS."
+  "note": "A instalação limpa foi validada no dArkOS.",
+  "screenshot_source": "local"
  },
  {
   "key": "ritas-rewind",
@@ -1175,7 +1185,8 @@
    "aarch64"
   ],
   "inst": "Use a base e a atualização v458752 da sua cópia Switch. Consulte o guia para os arquivos exigidos e o tempo de preparo.",
-  "note": "O preparo inicial pode demorar várias horas."
+  "note": "O preparo inicial pode demorar várias horas.",
+  "screenshot_source": "local"
  },
  {
   "key": "mombo",
@@ -1213,7 +1224,8 @@
    "armhf"
   ],
   "inst": "Use a edição Android 2.9.1. O guia indica o APK e a expansão OBB exigidos.",
-  "note": "Testado no dArkOS e no NextOS com Mali-450."
+  "note": "Testado no dArkOS e no NextOS com Mali-450.",
+  "screenshot_source": "local"
  },
  {
   "key": "brotato",
@@ -1232,7 +1244,8 @@
    "aarch64"
   ],
   "inst": "Use o pacote Android original Brotato: Premium 1.3.489 para ARM64.",
-  "note": "Inclui perfis gráficos e ajustes de memória para aparelhos com pouca RAM."
+  "note": "Inclui perfis gráficos e ajustes de memória para aparelhos com pouca RAM.",
+  "screenshot_source": "https://store.steampowered.com/app/1942280/Brotato/"
  },
  {
   "key": "mmw",
@@ -1252,7 +1265,8 @@
   ],
   "inst": "Use a cópia original de Mega Man W 2 em APK, APKM, APKS ou XAPK.",
   "note": "",
-  "availability": "free"
+  "availability": "free",
+  "screenshot_source": "https://jumpdashevade.itch.io/mega-man-w"
  },
  {
   "key": "strangerthings3",
@@ -1271,7 +1285,8 @@
    "aarch64"
   ],
   "inst": "Use o pacote original Android 1.4.7 para ARM64. Consulte o guia para os formatos aceitos.",
-  "note": ""
+  "note": "",
+  "screenshot_source": "https://play.google.com/store/apps/details?id=com.netflix.NGP.StrangerThings3"
  },
  {
   "key": "isaac-ios",
@@ -1290,6 +1305,7 @@
    "aarch64"
   ],
   "inst": "Use o IPA original da edição iOS 1.4. Consulte o guia para o build e o espaço necessário.",
-  "note": "Instalação limpa validada com NXExtract."
+  "note": "Instalação limpa validada com NXExtract.",
+  "screenshot_source": "local"
  }
 ]

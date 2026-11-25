@@ -5,3 +5,5 @@ Port de Stranger Things 3: The Game para portáteis Linux. Use o pacote original
 
 
 [Guia de instalação / Installation guide](INSTALLATION.md) · [Suporte no Discord](https://nextos-ports.github.io/nextos-universal-ports/#suporte)
+
+Imagem de divulgação do jogo. [Fonte original](https://play.google.com/store/apps/details?id=com.netflix.NGP.StrangerThings3)

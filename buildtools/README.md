@@ -18,3 +18,5 @@ Para um port novo aparecer automaticamente:
 Para nomes fora desse padrão, inclua o port no manifesto existente com o nome exato da tag e do ZIP. Para ports já listados, o site aceita versões estáveis mais novas com o ZIP canônico ou com o nome do ZIP registrado, incluindo a troca do número da versão no nome. O manifesto continua definindo a seleção distribuída em `ports-latest` para o PortMaster.
 
 Os filtros de aparelho e firmware usam o campo opcional `verification` de cada port no manifesto. Informe em `digest` o SHA-256 do ZIP testado no formato do GitHub (`sha256:…`) e em `tested_on` os pares de `device` e `firmware` documentados nas provas da versão. O site mostra esses pares enquanto eles corresponderem ao ZIP publicado.
+
+O campo opcional `variants` apresenta ZIPs adicionais na ficha de um port. Cada entrada usa `title`, `version`, `release_tag` e `asset`. O download principal continua seguindo a release padrão. A ficha identifica como prévia as variantes marcadas como pre-release no GitHub.
