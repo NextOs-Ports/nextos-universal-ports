@@ -40,14 +40,13 @@ button { color: inherit; }
 .button-glass { border-color: #b4cfda51; background: #111b2699; }
 .button-glass:hover { border-color: var(--accent); color: var(--accent); }
 .showcase { display: grid; grid-template-columns: 2.2fr 1fr; gap: 12px; margin-top: 26px; }
-.hero { position: relative; isolation: isolate; display: flex; align-items: center; min-height: 402px; overflow: hidden; border: 1px solid #504b44; border-radius: 18px; background: #181a22; }
-.hero-art { position: absolute; z-index: -1; inset: 0 0 0 29%; background: #2b2d38 url("https://raw.githubusercontent.com/NextOs-Ports/nextos-universal-ports/main/ports-vita/gow-collection-vita/gow-collection-vita.combate.screenshot.jpg") center 56% / cover no-repeat; }
-.hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg,#181a22 17%,#181a22f7 29%,#181a2299 52%,#181a2200 85%), linear-gradient(0deg,#0e111bd6,transparent 53%); }
-.hero-copy { padding: 48px 0 56px 52px; max-width: 590px; }
+.hero { display: grid; grid-template: "copy art" 1fr / minmax(0, 1fr) minmax(0, 1.08fr); align-items: center; min-height: 402px; overflow: hidden; border: 1px solid #504b44; border-radius: 18px; background: radial-gradient(ellipse at 79% 44%, #342921, #181a22 66%); }
+.hero-art { grid-area: art; display: block; width: calc(100% - 28px); height: auto; margin-inline: 8px 20px; border-radius: 10px; }
+.hero-copy { grid-area: copy; min-width: 0; padding: 36px 9px 40px 33px; }
 .kicker { display: flex; align-items: center; gap: 9px; margin: 0 0 15px; color: var(--accent); font-size: 11px; font-weight: 800; letter-spacing: .16em; }
 .kicker i { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
 h1, h2, h3, p { margin: 0; }
-h1 { font: 800 clamp(3.55rem, 7.5vw, 6.2rem)/.86 var(--heading); letter-spacing: -.023em; }
+h1 { font: 800 clamp(2.65rem, 6vw, 5.15rem)/.88 var(--heading); letter-spacing: -.023em; }
 h1 em { color: #ffd38b; font-style: normal; }
 .hero-description { max-width: 385px; color: #d5e0e7; margin: 20px 0 25px; font-size: 15px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -102,6 +101,7 @@ select { color: var(--text); min-height: 40px; max-width: 100%; border: 1px soli
 .card:hover { background: #162430; border-color: #50736f; }
 .shot { position: relative; overflow: hidden; aspect-ratio: 16 / 9; background: radial-gradient(ellipse at 70% 22%, #285150, #132e39 50%, #0c1822); }
 .shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.shot[data-port="gow-collection-vita.zip"] img { object-fit: contain; }
 .shot:empty::before { content: attr(data-title); position: absolute; inset: 30% 15% auto; color: #cde9e2; font: 700 26px/.95 var(--heading); text-align: center; }
 .card-image { display: block; position: relative; color: inherit; width: 100%; padding: 0; border: 0; background: none; text-align: left; }
 .card-image:focus-visible { outline-offset: -4px; }
@@ -157,9 +157,12 @@ dialog::backdrop { background: #050b12cb; backdrop-filter: blur(4px); }
 .variant p { flex: 1 1 200px; }
 @media (max-width: 980px) {
   .wrap { width: min(100% - 42px, 1200px); }
+  .header-inner { gap: 14px; }
+  .nav { flex-wrap: wrap; justify-content: center; gap: 4px 14px; }
+  .nav a { white-space: nowrap; }
   .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .hero { min-height: 375px; }
-  .hero-copy { padding-left: 35px; }
+  .hero-copy { padding-left: 23px; }
 }
 @media (max-width: 720px) {
   .wrap { width: calc(100% - 28px); }
@@ -168,10 +171,9 @@ dialog::backdrop { background: #050b12cb; backdrop-filter: blur(4px); }
   .wordmark { font-size: 24px; }
   .header-actions .button { min-height: 34px; }
   .showcase { grid-template-columns: minmax(0, 1fr); gap: 8px; margin-top: 14px; }
-  .hero { min-height: 325px; align-items: end; border-radius: 14px; }
-  .hero-art { inset: 0; background-position: 64% top; background-size: auto 73%; background-color: #101f2a; }
-  .hero::after { background: linear-gradient(0deg,#0e1d27 10%,#0e1d27f5 33%,#0e1d2740 66%,#0e1d2719), linear-gradient(90deg,#0e1d27a3,transparent 65%); }
-  .hero-copy { padding: 46px 18px 24px; }
+  .hero { grid-template: "art" auto "copy" auto / minmax(0, 1fr); min-height: 0; border-radius: 14px; }
+  .hero-art { width: calc(100% - 24px); max-width: 500px; justify-self: center; margin: 12px 0 0; }
+  .hero-copy { padding: 18px 16px 20px; }
   .hero-description { margin: 12px 0 16px; font-size: 13px; }
   .showcase-more { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: auto; gap: 6px; }
   .spotlight { min-height: 86px; padding: 7px; border-radius: 7px; overflow-wrap: anywhere; }

@@ -155,6 +155,7 @@ function portURL(port) {
 function screenshot(port) {
   const image = element("div", "shot");
   image.dataset.title = port.attr.title;
+  image.dataset.port = port.name;
   const source = githubURL(port.source.screenshot_url);
   if (source) {
     const img = element("img");

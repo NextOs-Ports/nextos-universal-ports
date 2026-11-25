@@ -11,7 +11,7 @@
 
 [Explorar catálogo](https://nextos-ports.github.io/nextos-universal-ports/#catalogo) · [Como instalar](#como-instalar) · [Suporte](#suporte-no-discord) · [English](#english)
 
-<a href="https://nextos-ports.github.io/nextos-universal-ports/?port=gow-collection-vita"><img src="ports-vita/gow-collection-vita/gow-collection-vita.combate.screenshot.jpg" alt="God of War Collection rodando no port NextOS" width="45%"></a>
+<a href="https://nextos-ports.github.io/nextos-universal-ports/?port=gow-collection-vita"><img src="ports-vita/gow-collection-vita/gow-collection-vita.capa.screenshot.jpg" alt="Capa de God of War Collection" width="45%"></a>
 <a href="https://nextos-ports.github.io/nextos-universal-ports/?port=gt4"><img src="ports-ps2/gt4/gt4.screenshot.jpg" alt="Gran Turismo 4 rodando no port NextOS" width="45%"></a>
 
 </div>
