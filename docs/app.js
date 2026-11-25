@@ -210,8 +210,10 @@ function card(port) {
   const file = element("div", "file-meta");
   file.append(element("span", "", releaseName(source) + (source.prerelease ? " · " + t("prerelease") : "")),
     element("span", "", sizeLabel(source.size)));
-  info.append(heading, element("p", "card-meta", meta.join(" · ")), actions, file);
-  article.append(cover, info);
+  const visual = element("div", "card-visual");
+  visual.append(cover, heading);
+  info.append(element("p", "card-meta", meta.join(" · ")), actions, file);
+  article.append(visual, info);
   return article;
 }
 

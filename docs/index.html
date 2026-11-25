@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20261125-7">
-  <script defer src="app.js?v=20261125-7"></script>
+  <link rel="stylesheet" href="style.css?v=20261125-8">
+  <script defer src="app.js?v=20261125-8"></script>
 </head>
 <body>
   <a class="skip" href="#catalogo" data-t="skip">Ir para o catálogo</a>
@@ -39,7 +39,7 @@
         <img class="hero-art" src="https://raw.githubusercontent.com/NextOs-Ports/nextos-universal-ports/main/ports-vita/gow-collection-vita/gow-collection-vita.capa.screenshot.jpg" width="607" height="394" alt="" fetchpriority="high">
         <div class="hero-copy">
           <p class="kicker"><i></i><span data-t="heroLabel">EM DESTAQUE · PS VITA</span></p>
-          <h1 id="hero-title">God of War<br><em>Collection</em></h1>
+          <h1 id="hero-title">God of War <em>Collection</em></h1>
           <p class="hero-description" data-t="heroCopy">God of War I e II em um port da edição de PS Vita para portáteis Linux.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="?port=gow-collection-vita#catalogo" data-port="gow-collection-vita.zip" data-t="viewPort">Ver port ↗</a>
@@ -70,42 +70,44 @@
       <div class="section-heading">
         <div><h2 id="catalog-title" data-t="catalog">Catálogo</h2><p data-t="catalogCopy">Os ZIPs incluem o port. Use os dados da sua cópia do jogo.</p></div>
       </div>
-      <div class="search">
-        <span class="search-icon" aria-hidden="true"></span>
-        <input id="search" type="search" placeholder="Buscar por jogo, apelido ou plataforma…" aria-label="Buscar ports" data-placeholder="search" data-aria="searchLabel">
-        <kbd aria-hidden="true">/</kbd>
-      </div>
-      <div class="toolbar">
-        <div class="platforms" id="platforms" role="group" aria-label="Plataforma de origem" data-aria="sourcePlatform"></div>
-        <div class="filter-actions">
-          <label class="sort"><span class="sr-only" data-t="sortBy">Ordenar por</span><select id="sort">
-            <option value="featured" data-t="featured">Em destaque</option>
-            <option value="added" data-t="newest">Adicionados recentemente</option>
-            <option value="recent" data-t="recent">Atualizados recentemente</option>
-            <option value="name" data-t="alphabetical">Nome A–Z</option>
-            <option value="downloads" data-t="mostDownloaded">Mais baixados</option>
-          </select></label>
-          <button class="button button-quiet" id="filter-toggle" type="button" aria-expanded="false" aria-controls="extra-filters"><span aria-hidden="true">≡</span> <span data-t="filters">Filtros</span><span id="filter-count" hidden></span></button>
+      <div class="catalog-tools">
+        <div class="search">
+          <span class="search-icon" aria-hidden="true"></span>
+          <input id="search" type="search" placeholder="Buscar por jogo, apelido ou plataforma…" aria-label="Buscar ports" data-placeholder="search" data-aria="searchLabel">
+          <kbd aria-hidden="true">/</kbd>
         </div>
-      </div>
-      <div class="extra-filters" id="extra-filters" hidden>
-        <label><span data-t="genre">Gênero</span><select id="genre"></select></label>
-        <label><span data-t="gameType">Tipo de jogo</span><select id="availability">
-          <option value="all" data-t="all">Todos</option><option value="free" data-t="free">Gratuito</option><option value="paid" data-t="paid">Pago</option>
-        </select></label>
-        <label><span data-t="installMode">Instalação</span><select id="install-mode">
-          <option value="all" data-t="all">Todos</option><option value="portmaster">PortMaster</option><option value="manual" data-t="manual">Manual</option>
-        </select></label>
-        <label><span data-t="architecture">Arquitetura</span><select id="architecture">
-          <option value="all" data-t="all">Todos</option><option value="aarch64">ARM64</option><option value="armhf">ARM 32 bits</option>
-        </select></label>
-        <label class="tested-filter"><span data-t="device">Aparelho testado</span><select id="device"><option value="all" data-t="all">Todos</option></select></label>
-        <label class="tested-filter"><span data-t="firmware">Firmware testado</span><select id="firmware"><option value="all" data-t="all">Todos</option></select></label>
-        <p class="filter-help" data-t="coverage">Os filtros de aparelho e firmware mostram as combinações com teste registrado para o ZIP publicado.</p>
-      </div>
-      <div class="active-filters" id="active-filters" hidden>
-        <div id="chips" class="chips"></div>
-        <button type="button" class="button button-quiet" id="reset" data-t="reset">Limpar filtros</button>
+        <div class="toolbar">
+          <div class="platforms" id="platforms" role="group" aria-label="Plataforma de origem" data-aria="sourcePlatform"></div>
+          <div class="filter-actions">
+            <label class="sort"><span class="sr-only" data-t="sortBy">Ordenar por</span><select id="sort">
+              <option value="featured" data-t="featured">Em destaque</option>
+              <option value="added" data-t="newest">Adicionados recentemente</option>
+              <option value="recent" data-t="recent">Atualizados recentemente</option>
+              <option value="name" data-t="alphabetical">Nome A–Z</option>
+              <option value="downloads" data-t="mostDownloaded">Mais baixados</option>
+            </select></label>
+            <button class="button button-quiet" id="filter-toggle" type="button" aria-expanded="false" aria-controls="extra-filters"><span aria-hidden="true">≡</span> <span data-t="filters">Filtros</span><span id="filter-count" hidden></span></button>
+          </div>
+        </div>
+        <div class="extra-filters" id="extra-filters" hidden>
+          <label><span data-t="genre">Gênero</span><select id="genre"></select></label>
+          <label><span data-t="gameType">Tipo de jogo</span><select id="availability">
+            <option value="all" data-t="all">Todos</option><option value="free" data-t="free">Gratuito</option><option value="paid" data-t="paid">Pago</option>
+          </select></label>
+          <label><span data-t="installMode">Instalação</span><select id="install-mode">
+            <option value="all" data-t="all">Todos</option><option value="portmaster">PortMaster</option><option value="manual" data-t="manual">Manual</option>
+          </select></label>
+          <label><span data-t="architecture">Arquitetura</span><select id="architecture">
+            <option value="all" data-t="all">Todos</option><option value="aarch64">ARM64</option><option value="armhf">ARM 32 bits</option>
+          </select></label>
+          <label class="tested-filter"><span data-t="device">Aparelho testado</span><select id="device"><option value="all" data-t="all">Todos</option></select></label>
+          <label class="tested-filter"><span data-t="firmware">Firmware testado</span><select id="firmware"><option value="all" data-t="all">Todos</option></select></label>
+          <p class="filter-help" data-t="coverage">Os filtros de aparelho e firmware mostram as combinações com teste registrado para o ZIP publicado.</p>
+        </div>
+        <div class="active-filters" id="active-filters" hidden>
+          <div id="chips" class="chips"></div>
+          <button type="button" class="button button-quiet" id="reset" data-t="reset">Limpar filtros</button>
+        </div>
       </div>
       <p id="results" class="results" role="status" data-t="loading">Carregando catálogo…</p>
       <div id="grid" class="grid"></div>
