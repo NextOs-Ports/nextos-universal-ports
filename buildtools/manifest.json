@@ -2085,5 +2085,45 @@
     "isaac-ios/NOTICE.md"
    ]
   }
+ },
+ {
+  "key": "celosia",
+  "title": "Shadow of the Colossus",
+  "folder": "ports-ps2/celosia",
+  "platform": "ps2",
+  "release_tag": "celosia-v1.0.0",
+  "asset": "celosia.zip",
+  "screenshot": "celosia.screenshot.jpg",
+  "genres": [
+   "action",
+   "adventure"
+  ],
+  "portmaster": null,
+  "arch": [
+   "aarch64"
+  ],
+  "desc": "Port nativo da edição de PlayStation 2 para Linux ARM64 com OpenGL ES 3, baseado no projeto Celosia.",
+  "inst": "Coloque sua ISO americana SCUS-97472 v1.00 em celosia/gamedata/ e reserve 2,8 GB livres além da ISO.",
+  "note": "Testado no R36T/K36S com dArkOS4Clone e Mali-G31 em 640 × 480.",
+  "verification": {
+   "digest": "sha256:0a4078e271a7478ce78245023ee80b0ba0151e4ce3b52251ff711754b2cd2647",
+   "tested_on": [
+    {
+     "device": "R36T / K36S (Mali-G31)",
+     "firmware": "dArkOS4Clone"
+    }
+   ]
+  },
+  "package_credits": {
+   "digest": "sha256:0a4078e271a7478ce78245023ee80b0ba0151e4ce3b52251ff711754b2cd2647",
+   "notices": [
+    "celosia/LICENSES/"
+   ],
+   "components": [
+    "Celosia",
+    "PS2Recomp",
+    "SDL2"
+   ]
+  }
  }
 ]
