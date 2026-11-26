@@ -1,11 +1,11 @@
 # Crash Twinsanity – instalação / installation
 
-Use o guia abaixo da versão 1.1.1. The port ships with this guide in `gamedata/README.txt`.
+Use o guia abaixo da versão 1.1.4. The port ships with this guide in `gamedata/README.txt`.
 
 ~~~text
 Game: Crash Twinsanity (PlayStation 2), NTSC-U SLUS-20909 version 2.00, or PAL SLES-52568.
 Reference image (NTSC-U 2.00): 2108489728 bytes, SHA-1 4f1a56f633c1b500bf3e39a0df1fdc8f101018ff.
-Port runtime: native ARM64, based on TwinsanityEvolved (MIT); framework V7 pin e32ccde11993b73ccda45155253402b5e2472122
+Port runtime: native ARM64, based on TwinsanityEvolved (MIT); framework V7 pin 74bef22354b1cc5cf21f725755c0a62751f95810
 
 PORTUGUES
 
