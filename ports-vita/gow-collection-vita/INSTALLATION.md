@@ -1,12 +1,12 @@
 # God of War Collection – instalação / installation
 
-Use o guia abaixo da versão 1.9.1. The port ships with this guide in `gamedata/README.txt`.
+Use o guia abaixo da versão 1.9.2. The port ships with this guide in `gamedata/README.txt`.
 
 ~~~text
 Game: God of War Collection (PS Vita), PCSA00126, app 01.00, ARM32 guest.
 Content ID: UP9000-PCSA00126_00-GOWCUS030100SHIP
 Reference original PKG: 3336914560 bytes; SHA-256 e00a3198376e2e1f99c70786f7d5454a8b9bdf3f8021aaa503e2199e95547417
-Port runtime: ARMHF; framework V7 pin 74bef22354b1cc5cf21f725755c0a62751f95810
+Port runtime: ARMHF; framework V7 pin ecc8511283fee8fb5a2709b52e5009d8727908a4
 
 COMMON PROBLEMS
 - "put the owner work.bin OR license.zrif...": the ZIP holds the PKG but the licence is missing. Put the work.bin or license.zrif of YOUR game in gamedata/, beside the ZIP. Do not extract the game ZIP: keep it zipped, one .zip in the folder.
@@ -46,4 +46,4 @@ Saves: gow-collection-vita/save/. Owner settings and saves persist.
 
 ## KNULLI Gladiator I
 
-Se o jogo sair antes de criar `gow-collection-vita/log.txt`, abra o PortMaster pelo menu Ports. Se ele abrir, envie o arquivo `gow-collection-vita-startup.*.log` ou `gow-collection-vita-launcher-error.*.log` mais recente. Procure na pasta do jogo, ao lado do lançador e, antes de reiniciar, em `/tmp`.
+Na versão 1.9.2, a abertura direta pelo menu Ports também funciona sem uma instalação do PortMaster na bancada do RG35XX H. Extraia o ZIP do port para deixar `God of War Collection.sh` ao lado da pasta `gow-collection-vita`. Dentro de `gamedata/`, coloque o ZIP original do jogo. O registro da preparação fica em `gow-collection-vita/log.txt`.

@@ -1247,7 +1247,7 @@
   "title": "God of War Collection",
   "folder": "ports-vita/gow-collection-vita",
   "platform": "vita",
-  "release_tag": "gow-collection-vita-v1.9.1",
+  "release_tag": "gow-collection-vita-v1.9.2",
   "asset": "gow-collection-vita.zip",
   "screenshot": "gow-collection-vita.capa.screenshot.jpg",
   "genres": [
@@ -1261,7 +1261,7 @@
   "inst": "ZIP original da edição americana PCSA00126 01.00. Consulte o guia para os formatos e a licença da sua cópia.",
   "note": "Prova física no R36T/K36S com dArkOS4Clone e Mali-G31.",
   "verification": {
-   "digest": "sha256:837fd1f917b6265410c3148739d0629f8635aed5fc8822d24880a00917fa1b67",
+   "digest": "sha256:9a1f93493d35b32cf66446d005a3a1221199733d269f4eb31412cddd7d77d688",
    "tested_on": [
     {
      "device": "R36T / K36S (Mali-G31)",
@@ -1272,9 +1272,9 @@
   "requirements": {
    "glibc": "2.28"
   },
-  "requirements_digest": "sha256:837fd1f917b6265410c3148739d0629f8635aed5fc8822d24880a00917fa1b67",
+  "requirements_digest": "sha256:9a1f93493d35b32cf66446d005a3a1221199733d269f4eb31412cddd7d77d688",
   "package_credits": {
-   "digest": "sha256:837fd1f917b6265410c3148739d0629f8635aed5fc8822d24880a00917fa1b67",
+   "digest": "sha256:9a1f93493d35b32cf66446d005a3a1221199733d269f4eb31412cddd7d77d688",
    "notices": [
     "gow-collection-vita/LICENSES/",
     "gow-collection-vita/runtime/translations/CREDITOS.txt"
