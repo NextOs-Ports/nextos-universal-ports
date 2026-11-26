@@ -55,11 +55,12 @@ h1 em { color: #ffd38b; font-style: normal; }
 .hero-description { max-width: 49ch; color: #e2e7e9; margin: 8px 0 16px; font-size: 14px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .hero-actions .button { min-height: 45px; padding-inline: 15px; }
-.showcase-more { display: grid; grid-template-rows: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.showcase-more { display: grid; grid-auto-rows: minmax(0, 1fr); gap: 12px; }
 .spotlight { display: flex; justify-content: space-between; gap: 6px; align-items: end; min-width: 0; padding: 16px 20px; border: 1px solid var(--glass-edge); border-radius: 15px; box-shadow: var(--lift); background: linear-gradient(90deg,#080f1bec 5%,#080f1b3d), linear-gradient(0deg,#080f1be0,transparent 88%), var(--spotlight-image) center 45% / cover #121d2b; }
 .spotlight-zelda { --spotlight-image: url("https://raw.githubusercontent.com/NextOs-Ports/nextos-universal-ports/main/ports-gamecube/wind-waker-nextos/wind-waker-nextos.screenshot.jpg"); }
 .spotlight-gt4 { --spotlight-image: url("https://raw.githubusercontent.com/NextOs-Ports/nextos-universal-ports/main/ports-ps2/gt4/gt4.screenshot.jpg"); }
 .spotlight-crash { --spotlight-image: url("https://raw.githubusercontent.com/NextOs-Ports/nextos-universal-ports/main/ports-ps2/twinsanity/twinsanity.screenshot.jpg"); }
+.spotlight-celosia { --spotlight-image: url("images/shadow-of-the-colossus.avif"); background: linear-gradient(90deg, #0c1522 18%, #0c1522e8 37%, #0c152230 78%), var(--spotlight-image) right 32% / 64% auto no-repeat #0c1522; }
 .spotlight:hover { border-color: var(--accent); }
 .spotlight small { display: block; color: #d2dfe7; font-size: 11px; }
 .spotlight strong { display: block; font: 700 clamp(1.25rem, 2.5vw, 2rem)/1 var(--heading); }
@@ -187,7 +188,7 @@ dialog::backdrop { background: #050b12cb; backdrop-filter: blur(4px); }
   .hero { aspect-ratio: 1.13; border-radius: 16px; }
   .hero-copy { padding: 36px 16px 17px; }
   .hero-description { margin: 6px 0 12px; font-size: 13px; }
-  .showcase-more { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: auto; gap: 6px; }
+  .showcase-more { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
   .spotlight { min-height: 86px; padding: 7px; border-radius: 7px; overflow-wrap: anywhere; }
   .spotlight small { font-size: 9px; }
   .spotlight strong { font-size: clamp(1rem, 4vw, 1.5rem); }

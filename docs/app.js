@@ -122,7 +122,7 @@ const genres = {
   fps: "Tiro em primeira pessoa", rhythm: "Ritmo", "visual novel": "Visual novel",
   beatemup: "Beat ’em up", fighting: "Luta", metroidvania: "Metroidvania",
 };
-const featured = ["gow-collection-vita.zip", "wind-waker-nextos.zip", "gt4.zip", "twinsanity.zip",
+const featured = ["gow-collection-vita.zip", "wind-waker-nextos.zip", "gt4.zip", "twinsanity.zip", "celosia.zip",
   "residentevil4-ios.zip", "asm2.zip", "horizonchase.zip", "Stardew.Valley.NextOS.zip", "sor4.zip"];
 const aliases = {
   "gow-collection-vita.zip": "gow gow1 gow2 god of war 1 god of war 2 kratos",
